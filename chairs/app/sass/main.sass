@@ -11,6 +11,9 @@
 ul
 	list-style-type: none
 
+a
+	
+
 body
 	font-size: 16px
 	min-width: 320px
@@ -37,10 +40,46 @@ body
 	width: 100%
 	display: flex
 	justify-content: center
+	border-bottom: 1px solid #cdcdcc
 	&__wrap
 		display: flex
-		width: 
-			
+		width: 78.5vw
+		justify-content: space-between
+		align-self: center
+	&__menu
+		display: flex
+		justify-content: space-between
+		align-self: center
+		width: 23.1vw
+		font-weight: 300
+		text-transform: uppercase
+		&__item
+			font-size: 18px		
+			&__link
+				color: $text
+	&__contact
+		display: flex
+		width: 23.85vw
+		&__item
+			display: flex
+			justify-content: space-between
+			width: 10.6vw
+			margin-right: 0.9vw
+			.icon
+				display: flex
+				padding: 15px 15px
+				border: 1px solid #000000
+				border-radius: 50px
+				height: 44px
+				width: 44px
+
+	
+.contact
+	width: 9.5vw	
+	font-size: 1.9vh
+	font-weight: 700
+
+
 .img-responsive
 	display: block
 	max-width: 100%
