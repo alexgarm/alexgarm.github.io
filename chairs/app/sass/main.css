@@ -2503,6 +2503,15 @@ body input:required:valid, body textarea:required:valid {
   border-color: green;
 }
 
+.main {
+  width: 100%;
+  height: 100vh;
+  background-image: url("/app/img/bg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 .img-responsive {
   display: block;
   max-width: 100%;
