@@ -1,0 +1,353 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color: $color
+.wrap
+	width: 130vh
+	margin: 0 auto
+	position: relative
+
+#header
+	display: flex
+	align-content: center
+	justify-content: space-between
+	width: 100%
+	height: 100vh
+	flex-direction: column
+	position: relative
+	background-size: cover
+	background-repeat: no-repeat
+	background-image: url(/app/img/main-bg.jpg)
+	background-position: center
+	padding-top: 7vh
+	padding-bottom: 8vh
+	color: $color
+	&__top
+		display: flex
+		height: 10vh
+		overflow: hidden
+		flex-flow: row nowrap
+		align-items: center
+		justify-content: space-between
+		&--logo
+			width: 15vh
+		&--call
+			text-transform: uppercase
+			text-decoration: underline
+			cursor: pointer
+
+	&__bottom
+		&.fixedNav nav a
+ 			color: #332233
+		&.fixedNav nav
+			height: inherit
+		nav
+			display: flex
+			flex-flow: row nowrap
+			align-items: center
+			justify-content: space-between
+		nav li
+			list-style: none
+		nav a
+			text-decoration: none
+		a
+			color: $color
+			text-transform: uppercase
+		
+#about
+	display: flex
+	align-content: center
+	position: relative
+	width: 100%
+	padding-top: 18vh
+	padding-bottom: 22vh
+	width: 130vh
+	margin: 0 auto
+	position: relative
+	&__title
+		width: 30vw
+		color: #000000
+		p
+			text-transform: uppercase
+			font-size: 3.8vh
+			line-height: 4.7vw
+		
+	&__text
+		width: 44vw
+		padding-right: 1.5vw
+		color: #000000
+		ul
+			width: 30vw
+			margin: 6vh 0s
+		ul li
+			margin-bottom: 1.18vh
+#gallery
+	background-color: #eeeeee
+	padding: 0 0 14.3vh
+#testimonials
+	background-color: #eeeeee
+	padding-bottom: 19vh
+.tm_box
+	width: 23.71vw
+	&__img
+		position: relative
+		height: 12.8vw
+		&--quote
+			width: 2.76vw
+			height: 2.29vw
+			position: absolute
+			z-index: 1
+			top: calc( 50% - 1.14vw )
+			left: 4.11vw
+		&__wrap
+			display: flex
+			align-content: center
+			justify-content: center
+			width: 11.62vw
+			height: 11.62vw
+			border-radius: 11.62vw
+			overflow: hidden
+			text-align: center
+			position: absolute
+			top: 0
+			left: calc( 50% - 5.81vw )
+			img
+				width: 100%
+				height: auto
+	&__name
+		h3
+			font-weight: bold
+			font-size: 1.26vw
+			text-align: center
+			color: #000000
+		h4
+			font-style: italic
+			font-size: 1.26vw
+			color: #696973
+			font-weight: 400
+			text-align: center
+	&__text
+		p
+			text-align: center
+			color: #000000
+
+.area__title
+	margin: 0 auto 5.5vh
+	z-index: 5
+	width: fit-content
+	color: #000000
+	position: relative
+	top: -2.61vh
+	h2
+		text-transform: uppercase
+		text-align: center
+		font-size: 3.79vw
+		color: #323232
+		line-height: 2.84vw
+		margin-bottom: 1.22vh
+	.dec
+		display: flex
+		flex-flow: nowrap
+		align-content: center
+		align-items: center
+		justify-content: between
+		&_svg
+			fill: #00aaef
+			width: 2.58vw
+			margin: 0 0.79vw
+
+.gallery_line
+	display: flex
+	width: 100%
+	height: 100%
+	.box_img_gallery
+		height: 20vmax
+		overflow: hidden
+		img
+			width: 100%
+			height: 100%	
+	&:nth-of-type(1)
+		.box_img_gallery
+			&:nth-of-type(1)
+				width: 49vw
+				margin-right: 1.58vw
+			&:nth-of-type(2)
+				width: 25.45vw
+	&:nth-of-type(3)
+		.box_img_gallery
+			&:nth-of-type(1)
+				width: 36.36vw
+				margin-right: 1.58vw
+			&:nth-of-type(2)
+				width: 38.08vw
+	&:nth-of-type(5)
+		.box_img_gallery
+			&:nth-of-type(1)
+				width: 23.71vw
+				margin-right: 1.58vw
+			&:nth-of-type(2)
+				width: 53.86vw
+.name__gallery
+	color: #000000
+	font-size: 1.26vw
+	margin: 2.61vh 0 4.57vh 0
+	font-weight: 700
+#consultation
+	margin-bottom: 19vh
+	align-items: center
+
+.consultation__text
+	width: 36.36vw
+	padding-bottom: 19vh
+	padding-right: 2vw
+	h2
+		font-style: 2.53vw
+		line-height: 2.84vw
+		margin-bottom: 6.53vh
+		font-weight: 400
+		color: #000000
+	p
+		color: #000000
+.consultation__form
+	width: 30vw
+	input
+		background-color: #eee
+		border: none
+		text-align: center
+		width: 100%
+		height: 6.79vh
+		font-size: 1.1vw
+		color: #393939
+		text-transform: uppercase
+		margin-bottom: 1.3vh
+	button
+		width: 100%
+		text-align: center
+#contact
+	margin-bottom: 19vh
+	align-items: center
+	
+#contact__list
+	width: 23.71vw
+	li
+		list-style: none
+		margin-bottom: 5.62vh
+		font-size: 1.89vw
+		color: #000
+.contact__form
+	width: 30vw
+	input
+		background-color: #eee
+		border: none
+		text-align: center
+		width: 100%
+		height: 6.79vh
+		font-size: 1.1vw
+		color: #393939
+		text-transform: uppercase
+		margin-bottom: 1.3vh
+	textarea
+		background-color: #eee
+		border: none
+		text-align: center
+		width: 100%
+		height: 21.7vh
+		font-size: 1.1vw
+		color: #393939
+		text-transform: uppercase
+		margin-bottom: 1.3vh
+	button
+		width: 100%
+		text-align: center
+footer
+	display: flex
+	flex-flow: column
+	align-items: center
+	justify-content: space-around
+	background-image: url(/app/img/footer.jpg)
+	background-repeat: no-repeat
+	background-position: center
+	background-size: cover
+	width: 100%
+	height: 71vh
+
+#footer__logo
+	width: 15vh
+
+.blue
+	color: #00aaef
+.bold
+	font-style: bold
+.line
+	background-color: #00aaef
+	width: 100%
+	height: 0.26vh
+.blue_btn
+	background-color: #00aaef
+	text-transform: uppercase
+	color: #ffffff
+	&:hover
+		background-color: #0185ba
+.btn
+	padding: 1.58vw 4.98vw
+	border: none
+.flex_jcontent__center
+	display: flex
+	justify-content: center
+.main_flex_no_wrap
+	display: flex
+	flex-wrap: nowrap	
+.flex_jcontent_between
+	justify-content: space-between		
+.flex__align_items-start
+	align-items: flex-start
+
+
+
+.fixedNav
+	position: fixed
+	top: 0
+	opacity: 0.7
+	background-color: #fff
+	left: 0
+	color: #323232
+	height: 10vh
+	z-index: 10
+	width: 100%
+	transition: 0.25s ease-in-out
+	&:hover
+		opacity: 1
+
+
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+
+
+@import "media" // Always at the end

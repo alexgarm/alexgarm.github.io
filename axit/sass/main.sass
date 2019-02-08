@@ -1,0 +1,784 @@
+@import "vars"
+@import "fonts"
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+body
+	margin: 0
+	
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video
+	margin: 0
+	padding: 0
+	border: 0
+	font-size: 100%
+	font: inherit
+	vertical-align: baseline
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section
+	display: block
+
+body
+	line-height: 1
+
+ol, ul
+	list-style: none
+
+blockquote, q
+	quotes: none
+
+blockquote:before, blockquote:after,
+q:before, q:after
+	content: ''
+	content: none
+a
+	text-decoration: none
+table
+	border-collapse: collapse
+	border-spacing: 0
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+#header
+	display: flex
+	flex-direction: column
+	width: 100%
+	height: 100vh
+.navbar
+	display: flex
+	justify-content: space-between
+	width: 100vw
+	height: 8.8vh
+	background-color: #000000
+	&__wrap
+		display: flex
+		justify-content: space-between
+		align-items: center
+		height: 8.8vh
+		width: 82vw
+		margin: 0 10vw 0 10vw
+	&__logo
+		width: 5.6vw
+		height: 27px
+		background-repeat: no-repeat
+	&__menu
+		display: flex
+		justify-content: space-between
+		width: 37.6vw
+		&__item
+			margin-left: 3.1vw
+			&--last
+				margin-right: 0
+			&__link
+				color: #ffffff
+	li
+		list-style: none
+.main
+	width: 100%
+	height: 78.36vh
+	background-image: url("/axit/img/main.jpg")	
+	background-repeat: no-repeat
+	background-position: center
+	background-size: cover
+	&__wrap
+		display: flex
+		justify-content: space-between
+		align-items: center
+		height: 49vh
+		width: 82vw
+		margin: 13.2vh 10vw 0 10vw
+	&__text
+		display: flex
+		flex-direction: column
+		justify-content: space-between
+		width: 36.5vw
+		height: 49vh
+		&__logo
+			height: 7vh
+			width: 12.5vw
+		
+		h1
+			margin-top: 4vh
+			height: 8.5vh
+			color: #ffffff
+			font-family: Raleway
+			font-size: 4.4vh
+			font-weight: 400
+			text-transform: uppercase
+		.line
+			margin-top: 5vh
+		p
+			margin-top: 5vh
+			width: 33vw
+			height: 7.4vh
+			opacity: 0.52
+			color: #ffffff
+			font-family: Raleway
+			font-size: 1.95vh
+			font-weight: 300
+			line-height: 23px
+		button
+			margin-top: 5.8vh
+	&__form
+		display: flex
+		flex-direction: column
+		height: 44vh
+		width: 25vw
+		background-color: #ffffff
+		z-index: 10
+		&__title
+			height: 6.6vh
+			width: 25vw
+			background-color: #f5f5f5
+			text-align: center
+			&__text
+				color: #333333
+				font-family: "Open Sans"
+				font-size: 2.4vh
+				font-weight: 700
+				margin-top: 2.2vh
+				padding: 0
+		&__inputblock
+			height: 10.60vh
+			width: 25vw
+			padding: 0
+			input
+				width: 19vw
+				border: none
+				color: #bdbdbd
+				font-weight: 400
+				font-size: 2vh
+				border-bottom: 1px solid #bdbdbd
+				margin: 2.32vh 2.5vw 0 3vw
+				padding: 1.3vh 0 1.1vh 1vw
+		button
+			background-color: $accent
+			border: none
+			color: #ffffff
+			height: 6.6vh
+			width: 25vw
+
+
+.social
+	display: flex
+	width: 100%
+	align-items: center
+	padding: 3.6vh 0 
+	&__wrap
+		display: flex
+		justify-content: space-between
+		align-items: center
+		height: 8.8vh
+		width: 82vw
+		margin: 0 10vw 0 10vw
+	&__text
+		display: flex
+		flex-direction: column
+		width: 25.7vw
+		&__title
+			width: 9vw
+			font-family: "Open Sans"
+			font-size: 2.44vh
+			font-weight: 700
+			margin-bottom: 1.25vh
+		&__offers	
+			width: 20vw
+			height: 3.9vh
+			color: #86878b
+			font-family: "Open Sans"
+			font-size: 1.7vh
+			font-weight: 400
+			line-height: 2.44vh
+	&__icons
+		display: flex
+		align-items: center
+		justify-content: space-between
+		width: 45vw
+		height: 5.86vh
+		color: #cccccc
+		font-size: 5.86vh	
+
+.features
+	display: flex
+	align-items: center
+	height: 100vh
+	width: 100%
+	background-color: #f5f5f5
+	&__wrap
+		display: flex
+		height: 58.4vh
+		width: 82vw
+		margin: 0 10vw 0 10vw
+	&__explane
+		display: flex
+		&__tabs
+			display: flex
+			flex-direction: column
+			height: 48vh
+			margin-right: 7.14vw
+			&__tab
+				height: 18.8vh
+				width: 8vw
+				background-color: #333333
+				border: 1px solid #cccccc
+				color: #ffffff
+				text-transform: uppercase
+				font-weight: 700
+				font-size: 2.25vh
+				text-align: center
+				padding: 7.5vh 0
+				&:hover
+					cursor: pointer
+					background-color: $accent
+				&.active
+					 background-color: $accent
+		&__text
+			margin-right: 7.14vw
+			&__title
+				width: 24.60vw
+				height: 3.52vh
+				color: #000000
+				font-family: "Open Sans"
+				font-size: 3.36vh
+				font-weight: 700
+				margin-bottom: 8.73vh
+			&__content
+				width: 34vw
+				height: 22.17vh
+				color: #86878b
+				font-family: "Open Sans"
+				font-size: 14px
+				font-weight: 400
+				line-height: 20px
+				
+			button
+				margin-top: 8.73vh
+				width: 8.64vw
+				height: 7.72vh
+				color: #ffffff
+				font-family: "Open Sans - Semibold"
+				font-size: 15px
+				font-weight: 400
+				border: none
+			section
+				display: none
+				p
+					margin: 1.5vh
+			input
+				display: none
+			#tab1:checked ~ #content1,
+			#tab2:checked ~ #content2,
+			#tab3:checked ~ #content3,
+			#tab4:checked ~ #content4
+				display: block
+	
+	&__img
+		margin-top: 	
+
+.section
+	width: 100%
+	height: 100vh
+	padding-top: 18vh
+	&__wrap
+		display: flex
+		justify-content: space-between
+		height: 63vh
+		width: 79.2vw
+		margin: 0 8.85vw
+
+	&__img
+	&__text
+		display: flex
+		flex-direction: column
+		width: 31vw
+		&__title
+			color: #212121
+			font-family: "Open Sans"
+			font-size: 3.35vh
+			font-weight: 700
+			margin-bottom: 2vh
+		
+		&__paragraph
+			margin-top: 2vh
+			color: #86878b
+			font-family: "Open Sans"
+			font-size: 2.3vh
+			font-weight: 400
+			line-height: 3vh
+			margin-bottom: 7.7vh
+			p
+				margin-top: 4vh
+		&__offer
+			display: flex
+			margin-bottom: 7vh
+			.circle
+				margin-right: 2.2vw
+			&__wrap
+				display: flex
+				flex-direction: column
+				width: 25.7vw
+			&__title
+				color: #212121
+				font-family: "Open Sans - Semibold"
+				font-size: 2.3vh
+				font-weight: 400
+				margin-bottom: 0.85vh
+			&__text
+				color: #86878b
+				font-family: "Open Sans"
+				font-size: 2.3vh
+				font-weight: 400
+				line-height: 3vh
+.section
+	&--process
+		width: 100%
+		height: 82vh
+		padding-top: 18vh
+	&--sublistRight
+		width: 100%
+		height: 62vh
+		padding-top: 18vh
+	&--sublistLeft
+		width: 100%
+		height: 82vh
+		padding-top: 18vh
+	&--pricing
+		width: 100%
+		height: 110vh
+		padding-top: 18vh
+	&--employes
+		width: 100%
+		height: 119vh
+		padding-top: 5vh
+	&--contact
+		width: 100%
+		height: 100vh
+		padding-top: 15vh
+
+
+
+.process
+	display: flex
+	flex-direction: column
+	height: 63.5vh
+	align-content: center
+	justify-content: center
+	align-items: center
+	&__title
+		color: #212121
+		font-family: Raleway
+		font-size: 36px
+		font-weight: 400
+		line-height: 43px
+		text-transform: uppercase
+	.line
+		margin: 4vh 0
+	&__text
+		color: #86878b
+		font-family: "Open Sans"
+		font-size: 14px
+		font-weight: 400
+	&__explane
+		display: flex
+		height: 33vh
+		width: 79.5vw
+		align-items: center
+		justify-content: center
+		margin-top: 14vh
+		&__block
+			display: flex
+			flex-direction: column
+			align-items: center
+			width: 23vw
+			margin-right: 2.28vw
+			&:last-child
+				margin-right: 0
+			.circle
+				width: 70px
+				height: 70px
+
+			&__title	
+				color: #333333
+				font-family: "Open Sans"
+				font-size: 20px
+				font-weight: 700
+				margin: 25px
+			&__offer
+				width: 23vw
+				height: 8.7vh
+				color: #86878b
+				font-family: "Open Sans"
+				font-size: 14px
+				font-weight: 400
+				text-align: center
+.pricing
+	display: flex
+	flex-direction: column
+	height: 80vh
+	align-content: center
+	justify-content: center
+	align-items: center
+	.wrap
+		height: 100vh
+	&__title
+		color: #212121
+		font-family: Raleway
+		font-size: 4vh
+		font-weight: 400
+		text-transform: uppercase
+	.line
+		margin: 4vh 0
+	&__text
+		color: #86878b
+		font-family: "Open Sans"
+		font-size: 1.6vh
+		font-weight: 400
+	&__explane
+		display: flex
+		height: 36vh
+		width: 79.5vw
+		align-items: center
+		justify-content: center
+		margin-top: 32vh
+	&__block
+		display: flex
+		flex-direction: column
+		align-items: center
+		width: 23vw
+		margin-right: 2.5vw
+		&:last-child
+			margin-right: 0
+		&__title
+			display: flex
+			width: 23vw
+			height: 59px
+			color: #ffffff
+			justify-content: center
+			align-items: center
+			background-color: #333333
+			text-transform: uppercase
+			border-bottom: 1px solid #ffffff
+			font-family: "Open Sans"
+			font-size: 2vh
+			font-weight: 700
+		&__price
+			display: flex
+			justify-content: center
+			align-items: center
+			width: 23vw
+			height: 100px
+			background-color: #333333
+			color: #ffffff
+			font-family: Raleway
+			font-size: 10vh
+			font-weight: 700
+			span
+				font-size: 35px
+		&__period
+			width: 23vw
+			height: 51px
+			background-color: #333333
+			color: #808080
+			text-align: center
+			font-family: "Open Sans - Semibold"
+			font-size: 1.5vh
+			font-weight: 400
+			font-style: italic
+		&__suggestion
+			width: 23vw
+			height: 5px
+			background-color: $accent
+			&--popular
+				display: flex
+				width: 23vw
+				justify-content: center
+				align-items: center
+				height: 4.5vh
+				background-color: $accent
+				color: #ffffff
+				font-family: "Open Sans"
+				font-size: 1.6vh
+				font-weight: 700
+				text-transform: uppercase
+		&__offers
+			ul li
+				display: flex
+				justify-content: center
+				align-items: center
+				width: 23vw
+				height: 4.5vh
+				background-color: #ffffff
+				color: #86878b
+				font-family: "Open Sans"
+				font-size: 1.6vh
+				font-weight: 400
+				text-transform: uppercase
+
+.employes
+	display: flex
+	flex-direction: column
+	height: 80vh
+	align-content: center
+	justify-content: center
+	align-items: center
+	.wrap
+		height: 100vh
+	&__title
+		color: #212121
+		font-family: Raleway
+		font-size: 4vh
+		font-weight: 400
+		text-transform: uppercase
+	.line
+		margin: 4vh 0
+	&__text
+		color: #86878b
+		font-family: "Open Sans"
+		font-size: 2vh
+		font-weight: 400
+	&__explane
+		display: flex
+		height: 36vh
+		width: 79.5vw
+		align-items: center
+		justify-content: space-between
+		margin-top: 6.1vh
+	&__block
+		display: flex
+		flex-direction: column
+		width: 19.5vw
+		margin-right: 2.5vw
+		&:last-child
+			margin-right: 0
+		&__comment
+			height: 14vh
+			width: 19.5vw
+			color: #86878b
+			font-size: 14px
+			font-weight: 400
+			font-style: italic
+			background-color: #f5f5f5
+			margin-bottom: 2.4vh
+			padding: 1vh 0 2vh 0
+			p
+				height: 14vh
+				width: 17vw
+				margin: 2.2vh 1vw
+
+			
+			position: relative
+			&:after
+				content: ''
+				position: absolute
+				left: 20px
+				bottom: -20px
+				border: 10px solid transparent
+				border-top: 10px solid  #f5f5f5
+			&:before
+				content: ''
+   				position: absolute
+    			left: 20px
+				bottom: -20px
+    			border: 10px solid transparent
+    			border-top: 10px solid  #f5f5f5
+
+		&__person
+			display: flex
+			align-items: center
+			&__img
+				margin-right: 1.1vw
+			&__data
+				display: block
+				height: 4.3vh
+				&__name
+					color: #333333
+					font-family: "Open Sans"
+					font-size: 20px
+					font-weight: 700
+					margin-bottom: 0.9vh
+				&__position
+					color: #86878b
+					font-family: "Open Sans"
+					font-size: 14px
+					font-weight: 400
+
+.img__footer
+	display: flex
+	flex-direction: column
+	align-items: center
+	justify-content: center
+	width: 100%
+	height: 35vh
+	padding-top: 8.1vh
+	background-image: url(/img/u25.png)
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: center
+	.employes__title
+		color: #ffffff
+	.employes__text
+		opacity: 0.8
+		color: #ffffff
+		font-family: Raleway
+		font-size: 16px
+		font-weight: 300
+	.line
+		margin: 2.75vh 0 
+
+	.btn--ghost
+		margin: 5.27vh 0
+.contact_form
+	display: flex
+	justify-content: space-between
+	margin: 15vh
+	width: 82vw
+	height: 28.42vh
+	&__personal_data
+		height: 19.42vh
+		.main__form__inputblock
+			width: 35vw
+			margin-right: 0
+			input
+				width: 35vw
+	&__text_message
+		height: 30vh
+		textarea
+			margin-top: 3vh
+			height: 26vh
+			width: 31vw
+			font-size: 2.5vh
+
+#contact
+	.wrap
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		margin-bottom: 15vh
+	.line
+		margin: 4.3vh 0
+	.footer
+		display: flex
+		align-items: center
+		justify-content: center
+		flex-direction: column
+		width: 100%
+		height: 11.71vh
+		background-color: #000000
+		.social__icons
+			width: 22.64vw
+			.social__icons-google
+				color: #cccccc
+				font-family: "Font Awesome"
+				font-size: 3.4vh
+				margin-right: 0
+				font-weight: 400
+		.copyright
+			width: 9vw
+			height: 1.3vh
+			opacity: 0.5
+			color: #ffffff
+			font-family: "Open Sans"
+			font-size: 12px
+			font-weight: 400
+
+	button
+		flex: 1 0 auto
+		
+
+.btn
+	
+	&--ghost
+		width: 9.6vw
+		height: 5.1vh
+		display: inline-block
+		padding: 0.97vh 0.57vw
+		color: #ffffff
+		background: rgba(255, 255, 255, 0)
+		border: 1px solid #fff
+		text-align: center
+		outline: none
+		text-decoration: none
+	&--orange
+		width: 9.6vw
+		height: 5.1vh
+		background-color: $accent
+		color: #ffffff
+		padding: 0.97vh 0.57vw
+		text-align: center
+		outline: none
+		text-decoration: none
+
+	
+
+.download__icon
+	color: $accent
+	font-size: 2.3vh
+.circle__icon
+	color: $accent
+	font-size: 4.6vh
+.circle
+	display: flex
+	border-radius: 50px
+	width: 40px
+	height: 40px
+	border: 2px solid $accent
+	align-items: center
+	justify-content: center
+.background
+	&--orange
+		background-color: $accent
+	&--grey
+		background-color: #f5f5f5
+	&--white
+		background-color: #ffffff
+.orange
+	color: $accent
+.white
+	background-color: #ffffff
+.line
+	width: 5vw
+	height: 0.3vh
+.wrap	
+	width: 82vw
+	margin: 0 13vh
+	&--pricing
+		height: 100vh
+		width: 82vw
+		margin: 0 13vh
+.jcontent_space-between
+	display: flex
+	justify-content: space-between
+.alitem__center
+	display: flex
+	align-items: center
+@import "media" // Always at the end

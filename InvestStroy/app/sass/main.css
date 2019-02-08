@@ -1,0 +1,246 @@
+@font-face {
+  font-family: "roboto-example";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot");
+  src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "roboto-example";
+  font-weight: bold;
+  font-style: normal;
+  src: url("../fonts/RobotoBold/RobotoBold.eot");
+  src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype");
+}
+
+.slick-active {
+  outline: none;
+}
+
+::-webkit-input-placeholder {
+  color: #666;
+}
+
+:-ms-input-placeholder {
+  color: #666;
+}
+
+::-ms-input-placeholder {
+  color: #666;
+}
+
+::placeholder {
+  color: #666;
+}
+
+::-moz-selection {
+  background-color: #009adf;
+  color: #fff;
+}
+
+::selection {
+  background-color: #009adf;
+  color: #fff;
+}
+
+body {
+  font-size: 14px;
+  min-width: 320px;
+  position: relative;
+  font-family: "roboto-example", sans-serif;
+  overflow-x: hidden;
+  color: #131313;
+  background-color: #eef3f5;
+  padding: 40px;
+}
+
+body input, body textarea {
+  border: #666 1px solid;
+  outline: none;
+}
+
+body input:focus:required:invalid, body textarea:focus:required:invalid {
+  border-color: red;
+}
+
+body input:required:valid, body textarea:required:valid {
+  border-color: green;
+}
+
+a {
+  color: #009adf;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+.btn {
+  padding: 20px 30px;
+  display: inline-block;
+  color: #ffffff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.btn-primary {
+  background-color: #009adf;
+  border-bottom: 5px solid #0077ac;
+}
+
+.btn-primary:hover {
+  background-color: #00a1e9;
+}
+
+.nav-top {
+  background-color: #ffffff;
+  padding: 15px;
+}
+
+.nav-top__menu {
+  list-style: none;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.nav-top__menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+.nav-top__menu ul li {
+  margin-right: 45px;
+}
+
+.nav-top__menu ul li a {
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: 700;
+  color: #131313;
+}
+
+.nav-top__menu ul li a:after {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: #009adf;
+  -webkit-transform: translateY(37px) scale(0);
+          transform: translateY(37px) scale(0);
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.nav-top__menu ul li a:hover:after {
+  -webkit-transform: translateY(37px) scale(1);
+          transform: translateY(37px) scale(1);
+}
+
+.sidebar-left {
+  margin-top: 35px;
+}
+
+.sidebar-left__menu {
+  background-color: #ffffff;
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-left__menu li {
+  -webkit-transition: all 0.1s;
+  transition: all 0.1s;
+}
+
+.sidebar-left__menu li a {
+  padding-top: 20px;
+}
+
+.sidebar-left__menu li a {
+  padding-bottom: 20px;
+}
+
+.sidebar-left__menu li:hover {
+  background-color: #009adf;
+}
+
+.sidebar-left__menu li:hover a {
+  color: #ffffff;
+}
+
+.sidebar-left__menu a {
+  display: block;
+  text-decoration: none;
+  color: #131313;
+  font-size: 16px;
+  font-weight: 400;
+  padding: 15px 29px;
+}
+
+.sidebar-left__object {
+  margin-top: 30px;
+  background-color: #ffffff;
+}
+
+.sidebar-left__object__descroption {
+  padding: 30px;
+}
+
+.sidebar-left__object__descroption h3 {
+  text-transform: uppercase;
+  font-size: 400;
+}
+
+.content {
+  margin-top: 40px;
+}
+
+.directions {
+  margin-top: 80px;
+}
+
+.directions-block {
+  display: block;
+  background-color: #ffffff;
+  height: 220px;
+  text-align: center;
+  padding: 10px;
+}
+
+.directions-block h3 {
+  color: #009adf;
+}
+
+.slick-slide {
+  margin: 0 15px;
+  /* the parent */
+}
+
+.slick-list {
+  margin: 0 -15px;
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.img-responsive.img-width {
+  width: 100%;
+}
+
+.text-center {
+  text-align: center;
+}
+
+b, strong {
+  font-weight: bold;
+}
+/*# sourceMappingURL=main.css.map */
