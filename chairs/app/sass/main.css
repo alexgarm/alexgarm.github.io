@@ -2480,12 +2480,16 @@ html {
   color: #fff;
 }
 
+ul {
+  list-style-type: none;
+}
+
 body {
   font-size: 16px;
   min-width: 320px;
   position: relative;
   line-height: 1.65;
-  font-family: "roboto-example", sans-serif;
+  font-family: "geometria", sans-serif;
   overflow-x: hidden;
   color: #333;
 }
@@ -2510,6 +2514,22 @@ body input:required:valid, body textarea:required:valid {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+}
+
+.header {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.header__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .img-responsive {
