@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @font-face {
   font-family: "geometria";
   font-weight: normal;
@@ -2661,7 +2662,10 @@ body input:required:valid, body textarea:required:valid {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 1750px;
+  width: 90vw;
+  background-image: url("/app/img/truly.png");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .property__content p {
@@ -2681,6 +2685,16 @@ body input:required:valid, body textarea:required:valid {
   width: 291px;
 }
 
+.cirсle {
+  border-radius: 50px;
+  border: 1px solid #000000;
+}
+
+.cirсle--large {
+  height: 50px;
+  widows: 50px;
+}
+
 .img-responsive {
   display: block;
   max-width: 100%;
@@ -2693,6 +2707,10 @@ body input:required:valid, body textarea:required:valid {
 
 .beige {
   background-color: #faebd7;
+}
+
+.white {
+  color: #ffffff;
 }
 
 .text-center {
