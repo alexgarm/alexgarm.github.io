@@ -107,14 +107,12 @@ body
 		align-items: center
 	&__content
 		display: flex
-		justify-content: space-between
 		width: 90vw
+		height: 72vh
 		background-image: url("/app/img/truly.png")
 		background-repeat: no-repeat
 		background-position: center
-
 		p
-			// Style for "Теперь ваш"
 			width: 287px
 			height: 714px
 			color: #000000
@@ -122,23 +120,61 @@ body
 			font-size: 20px
 			font-weight: 400
 		&__chair
-			width: 1034px
+			display: flex
+			width: 52vw
+			height: 72vh
+			padding: 0
+			.side
+				&.right
+					width: 34vw
+					height: 72vh
+					margin: 0
+					
+				&.left
+					width: 18vw
+					height: 72vh
+					margin: 0
 			&__item
-				&--right
+				display: flex
+				width: 24vw
+				height: 17.2vh
+				&.right
+					flex-direction: row-reverse
+					margin: 0
 				&--left
-
+				&.line
+					
+				
 		&__galery
+			display: flex
+			flex-direction: column
 			width: 291px
-
-.cirсle
-	border-radius: 50px
-	border: 1px solid #000000
+.description
+	display: flex
+	flex-direction: column
+	justify-content: center
+	height: 2vh
+	width: 1vh
+.circle
+	display: flex
+	justify-content: center
+	align-items: center
+	border: 2px solid #ffffff
 	&--large
+		border-radius: 50%
+		position: relative
 		height: 50px
-		widows: 50px
+		width: 50px
 	&--small
-
+		border-radius: 50%
+		position: absolute
+		height: 30px
+		width: 30px
 	&--solid
+		background-color: #ffffff
+		border-radius: 50%
+		height: 10px
+		width: 10px
 
 .img-responsive
 	display: block
