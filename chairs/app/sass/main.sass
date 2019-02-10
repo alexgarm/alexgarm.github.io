@@ -35,6 +35,20 @@ body
 	background-repeat: no-repeat
 	background-position: center
 	background-size: cover
+.between
+	// Style for "Rectangle"
+	width: 100%
+	height: 391px
+	background-image: url("/app/img/betweenbg.jpg")
+	background-repeat: no-repeat
+	background-position: center
+	background-size: cover
+	.wrap
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+
 .header
 	width: 100%
 	display: flex
@@ -110,7 +124,7 @@ body
 		align-items: center
 		margin-bottom: 2vh
 		span
-			font-size: 18px
+			font-size: 1.6vh
 			font-weight: 400
 	&__content
 		display: flex
@@ -137,13 +151,24 @@ body
 			width: 52vw
 			height: 72vh
 			.side
+				display: flex
+				flex-direction: column
 				&.right
 					width: 28vw
 					height: 72vh		
 				&.left
 					width: 24vw
 					height: 72vh
-					margin-top: 3vh
+					margin-top: 2vh
+				.price
+					// Style for "10 500 грн"
+					width: 204px
+					height: 36px
+					color: #20418c
+					font-family: Geometria
+					font-size: 39px
+					font-weight: 500
+					line-height: 50.9px
 			&__item
 				display: flex
 				align-items: center
@@ -152,7 +177,7 @@ body
 					flex-direction: row-reverse
 					width: 26vw	
 				&--left
-					width: 26vw	
+					width: 26vw
 				.square
 					// Style for "Rectangle"
 					width: 7px

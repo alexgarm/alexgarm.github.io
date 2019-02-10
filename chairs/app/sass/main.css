@@ -2515,6 +2515,31 @@ body input:required:valid, body textarea:required:valid {
   background-size: cover;
 }
 
+.between {
+  width: 100%;
+  height: 391px;
+  background-image: url("/app/img/betweenbg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.between .wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .header {
   width: 100%;
   display: -webkit-box;
@@ -2659,7 +2684,7 @@ body input:required:valid, body textarea:required:valid {
 }
 
 .property__title span {
-  font-size: 18px;
+  font-size: 1.6vh;
   font-weight: 400;
 }
 
@@ -2696,6 +2721,16 @@ body input:required:valid, body textarea:required:valid {
   height: 72vh;
 }
 
+.property__content__chair .side {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .property__content__chair .side.right {
   width: 28vw;
   height: 72vh;
@@ -2704,7 +2739,17 @@ body input:required:valid, body textarea:required:valid {
 .property__content__chair .side.left {
   width: 24vw;
   height: 72vh;
-  margin-top: 3vh;
+  margin-top: 2vh;
+}
+
+.property__content__chair .side .price {
+  width: 204px;
+  height: 36px;
+  color: #20418c;
+  font-family: Geometria;
+  font-size: 39px;
+  font-weight: 500;
+  line-height: 50.9px;
 }
 
 .property__content__chair__item {
