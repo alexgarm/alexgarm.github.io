@@ -31,24 +31,43 @@ body
 .main
 	width: 100%
 	height: 100vh
-	background-image: url("/chairs/app/img/bg.jpg")
+	background-image: url("/app/img/bg.jpg")
 	background-repeat: no-repeat
 	background-position: center
 	background-size: cover
 .between
-	// Style for "Rectangle"
 	width: 100%
-	height: 391px
-	background-image: url("/chairs/app/img/betweenbg.jpg")
+	height: 36.2vh
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	background-image: url("/app/img/betweenbg.jpg")
 	background-repeat: no-repeat
 	background-position: center
 	background-size: cover
-	.wrap
+	&.wrap
 		display: flex
 		flex-direction: column
 		justify-content: center
 		align-items: center
-
+		width: 52.13vw
+		height: 21.75vh
+	&__content
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		color: #ffffff
+		&__icon
+			width: 165px
+			height: 165px
+			margin-bottom: 3vh
+		h2
+			text-transform: uppercase
+			font-size: 35px
+			font-weight: 700
+	
 .header
 	width: 100%
 	display: flex
@@ -102,8 +121,6 @@ body
 				width: 9.5vw	
 				font-size: 0.93vw
 				font-weight: 700
-
-
 .property
 	width: 100%
 	height: 100vh
@@ -136,15 +153,15 @@ body
 			height: 60vh
 			font-size: 1.8vh
 			font-weight: 400
-			margin-right: 5vw
+			margin-right: 3vw
 			color: #000000
 			font-family: Geometria
-			line-height: 1.1
+			line-height: 1.25
 		&__chair
 			display: flex
 			margin-right: 108px
 			margin-top: 2vh
-			background-image: url("/chairs/app/img/truly.png")
+			background-image: url("/app/img/truly.png")
 			background-repeat: no-repeat
 			background-position: 40% 50%
 			background-size: 40%
@@ -158,7 +175,7 @@ body
 					height: 72vh		
 				&.left
 					width: 24vw
-					height: 72vh
+					height: 60vh
 					margin-top: 2vh
 				.price
 					// Style for "10 500 грн"
@@ -230,6 +247,11 @@ body
 	justify-content: center
 	align-items: center
 	border: 2px solid #ffffff
+	&--xlarge
+		border-radius: 50%
+		position: relative
+		height: 160px
+		width: 160px
 	&--large
 		border-radius: 50%
 		position: relative
@@ -245,6 +267,93 @@ body
 		border-radius: 50%
 		height: 10px
 		width: 10px
+	&--opacity
+		background-color: #ffffff
+		border-radius: 50%
+		height: 150px
+		width: 150px
+		opacity: 0.3
+
+.dreams
+	width: 100%
+	height: 100vh
+	background-image: url("/app/img/dreams-bg.png")
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center
+	padding: 2.2vh
+	&__wrap
+		display: flex
+		flex-direction: column
+		align-items: center
+		margin: 0 4.8vw
+	&__vertical-line
+		width: 1px
+		height: 70px
+		border: 1px solid #1b1b1b
+		margin-bottom: 2vh
+	&__title
+		display: flex
+		flex-direction: column
+		align-items: center
+		margin-bottom: 2vh
+		h2
+			font-size: 39px
+			font-weight: 700
+			text-transform: uppercase
+	&__content
+		width: 30vw
+		height: 30vh
+		&__circle--big
+			position: relative
+			width: 25vw
+			height: 25vw
+			border: 2px solid #000000
+			border-radius: 50%
+			margin: 250px
+			.div2
+				position: absolute
+				width: 2vw
+				height: 2vw
+				background-color: #ffffff
+				border-radius: 50%
+				background-repeat: no-repeat
+				background-position: center
+				
+			&--big
+				height: 30vw
+				width: 30vw
+				position: absolute
+				margin: 100px
+			    
+                    
+                    
+.one
+	left: -25px
+    top: -25px
+
+.two 
+    top: -60px
+    left: 50px
+
+
+.three 
+    right: -25px
+    top: -25px
+
+
+.four
+    left: -25px
+    bottom: -25px
+
+.five 
+    bottom: -30px
+    left: 50px
+
+
+.six
+    right: -25px
+    bottom: -25px
 
 .img-responsive
 	display: block
