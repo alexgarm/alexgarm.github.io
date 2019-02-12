@@ -2757,7 +2757,6 @@ body input:required:valid, body textarea:required:valid {
   display: flex;
   margin-right: 108px;
   margin-top: 2vh;
-  background-image: url("/app/img/truly.png");
   background-repeat: no-repeat;
   background-position: 40% 50%;
   background-size: 40%;
@@ -3151,6 +3150,12 @@ body input:required:valid, body textarea:required:valid {
           align-items: center;
 }
 
+.info__steps .line {
+  width: 499px;
+  height: 3px;
+  border: 2px dotted #ffffff;
+}
+
 .info__steps__circle {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -3164,7 +3169,7 @@ body input:required:valid, body textarea:required:valid {
   border: 1px solid #ffffff;
   width: 4.16vw;
   height: 4.16vw;
-  border-radius: 50px;
+  border-radius: 50%;
 }
 
 .info__steps__circle--solid {
@@ -3182,6 +3187,8 @@ body input:required:valid, body textarea:required:valid {
   height: 3vw;
   border-radius: 50px;
   background-color: #fff;
+  font-size: 42px;
+  font-weight: 700;
 }
 
 .img-responsive {
