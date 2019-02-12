@@ -132,7 +132,7 @@ body
 		margin: 0 4.8vw
 	&__vertical-line
 		width: 1px
-		height: 70px
+		height: 6.5vh
 		border: 1px solid #1b1b1b
 		margin-bottom: 2vh
 	&__title
@@ -246,7 +246,7 @@ body
 	display: flex
 	justify-content: center
 	align-items: center
-	border: 2px solid #ffffff
+	border: 1px solid #ffffff
 	&--xlarge
 		border-radius: 50%
 		position: relative
@@ -255,18 +255,18 @@ body
 	&--large
 		border-radius: 50%
 		position: relative
-		height: 50px
-		width: 50px
+		height: 2.6vw
+		width: 2.6vw
 	&--small
 		border-radius: 50%
 		position: absolute
-		height: 30px
-		width: 30px
+		height: 1.56vw
+		width: 1.56vw
 	&--solid
 		background-color: #ffffff
 		border-radius: 50%
-		height: 10px
-		width: 10px
+		height: 0.52vw
+		width: 0.52vw
 	&--opacity
 		background-color: #ffffff
 		border-radius: 50%
@@ -275,8 +275,11 @@ body
 		opacity: 0.3
 
 .dreams
+	display: flex
+	flex-direction: column
+	align-items: center
 	width: 100%
-	height: 100vh
+	height: 110vh
 	background-image: url("/app/img/dreams-bg.png")
 	background-repeat: no-repeat
 	background-size: cover
@@ -286,10 +289,12 @@ body
 		display: flex
 		flex-direction: column
 		align-items: center
+		height: 77vh
+		width: 64.5vw
 		margin: 0 4.8vw
 	&__vertical-line
 		width: 1px
-		height: 70px
+		height: 6.5vh
 		border: 1px solid #1b1b1b
 		margin-bottom: 2vh
 	&__title
@@ -298,63 +303,110 @@ body
 		align-items: center
 		margin-bottom: 2vh
 		h2
-			font-size: 39px
+			font-size: 2vw
 			font-weight: 700
 			text-transform: uppercase
 	&__content
+		display: flex
+		justify-content: center
+		align-items: center
+		margin-top: 22vh
 		width: 30vw
-		height: 30vh
-		&__circle--big
-			position: relative
-			width: 25vw
-			height: 25vw
-			border: 2px solid #000000
-			border-radius: 50%
-			margin: 250px
-			.div2
-				position: absolute
-				width: 2vw
-				height: 2vw
-				background-color: #ffffff
-				border-radius: 50%
-				background-repeat: no-repeat
-				background-position: center
-				
+		height: 30vw
+		&__circle
 			&--big
-				height: 30vw
+				display: flex
+				position: relative
+				justify-content: center
+				align-items: center
 				width: 30vw
-				position: absolute
-				margin: 100px
-			    
-                    
-                    
-.one
-	left: -25px
-    top: -25px
+				height: 30vw
+				border: 2px solid #000000
+				border-radius: 50%
+				.div2
+					position: absolute
+					width: 2.6vw
+					height: 2.6vw
+					background-color: #ffffff
+					border-radius: 50%
+					background-repeat: no-repeat
+					background-position: center
+				.div3
+					// Style for "Максимальн"
+					width: 15.6vw
+					height: 114px
+					color: #000000
+					font-family: Geometria
+					font-size: 1.8vh
+					font-weight: 700
+					line-height: 1.1
+							
+			&--solid
+				display: flex
+				justify-content: center
+				align-items: center
+				width: 27vw
+				height: 27vw
+				border-radius: 50%
+				background-color: #fff
+				img
+					height: 35vh
+					width: 19vw
 
-.two 
-    top: -60px
-    left: 50px
+.info
+	display: flex
+	justify-content: center
+	align-items: center
+	width: 100%
+	height: 67.4vh
+	background-image: url("/app/img/bg-info.jpg")
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center
+	&__wrap
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		width: 91vw
+		height: 49.4vh
+	&__title
+		// Style for "Это кресло"
+		width: 40vw
+		color: #ffffff
+		font-family: Geometria
+		font-size: 1.8vw
+		font-weight: 700
+		text-transform: uppercase
+	&__steps
+		width: 66.6vw
+		height: 8.7vh
+		display: flex
+		justify-content: space-between
+		align-items: center
+		&__circle
+			display: flex
+			justify-content: center
+			align-items: center
+			border: 1px solid #ffffff
+			width: 4.16vw
+			height: 4.16vw
+			border-radius: 50px
 
 
-.three 
-    right: -25px
-    top: -25px
+			&--solid
+				display: flex
+				justify-content: center
+				align-items: center
+				border: 1px solid #ffffff
+				width: 3vw
+				height: 3vw
+				border-radius: 50px
+				background-color: #fff
 
 
-.four
-    left: -25px
-    bottom: -25px
 
-.five 
-    bottom: -30px
-    left: 50px
-
-
-.six
-    right: -25px
-    bottom: -25px
-
+                
 .img-responsive
 	display: block
 	max-width: 100%

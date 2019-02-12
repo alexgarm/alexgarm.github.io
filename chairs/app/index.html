@@ -373,32 +373,93 @@
                 <h2>Кресло, о котором вы так давно мечтали</h2>
             </div>
             <div class="dreams__content">
-                <div id="parentdiv" class="dreams__content__circle--big"></div>
+                <div id="parentdiv" class="dreams__content__circle--big">
+                    <div class="dreams__content__circle--solid">
+                        <img src="/app/img/dreams-chairs.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="info">
+        <div class="info__wrap">
+            <div class="info__title">
+                Это кресло уже спешит стать вашим!
+            </div>
+            <div class="info__steps">
+                <div class="info__steps__circle">
+                    <div class="info__steps__circle--solid">1</div>
+                </div>
+                <span class="line"></span>
+                <div class="info__steps__circle">
+                    <div class="info__steps__circle--solid">2</div>
+                </div>
+                <span class="line"></span>
+                <div class="info__steps__circle">
+                    <div class="info__steps__circle--solid">3</div>
+                </div>
+            </div>
+            <div class="info__blocks">
+                <div class="info__blocks__block"></div>
 
-                <script type="text/javascript">
-                    var div = 360 / 6;
-                    var parentdiv = document.getElementById('parentdiv');
-                    var radius = (parentdiv.clientWidth / 2);
-                    var offsetToParentCenter = parseInt(parentdiv.offsetWidth / 2); //assumes parent is square
-                    var offsetToChildCenter = 20;
-                    var totalOffset = offsetToParentCenter - offsetToChildCenter;
-                    for (var i = 1; i <= 6; ++i) {
-                        var childdiv = document.createElement('div');
-                        childdiv.className = 'div2';
-                        childdiv.style.position = 'absolute';
-                        childdiv.style.backgroundImage = "url('/app/img/icons/armchair.svg')";
-                        var y = Math.sin((div * i) * (Math.PI / 180)) * radius;
-                        var x = Math.cos((div * i) * (Math.PI / 180)) * radius;
-                        childdiv.style.top = (y + totalOffset).toString() + "px";
-                        childdiv.style.left = (x + totalOffset).toString() + "px";
-                        parentdiv.appendChild(childdiv);
-                    }
-                </script>
+                <div class="info__blocks__block"></div>
+                <div class="info__blocks__block"></div>
             </div>
         </div>
     </section>
     <script src="js/scripts.min.js "></script>
+    <script type="text/javascript">
+        var arr = ["0",
+            "Максимальная поддержка позвоночника при движении вперед-назади вправо-влево благодаря инновационной системе FlexSpine",
+            "Коррекция положения для расслабления грудного отдела позвоночника",
+            "Точная настройка для правильно положения спины и ног",
+            "Максимальное расслабление всего тела после трудного рабочего дня",
+            "Формирование правильного изгиба в поясничном отделе позвоночника.",
+            "Теперь никакой нагрузки на шейный отдел позвоночника",
+            "Отсутствие нагрузки на копчик"
 
+        ];
+        var div = 360 / 7;
+        var parentdiv = document.getElementById('parentdiv');
+        var radius = (parentdiv.clientWidth / 2);
+        var offsetToParentCenter = parseInt(parentdiv.offsetWidth / 2); //assumes parent is square
+        var offsetToChildCenter = 20;
+        var totalOffset = offsetToParentCenter - offsetToChildCenter;
+        for (var i = 1; i <= 7; ++i) {
+            var childdiv = document.createElement('div');
+            var childdivtext = document.createElement('div');
+            childdiv.className = 'div2';
+            childdivtext.className = 'div3';
+            childdiv.style.position = 'absolute';
+            childdivtext.style.position = 'absolute';
+            childdiv.style.backgroundImage = "url('/app/img/icons/armchair.svg')";
+            var y = Math.sin((div * i) * (Math.PI / 180)) * radius;
+            var x = Math.cos((div * i) * (Math.PI / 180)) * radius;
+            childdiv.style.top = (y - 5 + totalOffset).toString() + "px";
+            childdiv.style.left = (x - 10 + totalOffset).toString() + "px";
+            childdivtext.style.top = (y + 10 + totalOffset).toString() + "px";
+            childdivtext.style.left = (x + 10 + totalOffset).toString() + "px";
+            if (i == 1 || i == 6 || i == 7) {
+                childdivtext.style.marginLeft = "3.9vw"
+            } else if (i == 4) {
+                childdivtext.style.left = -((x + 20 + totalOffset) * 10).toString() + "px";
+            } else if (i == 3) {
+                childdivtext.style.left = -((x + 20 + totalOffset) * 10).toString() + "px";
+            } else if (i == 2) {
+                childdivtext.style.marginTop = "5vh";
+                childdivtext.style.left = ((x + 20 + totalOffset) - 100).toString() + "px";
+
+            } else if (i == 5) {
+                childdivtext.style.top = (x + totalOffset - radius).toString() + "px";
+                childdivtext.style.left = ((x + 20 + totalOffset) - 100).toString() + "px";
+
+            }
+
+            childdivtext.innerText = arr[i];
+            parentdiv.appendChild(childdiv);
+            parentdiv.appendChild(childdivtext);
+        }
+    </script>
 </body>
 
 </html>
