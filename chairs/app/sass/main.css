@@ -2765,6 +2765,14 @@ body input:required:valid, body textarea:required:valid {
   height: 72vh;
 }
 
+.property__content__chair.truly {
+  background-image: url("/app/img/truly.png");
+}
+
+.property__content__chair.ergopro {
+  background-image: url("/app/img/ergopro.png");
+}
+
 .property__content__chair .side {
   display: -webkit-box;
   display: -ms-flexbox;
