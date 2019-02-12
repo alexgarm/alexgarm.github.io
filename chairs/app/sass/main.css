@@ -2692,7 +2692,7 @@ body input:required:valid, body textarea:required:valid {
   padding: 2.2vh;
 }
 
-.property .wrap {
+.property__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3048,7 +3048,7 @@ body input:required:valid, body textarea:required:valid {
   position: absolute;
   width: 2.6vw;
   height: 2.6vw;
-  background-color: #ffffff;
+  background-color: #000000;
   border-radius: 50%;
   background-repeat: no-repeat;
   background-position: center;
@@ -3057,7 +3057,6 @@ body input:required:valid, body textarea:required:valid {
 .dreams__content__circle--big .div3 {
   width: 15.6vw;
   height: 114px;
-  color: #000000;
   font-family: Geometria;
   font-size: 1.8vh;
   font-weight: 700;
