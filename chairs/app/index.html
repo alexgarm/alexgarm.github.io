@@ -433,8 +433,10 @@
             <div class="location__info">
                 <div class="location__info__map"></div>
                 <div class="location__info__adress">
-                    <span class="email">+38097 567 45 67</span>
-                    <span class="email">goodwin@gmail.com</span>
+                    <div class="contact__info">
+                        <span class="email">+38097 567 45 67</span>
+                        <span class="email">goodwin@gmail.com</span>
+                    </div>
                     <ul>
                         <li class="adress">Украина, г.Днепр,</br> ул. Екатерининская, 45 офис 567</li>
                         <li class="adress">Украина, г.Днепр,</br> ул. Екатерининская, 45 офис 567</li>
@@ -443,21 +445,35 @@
 
                 </div>
                 <div class="location__info__form">
-                    <div class="location__info__wrap">
+                    <div class="location__info__form__wrap">
                         <div class="title">ОсТались вопросы?</div>
-                        <span>Оставьте свой номер 
-                            и мы вам обязательно перезвоним</span>
-                        <input type="text" name="name" id="name">
-                        <input type="text" name="phone" id="phone">
-                        <textarea name="coment" id=""></textarea>
-                        <button class="btn" type="submit" value="Отправить">
+                        <p style="text-align: center">Оставьте свой номер и мы вам обязательно перезвоним</p>
+                        <div class="inputext">
+                            <span>Ваше имя</span>
+                            <input type="text" name="name" id="name">
+                        </div>
+
+                        <div class="inputext">
+                            <span>Ваш телефон</span>
+                            <input type="text" name="phone" id="phone"></div>
+                        <div class="inputext">
+                            <span>Сообщение</span>
+                            <textarea name="coment" id=""></textarea>
+                        </div>
+                        <button class="btn" type="submit" value="Отправить">Отправить</button>
                     </div>
                 </div>
             </div>
         </div>
         <div class="footer">
-            <div class="footer__logo"></div>
-            <div class="coopiright"></div>
+            <div class="footer__upper">
+                <div class="footer-logo">
+                    <img src="/app/img/logo-white.png" alt="Goodwin Logo">
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2019 Goodwin. All Rights Reserved</p>
+            </div>
         </div>
     </section>
     <script src="js/scripts.min.js "></script>

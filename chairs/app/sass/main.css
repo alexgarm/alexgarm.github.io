@@ -2760,17 +2760,18 @@ body input:required:valid, body textarea:required:valid {
   margin-top: 2vh;
   background-repeat: no-repeat;
   background-position: 40% 50%;
-  background-size: 40%;
   width: 52vw;
   height: 72vh;
 }
 
 .property__content__chair.truly {
   background-image: url("/app/img/truly.png");
+  background-size: 40%;
 }
 
 .property__content__chair.ergopro {
   background-image: url("/app/img/ergopro.png");
+  background-size: 50%;
 }
 
 .property__content__chair .side {
@@ -3218,22 +3219,7 @@ body input:required:valid, body textarea:required:valid {
 
 .location {
   width: 100%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 2.2vh;
-}
-
-.location__wrap {
-  width: 84.16vw;
-  height: 58.51vh;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3244,6 +3230,25 @@ body input:required:valid, body textarea:required:valid {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.location__wrap {
+  width: 84.16vw;
+  height: 82vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 2.2vh;
 }
 
 .location__title {
@@ -3261,6 +3266,7 @@ body input:required:valid, body textarea:required:valid {
       -ms-flex-pack: center;
           justify-content: center;
   width: 64.79vw;
+  height: 6.7vh;
 }
 
 .location__title span {
@@ -3290,15 +3296,16 @@ body input:required:valid, body textarea:required:valid {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-top: 20vh;
+  margin-top: 15vh;
 }
 
 .location__info__map {
-  height: 39.16vh;
+  height: 50.16vh;
   width: 35.41vw;
   background-image: url("/app/img/Ukraine.png");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: 90%;
 }
 
 .location__info__adress {
@@ -3312,20 +3319,39 @@ body input:required:valid, body textarea:required:valid {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
+  height: 25vh;
 }
 
-.location__info__adress .email {
+.location__info__adress .contact__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-left: 1.6vw;
+}
+
+.location__info__adress .contact__info .email {
   width: 239px;
   height: 22px;
   color: #000000;
   font-family: Geometria;
   font-size: 23px;
   font-weight: 700;
-  line-height: 23.31px;
 }
 
 .location__info__adress ul {
   list-style: disc;
+}
+
+.location__info__adress .adress {
+  font-size: 0.83vw;
+  font-weight: 600;
+  margin-bottom: 1vh;
 }
 
 .location__info__form {
@@ -3343,7 +3369,7 @@ body input:required:valid, body textarea:required:valid {
   background-color: #fbf0e1;
 }
 
-.location__info__wrap {
+.location__info__form__wrap {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3361,7 +3387,7 @@ body input:required:valid, body textarea:required:valid {
   width: 16.56vw;
 }
 
-.location__info__wrap .title {
+.location__info__form__wrap .title {
   width: 16.45vw;
   height: 1.85vh;
   font-size: 1.35vw;
@@ -3369,24 +3395,75 @@ body input:required:valid, body textarea:required:valid {
   text-transform: uppercase;
 }
 
-.location__info__wrap span {
+.location__info__form__wrap p {
   width: 15.26vw;
   height: 3.51vh;
   font-size: 0.88vw;
   font-weight: 400;
 }
 
-.location__info__wrap input {
-  border: none;
-  width: 353px;
-  height: 52px;
-  background-color: #ffffff;
+.location__info__form__wrap .inputext span {
+  margin: 0;
+  padding: 0;
 }
 
-.location__info__wrap textarea {
+.location__info__form__wrap .inputext input {
   border: none;
-  width: 13vw;
+  width: 18.38vw;
+  height: 4.81vh;
+  background-color: #ffffff;
+  font-size: 1.2vw;
+}
+
+.location__info__form__wrap .inputext textarea {
+  border: none;
+  width: 18.38vw;
   height: 10.64vh;
+}
+
+.footer {
+  width: 100%;
+  height: 14.35vh;
+  background-color: #000000;
+}
+
+.footer__upper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 7.21vh;
+  border-bottom: 2px solid white;
+  padding-top: 1vh;
+}
+
+.footer-logo {
+  height: 5.21vh;
+  width: 13vw;
+  color: #ffffff;
+}
+
+.footer-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+  height: 3.65vw;
+  background-color: black;
+}
+
+.footer-bottom p {
+  color: white;
+  font-size: 0.625vw;
 }
 
 .vertical__line {
@@ -3419,10 +3496,12 @@ body input:required:valid, body textarea:required:valid {
 }
 
 .btn {
-  width: 185px;
-  height: 52px;
+  width: 9.63vw;
+  height: 4.8vh;
   background-color: #000000;
   color: #ffffff;
+  font-size: 0.8vw;
+  font-weight: 700;
 }
 
 b,

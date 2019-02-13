@@ -164,13 +164,16 @@ body
 			margin-top: 2vh
 			background-repeat: no-repeat
 			background-position: 40% 50%
-			background-size: 40%
+			
 			width: 52vw
 			height: 72vh
 			&.truly
 				background-image: url("/app/img/truly.png")
+				background-size: 40%
+				
 			&.ergopro
 				background-image: url("/app/img/ergopro.png")
+				background-size: 50%
 			.side
 				display: flex
 				flex-direction: column
@@ -425,28 +428,27 @@ body
 				margin-bottom: 0.3vh
 				font-size: 1.1vw
 				font-weight: 400
-
-
-
 .location
 	width: 100%
-	height: 100%
+	height: 100vh
 	display: flex
+	flex-direction: column
 	align-items: center
-	justify-content: center
-	padding: 2.2vh
+	justify-content: space-between
 	&__wrap
 		width: 84.16vw
-		height: 58.51vh
+		height: 82vh
 		display: flex
 		flex-direction: column
-		align-items: center		
+		align-items: center	
+		margin: 2.2vh	
 	&__title
 		display: flex
 		flex-direction: column
 		align-items: center
 		justify-content: center
 		width: 64.79vw
+		height: 6.7vh
 		span
 			// Style for "Уже предст"
 			width: 24.35vw
@@ -466,27 +468,38 @@ body
 		display: flex
 		align-items: center
 		justify-content: space-between
-		margin-top: 20vh
+		margin-top: 15vh
 		&__map
-			height: 39.16vh
+			height: 50.16vh
 			width: 35.41vw
 			background-image: url("/app/img/Ukraine.png")
 			background-position: center
 			background-repeat: no-repeat
+			background-size: 90%
 		&__adress
 			display: flex
 			flex-direction: column
 			justify-content: space-between
-			.email
-				width: 239px
-				height: 22px
-				color: #000000
-				font-family: Geometria
-				font-size: 23px
-				font-weight: 700
-				line-height: 23.31px
+			align-content: space-between
+			height: 25vh
+			.contact__info
+				display: flex
+				flex-direction: column
+				padding-left: 1.6vw
+				.email
+					width: 239px
+					height: 22px
+					color: #000000
+					font-family: Geometria
+					font-size: 23px
+					font-weight: 700
 			ul
 				list-style: disc
+			
+			.adress
+				font-size: 0.83vw
+				font-weight: 600
+				margin-bottom: 1vh
 		&__form
 			display: flex
 			align-items: center
@@ -494,40 +507,65 @@ body
 			width: 22.6vw
 			height: 52.12vh
 			background-color: #fbf0e1
-		&__wrap
-			display: flex
-			flex-direction: column
-			align-items: center
-			justify-content: space-between
-			height: 47.31vh
-			width: 16.56vw
-			.title
-				width: 16.45vw
-				height: 1.85vh
-				font-size: 1.35vw
-				font-weight: 700
-				text-transform: uppercase
-			span
-				// Style for "Оставьте с"
-				width: 15.26vw
-				height: 3.51vh
-				font-size: 0.88vw
-				font-weight: 400
-			input
-				border: none
-				width: 353px
-				height: 52px
-				background-color: #ffffff
-			textarea
-				border: none
-				width: 13vw
-				height: 10.64vh
-
-				
-
-
-
-
+			&__wrap
+				display: flex
+				flex-direction: column
+				align-items: center
+				justify-content: space-between
+				height: 47.31vh
+				width: 16.56vw
+				.title
+					width: 16.45vw
+					height: 1.85vh
+					font-size: 1.35vw
+					font-weight: 700
+					text-transform: uppercase
+				p
+					width: 15.26vw
+					height: 3.51vh
+					font-size: 0.88vw
+					font-weight: 400
+				.inputext
+					span
+						margin: 0
+						padding: 0
+					input
+						border: none
+						width: 18.38vw
+						height: 4.81vh
+						background-color: #ffffff
+						font-size: 1.2vw
+					textarea
+						border: none
+						width: 18.38vw
+						height: 10.64vh
+			
+.footer
+	width: 100%
+	height: 14.35vh
+	background-color: #000000
+	&__upper
+		display: flex
+		justify-content: center
+		width: 100%
+		height: 7.21vh
+		border-bottom: 2px solid white
+		padding-top: 1vh
+	&-logo
+		height: 5.21vh
+		width: 13vw
+		color: #ffffff
+	&-bottom
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 100%
+		height: 3.65vw
+		background-color: black
+		p
+			color: white
+			font-size: 0.625vw
+			
 
 .vertical__line
 	width: 1px
@@ -548,13 +586,17 @@ body
 .text-center
 	text-align: center
 .btn
-	width: 185px
-	height: 52px
+	width: 9.63vw
+	height: 4.8vh
 	background-color: #000000
 	color: #ffffff
+	font-size: 0.8vw
+	font-weight: 700
 b, strong
 	font-weight: bold
 
 
 
 @import "media" // Always at the end
+
+
