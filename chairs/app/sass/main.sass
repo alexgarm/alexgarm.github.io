@@ -15,7 +15,7 @@ a
 	
 
 body
-	font-size: 16px
+	font-size: 0.83vw
 	min-width: 320px
 	position: relative
 	font-family: $default-font
@@ -31,7 +31,7 @@ body
 .main
 	width: 100%
 	height: 100vh
-	background-image: url("/chairs/app/img/bg.jpg")
+	background-image: url("/app/img/bg.jpg")
 	background-repeat: no-repeat
 	background-position: center
 	background-size: cover
@@ -42,7 +42,7 @@ body
 	flex-direction: column
 	justify-content: center
 	align-items: center
-	background-image: url("/chairs/app/img/betweenbg.jpg")
+	background-image: url("/app/img/betweenbg.jpg")
 	background-repeat: no-repeat
 	background-position: center
 	background-size: cover
@@ -65,7 +65,7 @@ body
 			margin-bottom: 3vh
 		h2
 			text-transform: uppercase
-			font-size: 35px
+			font-size: 1.82vw
 			font-weight: 700
 	
 .header
@@ -93,10 +93,11 @@ body
 		width: 26vw
 		font-weight: 300
 		text-transform: uppercase
-		padding: 30px
+		padding: 1.56vw
 		margin: 0
 		&__item
-			font-size: 0.9vw
+			font-size: 0.93vw
+			font-weight: 300
 			&__link
 				color: $text
 	&__contact
@@ -167,9 +168,9 @@ body
 			width: 52vw
 			height: 72vh
 			&.truly
-				background-image: url("/chairs/app/img/truly.png")
+				background-image: url("/app/img/truly.png")
 			&.ergopro
-				background-image: url("/chairs/app/img/ergopro.png")
+				background-image: url("/app/img/ergopro.png")
 			.side
 				display: flex
 				flex-direction: column
@@ -283,7 +284,7 @@ body
 	align-items: center
 	width: 100%
 	height: 110vh
-	background-image: url("/chairs/app/img/dreams-bg.png")
+	background-image: url("/app/img/dreams-bg.png")
 	background-repeat: no-repeat
 	background-size: cover
 	background-position: center
@@ -360,8 +361,8 @@ body
 	justify-content: center
 	align-items: center
 	width: 100%
-	height: 67.4vh
-	background-image: url("/chairs/app/img/bg-info.jpg")
+	height: 68vh
+	background-image: url("/app/img/bg-info.jpg")
 	background-repeat: no-repeat
 	background-size: cover
 	background-position: center
@@ -388,8 +389,7 @@ body
 		align-items: center
 		.line
 			// Style for "Shape 6"
-			width: 499px
-			height: 3px
+			width: 27vw
 			border: 1px solid #ffffff
 		&__circle
 			display: flex
@@ -404,33 +404,136 @@ body
 				justify-content: center
 				align-items: center
 				border: 1px solid #ffffff
-				width: 3vw
-				height: 3vw
-				border-radius: 50px
+				width: 3.4vw
+				height: 3.4vw
+				border-radius: 50%
 				background-color: #fff
-				font-size: 42px
+				font-size: 2.1vw
 				font-weight: 700
 	&__blocks
 		display: flex
 		justify-content: space-between
-		height: 24.81vh
+		height: 24.9vh
 		width: 91vw	
 		&__block
-			height: 24.81vh
+			height: 24.9vh
 			width: 29.2vw
 			border: 2px solid #ffffff
 			padding: 2.3vh 1.3vw
 			color: #ffffff
-			
-
 			p
 				margin-bottom: 0.3vh
-				font-size: 1.14vw
+				font-size: 1.1vw
 				font-weight: 400
 
 
 
+.location
+	width: 100%
+	height: 100%
+	display: flex
+	align-items: center
+	justify-content: center
+	padding: 2.2vh
+	&__wrap
+		width: 84.16vw
+		height: 58.51vh
+		display: flex
+		flex-direction: column
+		align-items: center		
+	&__title
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		width: 64.79vw
+		span
+			// Style for "Уже предст"
+			width: 24.35vw
+			height: 2vh
+			font-size: 0.93vw
+			font-weight: 400		
+		h2
+			// Style for "Приходите"
+			width: 64.79vw
+			height: 3.14vh
+			font-size: 2.03vw
+			font-weight: 700
+			text-transform: uppercase
+	&__info
+		height: 52.12vh
+		width: 84.16vw
+		display: flex
+		align-items: center
+		justify-content: space-between
+		margin-top: 20vh
+		&__map
+			height: 39.16vh
+			width: 35.41vw
+			background-image: url("/app/img/Ukraine.png")
+			background-position: center
+			background-repeat: no-repeat
+		&__adress
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+			.email
+				width: 239px
+				height: 22px
+				color: #000000
+				font-family: Geometria
+				font-size: 23px
+				font-weight: 700
+				line-height: 23.31px
+			ul
+				list-style: disc
+		&__form
+			display: flex
+			align-items: center
+			justify-content: center
+			width: 22.6vw
+			height: 52.12vh
+			background-color: #fbf0e1
+		&__wrap
+			display: flex
+			flex-direction: column
+			align-items: center
+			justify-content: space-between
+			height: 47.31vh
+			width: 16.56vw
+			.title
+				width: 16.45vw
+				height: 1.85vh
+				font-size: 1.35vw
+				font-weight: 700
+				text-transform: uppercase
+			span
+				// Style for "Оставьте с"
+				width: 15.26vw
+				height: 3.51vh
+				font-size: 0.88vw
+				font-weight: 400
+			input
+				border: none
+				width: 353px
+				height: 52px
+				background-color: #ffffff
+			textarea
+				border: none
+				width: 13vw
+				height: 10.64vh
 
+				
+
+
+
+
+
+.vertical__line
+	width: 1px
+	height: 6.5vh
+	border: 1px solid #1b1b1b
+	margin-bottom: 2vh
                 
 .img-responsive
 	display: block
@@ -444,7 +547,11 @@ body
 	color: #ffffff
 .text-center
 	text-align: center
-
+.btn
+	width: 185px
+	height: 52px
+	background-color: #000000
+	color: #ffffff
 b, strong
 	font-weight: bold
 
