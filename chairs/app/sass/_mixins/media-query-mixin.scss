@@ -1,0 +1,35 @@
+//////////////////////////////
+// Generalized Media Query Mixin
+//
+// Requires Sass 3.2+
+// Until released:
+// (sudo) gem install sass --pre
+//////////////////////////////
+@mixin media-query($value, $operator: 'min-width', $query: 'screen') {
+    @media #{$query} and (#{$operator}: #{$value}) {
+        @content;
+    }
+}
+
+//////////////////////////////
+// Usage
+//////////////////////////////
+#foo {
+    background-color: red;
+    @include media-query(500px) {
+        background-color: green;
+    }
+}
+
+//////////////////////////////
+// Output
+//////////////////////////////
+#foo {
+    background-color: red;
+}
+
+@media screen and (min-width: 500px) {
+    #foo {
+        background-color: green;
+    }
+}

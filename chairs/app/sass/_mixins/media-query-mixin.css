@@ -1,0 +1,20 @@
+#foo {
+  background-color: red;
+}
+
+@media screen and (min-width: 500px) {
+  #foo {
+    background-color: green;
+  }
+}
+
+#foo {
+  background-color: red;
+}
+
+@media screen and (min-width: 500px) {
+  #foo {
+    background-color: green;
+  }
+}
+/*# sourceMappingURL=media-query-mixin.css.map */
