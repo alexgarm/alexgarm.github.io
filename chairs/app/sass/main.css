@@ -1083,7 +1083,6 @@ body input:required:valid, body textarea:required:valid {
 }
 
 .vertical__line {
-  width: 1px;
   height: 6.5vh;
   border: 1px solid #1b1b1b;
   margin-bottom: 2vh;
