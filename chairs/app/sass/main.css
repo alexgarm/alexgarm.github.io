@@ -143,6 +143,11 @@ body input:required:valid, body textarea:required:valid {
   margin-bottom: 3vh;
 }
 
+.between__content__icon img {
+  width: 17px;
+  height: 13px;
+}
+
 .between__content h2 {
   text-transform: uppercase;
   font-size: 1.82vw;
@@ -395,7 +400,7 @@ body input:required:valid, body textarea:required:valid {
 
 .property__content__chair .side .price {
   display: inline;
-  width: 18.62vw;
+  width: 22.62vw;
   height: 5.33vh;
   padding-left: 11vw;
   color: #20418c;
@@ -666,7 +671,7 @@ body input:required:valid, body textarea:required:valid {
   border-radius: 50%;
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: 1.3vh;
 }
 
 .dreams__content__circle--big .div3 {
