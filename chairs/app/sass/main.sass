@@ -22,6 +22,7 @@ body
 	font-family: $default-font
 	overflow-x: hidden
 	color: $text
+	margin: 0
 	input, textarea
 		border: #666 1px solid
 		outline: none
@@ -38,7 +39,7 @@ body
 	background-size: cover
 .between
 	width: 100%
-	height: 36.2vh
+	height: 37.2vh
 	display: flex
 	flex-direction: column
 	justify-content: center
@@ -139,15 +140,16 @@ body
 				font-weight: 700
 .property
 	width: 100%
-	height: 100vh
+	height: 120vh
 	padding: 2.2vh
 	&__wrap
 		display: flex
+		width: 90vw
+		height: 113vh
 		flex-direction: column
 		align-items: center
 		margin: 0 4.8vw
 	&__vertical-line
-		width: 1px
 		height: 6.5vh
 		border: 1px solid #1b1b1b
 		margin-bottom: 2vh
@@ -163,24 +165,28 @@ body
 	&__content
 		display: flex
 		width: 90vw
-		height: 72vh
-		
-		p
-			width: 15vw
-			height: 60vh
-			font-size: 1.8vh
-			font-weight: 400
-			margin-right: 3vw
-			color: #000000
-			font-family: Geometria
-			line-height: 1.25
+		height: 78vh
+		&__text
+			width: 17vw
+			p
+				width: auto
+				height: 60vh
+				font-size: 19px
+				font-weight: 400
+				margin-right: 3vw
+				color: #000000
+				font-family: Geometria
+				line-height: 1.25
+		&__wrap
+			display: flex
+			height: 70vh
+
 		&__chair
 			display: flex
 			margin-right: 108px
 			margin-top: 2vh
 			background-repeat: no-repeat
 			background-position: 40% 50%
-			
 			width: 52vw
 			height: 72vh
 			&.truly
@@ -201,21 +207,23 @@ body
 					height: 60vh
 					margin-top: 2vh
 				.price
-					// Style for "10 500 грн"
-					width: 204px
-					height: 36px
+					display: inline
+					width: 18.62vw
+					height: 5.33vh
+					padding-left: 11vw 
 					color: #20418c
 					font-family: Geometria
-					font-size: 39px
+					font-size: 2.03vw
 					font-weight: 500
-					line-height: 50.9px
 			&__item
 				display: flex
 				align-items: center
 				height: 17.2vh
+				margin-top: 1vh
 				&.right
 					flex-direction: row-reverse
-					width: 26vw	
+					width: 26vw
+					
 				&--left
 					width: 26vw
 				.square
@@ -227,21 +235,23 @@ body
 					display: flex
 					flex-direction: column
 					width: 13vw
-					height: 7.3vh
+					height: auto
+					
 					h3
-						width: 13vw
+						width: 20vw
 						line-height: 1
 						font-size: 18px
 						font-weight: 700
 						text-transform: uppercase
+						margin: 0 0 0.5vh 0
 					p										// Style for "Подголовни"
 						// Style for "благодаря"
 						width: 13vw
-						height: 35px
+						height: 3.2vh
 						font-weight: 400
 						margin: 0
 				hr
-					margin: 0
+					width: 7.8vw
 			
 		
 				
@@ -258,6 +268,12 @@ body
 				width: 15.5vw
 				height: 21.6vh
 				border: 1px solid #626262
+				a
+					img
+						// Style for "Layer 16"
+						width: 6.3vw
+						height: 18.7vh
+
 				
 .description
 	display: flex
@@ -316,7 +332,7 @@ body
 		width: 64.5vw
 		margin: 0 4.8vw
 	&__vertical-line
-		width: 1px
+		
 		height: 6.5vh
 		border: 1px solid #1b1b1b
 		margin-bottom: 2vh
@@ -354,6 +370,7 @@ body
 					border-radius: 50%
 					background-repeat: no-repeat
 					background-position: center
+					background-size: contain
 				.div3
 					// Style for "Максимальн"
 					width: 15.6vw
@@ -568,9 +585,13 @@ body
 		border-bottom: 2px solid white
 		padding-top: 1vh
 	&-logo
-		height: 5.21vh
-		width: 13vw
+		height: 8.21vh
+		width: 17vw
 		color: #ffffff
+		img
+			height: 8.21vh
+			width: 17vw
+
 	&-bottom
 		display: flex
 		justify-content: center
@@ -619,6 +640,34 @@ b, strong
 	.header__contact
 		width: 25.85vw
 		padding: 0
-	.header__contact__item .contact
-	
-	
+	.property__content
+		flex-direction: column-reverse
+		height: 93vh
+	.property__content__chair
+		width: 60vw
+		background-position: 27% 50%
+		.side.left
+			width: 30vw
+	.property__content__text
+		margin: 2vw
+		width: 85vw
+		height: 15vh
+	.property__title
+		margin: 0
+		h2
+			margin: 0
+
+		
+	.property__vertical-line
+		margin-bottom: 0.2vh
+		
+	.property__content__chair.truly
+		background-size: 45%
+	.property__content__chair.ergopro
+		background-size: 45%
++max-screen(1550px)
+	.property__content__chair.truly
+		background-size: 40%
+	.property__content__chair.ergopro
+		background-size: 50%
+
