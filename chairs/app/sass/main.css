@@ -356,7 +356,9 @@ body input:required:valid, body textarea:required:valid {
 }
 
 .property__content__sliders {
-  display: block;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin-right: 108px;
   margin-top: 2vh;
   width: 52vw;
@@ -368,6 +370,8 @@ body input:required:valid, body textarea:required:valid {
   width: 30vw;
   height: 70vh;
   background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
 
 .property__content__chair {
