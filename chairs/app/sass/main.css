@@ -373,7 +373,7 @@ body input:required:valid, body textarea:required:valid {
 
 .property__content__slider {
   display: block;
-  width: 30vw;
+  width: 40vw;
   height: 70vh;
   background-repeat: no-repeat;
   background-position: center;
