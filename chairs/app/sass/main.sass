@@ -18,8 +18,6 @@ a
 body
 	font-size: 0.83vw
 	min-width: 320px
-	width: 100%
-	height: 100%
 	position: relative
 	font-family: $default-font
 	overflow-x: hidden
@@ -665,7 +663,8 @@ body
 			color: white
 			font-size: 0.625vw
 			
-
+.mobile
+	display: none
 .vertical__line
 	height: 6.5vh
 	border: 1px solid #1b1b1b
@@ -814,7 +813,7 @@ b, strong
 	.main
 		width: 100%
 		height: 100vh
-		background-image: url("/app/img/mobile-bg.png")
+		background-image: url("/app/img/bg-mobile.jpg")
 		background-repeat: no-repeat
 		background-position: center
 		background-size: cover
@@ -1003,7 +1002,7 @@ b, strong
 					position: relative
 					align-items: center
 					justify-content: center
-					margin-right: 108px
+					margin-right: 0
 					margin-top: 2vh
 					width: 94vw
 					height: 100vh
@@ -1012,17 +1011,17 @@ b, strong
 					position: relative
 					align-items: center
 					justify-content: center
-					margin-right: 108px
+					margin-right: 0
 					margin-top: 2vh
-					width: 52vw
-					height: 72vh
+					width: 94vw
+					height: 90vh
 			&__slider
 				display: block
 				width: 70vw
-				height: 70vh
+				height: 90vh
 				background-repeat: no-repeat
 				background-position: center
-				background-size: 80%
+				background-size: 100%
 				
 			&__chair
 				display: flex
@@ -1037,12 +1036,15 @@ b, strong
 					background-size: 71%
 					background-position: 100% 50%
 				&.no-display
-					display: none
-				
-					
+					display: none					
 				&.ergopro
+					display: flex
 					background-image: url("/app/img/ergopro.png")
-					background-size: 50%
+					background-size: 90%
+					background-position: 100% 50%
+				&.no-display
+					display: none
+
 				.side
 					display: flex
 					flex-direction: column
@@ -1088,7 +1090,7 @@ b, strong
 						
 						h3
 							width: 20vw
-							font-size: 2.6vw
+							font-size: 19px
 							font-weight: 700
 							text-transform: uppercase
 							margin: 0 0 0.5vh 0
@@ -1097,7 +1099,8 @@ b, strong
 							height: 34px
 							color: #000000
 							font-family: Geometria
-							font-size: 2vw
+							font-size: 17px
+							line-height: 1
 							font-weight: 400
 					hr
 						width: 30vw
@@ -1119,8 +1122,8 @@ b, strong
 					border: 1px solid #626262
 					margin-top: 1vh
 					img
-						width: 10.3vw
-						height: 16vh
+						width: 14.3vw
+						height: 17.3vw
 
 	.ergopro__galery
 		justify-content: center
@@ -1152,6 +1155,696 @@ b, strong
 			height: 4.2vw
 			width: 4.2vw
 		&--solid
+			background-color: #ffffff
+			border-radius: 50%
+			height: 2vw
+			width: 2vw
+		&--opacity
+			background-color: #ffffff
+			border-radius: 50%
+			height: 150px
+			width: 150px
+			opacity: 0.3
+
+	.dreams
+		display: flex
+		flex-direction: column
+		align-items: center
+		width: 100%
+		height: 100vh
+		background-image: url("/app/img/dreams-bg.png")
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: center
+		padding: 2.2vh
+		&__wrap
+			display: flex
+			flex-direction: column
+			align-items: center
+			height: 77vh
+			width: 64.5vw
+			margin: 0 4.8vw
+		&__vertical-line
+			
+			height: 6.5vh
+			border: 1px solid #1b1b1b
+			margin-bottom: 2vh
+		&__title
+			display: flex
+			flex-direction: column
+			align-items: center
+			margin-bottom: 2vh
+			h2
+				font-size: 2vw
+				font-weight: 700
+				text-transform: uppercase
+		&__content
+			display: flex
+			justify-content: center
+			align-items: center
+			margin-top: 3vh
+			width: 60vw
+			height: 60vw
+			&__circle
+				&--big
+					display: flex
+					position: relative
+					justify-content: center
+					align-items: center
+					width: 60vw
+					height: 60vw
+					border: 2px solid #000000
+					border-radius: 50%
+					.div2
+						position: absolute
+						width: 5.6vw
+						height: 5.6vw
+						background-color: #000000
+						border-radius: 50%
+						background-repeat: no-repeat
+						background-position: center
+						background-size: 1.3vh
+					.div3
+						display: none
+						width: 15.6vw
+						height: 114px
+						font-family: Geometria
+						font-size: 1.8vh
+						font-weight: 700
+						line-height: 1.1
+								
+				&--solid
+					display: flex
+					justify-content: center
+					align-items: center
+					width: 55vw
+					height: 55vw
+					border-radius: 50%
+					background-color: #fff
+					img
+						height: 35vh
+						width: 19vw
+
+	.info
+		display: flex
+		justify-content: center
+		align-items: center
+		width: 100%
+		height: 68vh
+		background-image: url("/app/img/bg-info.jpg")
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: center
+		&__wrap
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+			align-items: center
+			width: 91vw
+			height: 49.4vh
+		&__title
+			// Style for "Это кресло"
+			width: 40vw
+			color: #ffffff
+			font-family: Geometria
+			font-size: 1.8vw
+			font-weight: 700
+			text-transform: uppercase
+		&__steps
+			width: 66.6vw
+			height: 8.7vh
+			display: flex
+			justify-content: space-between
+			align-items: center
+			.line
+				// Style for "Shape 6"
+				width: 27vw
+				border: 1px solid #ffffff
+			&__circle
+				display: flex
+				justify-content: center
+				align-items: center
+				border: 1px solid #ffffff
+				width: 4.16vw
+				height: 4.16vw
+				border-radius: 50%
+				&--solid
+					display: flex
+					justify-content: center
+					align-items: center
+					border: 1px solid #ffffff
+					width: 3.4vw
+					height: 3.4vw
+					border-radius: 50%
+					background-color: #fff
+					font-size: 2.1vw
+					font-weight: 700
+		&__blocks
+			display: flex
+			justify-content: space-between
+			height: 24.9vh
+			width: 91vw	
+			&__block
+				height: 24.9vh
+				width: 29.2vw
+				border: 2px solid #ffffff
+				padding: 2.3vh 1.3vw
+				color: #ffffff
+				p
+					margin-bottom: 0.3vh
+					font-size: 1.1vw
+					font-weight: 400
+	.location
+		width: 100%
+		height: 100vh
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: space-between
+		&__wrap
+			width: 84.16vw
+			height: 82vh
+			display: flex
+			flex-direction: column
+			align-items: center	
+			margin: 2.2vh	
+		&__title
+			display: flex
+			flex-direction: column
+			align-items: center
+			justify-content: center
+			width: 64.79vw
+			height: 6.7vh
+			span
+				// Style for "Уже предст"
+				width: 24.35vw
+				height: 2vh
+				font-size: 0.93vw
+				font-weight: 400		
+			h2
+				// Style for "Приходите"
+				width: 64.79vw
+				height: 3.14vh
+				font-size: 2.03vw
+				font-weight: 700
+				text-transform: uppercase
+		&__info
+			height: 52.12vh
+			width: 84.16vw
+			display: flex
+			align-items: center
+			justify-content: space-between
+			margin-top: 15vh
+			&__map
+				height: 50.16vh
+				width: 35.41vw
+				background-image: url("/app/img/Ukraine.png")
+				background-position: center
+				background-repeat: no-repeat
+				background-size: 90%
+			&__adress
+				display: flex
+				flex-direction: column
+				justify-content: space-between
+				align-content: space-between
+				height: 25vh
+				.contact__info
+					display: flex
+					flex-direction: column
+					padding-left: 1.6vw
+					.email
+						width: 12.44vw
+						height: 2vh
+						color: #000000
+						font-family: Geometria
+						font-size: 1.2v
+						font-weight: 700
+				ul
+					list-style: disc
+				
+				.adress
+					font-size: 0.83vw
+					font-weight: 600
+					margin-bottom: 1vh
+			&__form
+				display: flex
+				align-items: center
+				justify-content: center
+				width: 22.6vw
+				height: 52.12vh
+				background-color: #fbf0e1
+				&__wrap
+					display: flex
+					flex-direction: column
+					align-items: center
+					justify-content: space-between
+					height: 47.31vh
+					width: 16.56vw
+					.title
+						width: 16.45vw
+						height: 1.85vh
+						font-size: 1.35vw
+						font-weight: 700
+						text-transform: uppercase
+					p
+						width: 15.26vw
+						height: 3.51vh
+						font-size: 0.88vw
+						font-weight: 400
+					.inputext
+						span
+							margin: 0
+							padding: 0
+						input
+							border: none
+							width: 18.38vw
+							height: 4.81vh
+							background-color: #ffffff
+							font-size: 1.2vw
+						textarea
+							border: none
+							width: 18.38vw
+							height: 10.64vh
+	.no-display
+		display: none			
+	.footer
+		width: 100%
+		height: 14.35vh
+		background-color: #000000
+		&__upper
+			display: flex
+			justify-content: center
+			width: 100%
+			height: 7.21vh
+			border-bottom: 2px solid white
+			padding-top: 1vh
+		&-logo
+			height: 8.21vh
+			width: 17vw
+			color: #ffffff
+			img
+				height: 8.21vh
+				width: 17vw
+
+		&-bottom
+			display: flex
+			justify-content: center
+			align-items: center
+			width: 100%
+			height: 3.65vw
+			background-color: black
+			p
+				color: white
+				font-size: 0.625vw
+				
+
+	.vertical__line
+		height: 6.5vh
+		border: 1px solid #1b1b1b
+		margin-bottom: 2vh
+					
+	.img-responsive
+		display: block
+		max-width: 100%
+		height: auto
+		&.img-width
+			width: 100%
+	.beige
+		background-color: #faebd7
+	.white
+		color: #ffffff
+	.text-center
+		text-align: center
+	.btn1
+		width: 9.63vw
+		height: 4.8vh
+		background-color: #000000
+		color: #ffffff
+		font-size: 0.8vw
+		font-weight: 700
+	.close
+		position: absolute
+		right: 70px
+		top: 10px
+		width: 3vw
+		height: 3vw
+		svg
+			width: 10vw
+			height: 10vw
+	.mobile
+		display: flex
+
+
++max-screen(375px)
+	.main
+		width: 100%
+		height: 100vh
+		background-image: url("/app/img/bg-mobile.jpg")
+		background-repeat: no-repeat
+		background-position: center
+		background-size: cover
+		.chairs
+			display: none
+	.between
+		width: 100%
+		height: 37.2vh
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		background-image: url("/app/img/betweenbg.jpg")
+		background-repeat: no-repeat
+		background-position: center
+		background-size: cover
+		&.wrap
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			width: 52.13vw
+			height: 21.75vh
+		&__content
+			display: flex
+			flex-direction: column
+			justify-content: center
+			align-items: center
+			color: #ffffff
+			&__icon
+				width: 165px
+				height: 165px
+				margin-bottom: 3vh
+				img
+					// Style for "005-close-"
+					width: 17px
+					height: 13px
+
+			h2
+				text-transform: uppercase
+				font-size: 3vw
+				font-weight: 700
+		
+	.header
+		width: 100%
+		display: flex
+		justify-content: center
+		border-bottom: 0px solid #cdcdcc
+		&__wrap
+			display: flex
+			width: 87vw
+			justify-content: space-between
+			align-context: center
+			margin-top: 2.6vh
+			.logo
+				background-image: url("/app/img/logo.png")
+				background-repeat: no-repeat
+				background-size: 100%
+				background-position: center
+				margin-bottom: -1.7vh
+				width: 60vw
+				height: 13vh
+					
+			&__menu
+				display: none
+				justify-content: space-between
+				height: 6vh
+				width: 60vw
+				padding-top: 1vh
+				align-items: center
+				padding-top: 3.5vh
+		&__menu
+			display: flex
+			justify-content: space-between
+			align-self: center
+			height: 3vh
+			width: 26vw
+			font-weight: 300
+			text-transform: uppercase
+			
+			margin: 0
+			&__item
+				font-size: 0.93vw
+				font-weight: 300
+				&__link
+					color: $text
+		&__contact
+			display: flex
+			width: 25.85vw
+			height: 4.7vh
+			margin: 0
+			&__item
+				display: flex
+				justify-content: space-between
+				align-items: center
+				width: 14vw
+				font-size: 0.93vw
+				.icon
+					display: flex
+					align-items: center
+					justify-content: center
+					border: 1px solid #000000
+					border-radius: 50%
+					height: 2.29vw
+					width: 2.29vw
+					img
+						width: 0.78vw
+						height: 0.78vw
+				.contact
+					width: 9.5vw	
+					font-size: 1vw
+					font-weight: 700
+	.chairs
+		display: flex
+		width: 100%
+		height: 90vh
+		align-items: flex-end
+		justify-content: center
+		&__wrap
+			width: 68vw
+			height: 73.70vh
+			display: flex
+			justify-content: space-between	
+		&__img
+			width: 34vw
+			height: 73vh
+			&--trully
+				width: 34vw
+				background-image: url("/app/img/trully--bg.png")
+				background-repeat: no-repeat
+				background-size: contain
+			&--egropro
+				width: 34vw
+				background-image: url("/app/img/ergopro--bg.png")
+				background-repeat: no-repeat
+				background-size: contain
+
+	.property
+		width: 100%
+		height: 230vh
+		padding: 2.2vh 0
+		&__wrap
+			display: flex
+			width: 95vw
+			height: 170vh
+			flex-direction: column
+			align-items: center
+			margin: 4vw 4.8vw
+		&__vertical-line
+			height: 6.5vh
+			border: 1px solid #1b1b1b
+			margin-bottom: 2vh
+		&__title
+			display: flex
+			flex-direction: column
+			align-items: center
+			font-size: 2.03vw
+			margin-bottom: 2vh
+			span
+				font-size: 1.6vh
+				font-weight: 400
+		&__content
+			display: flex
+			flex-direction: column
+			flex-direction: column-reverse
+			width: 95vw
+			height: 180vh
+			&__text
+				width: 90vw
+				height: 26vh
+				p
+					width: auto
+					height: 26vh
+					font-size: 19px
+					font-weight: 400
+					margin-right: 3vw
+					color: #000000
+					font-family: Geometria
+			&__wrap
+				display: flex
+				flex-direction: column
+				height: 180vh
+			&__sliders
+				&--trully
+					display: flex
+					position: relative
+					align-items: center
+					justify-content: center
+					margin-right: 0
+					margin-top: 2vh
+					width: 94vw
+					height: 68vh
+				&--ergopro
+					display: flex
+					position: relative
+					align-items: center
+					justify-content: center
+					margin-right: 108px
+					margin-top: 2vh
+					width: 52vw
+					height: 72vh
+			&__slider
+				display: block
+				width: 70vw
+				height: 70vh
+				background-repeat: no-repeat
+				background-position: center
+				background-size: 80%
+				
+			&__chair
+				display: flex
+				margin-top: 2vh
+				background-repeat: no-repeat
+				background-position: 0% 0%
+				width: 90vw
+				height: 113vh
+				&.truly
+					display: flex
+					background-image: url("/app/img/truly.png")
+					background-size: 100%
+					background-position: 50% 50%
+					backface-visibility: 30%
+				&.no-display
+					display: none
+				
+					
+				&.ergopro
+					background-image: url("/app/img/ergopro.png")
+					background-size: 50%
+				.side
+					display: flex
+					flex-direction: column
+					&.right
+						width: 60vw
+						height: 91vh
+					&.left
+						display: none
+						width: 60vw
+						height: 72vh
+							
+				
+					.price
+						/* Style for "10 500 грн" */
+						width: 60vw
+						height: 36px
+						color: #20418c
+						font-family: Geometria
+						font-size: 39px
+						font-weight: 500
+						line-height: 50.9px
+				&__item
+					display: flex
+					align-items: center
+					height: 57.2vh
+					margin-top: 1vh
+					&.right
+						flex-direction: row-reverse
+						width: 90vw
+						
+					&--left
+						width: 26vw
+					.square
+						// Style for "Rectangle"
+						width: 7px
+						height: 7px
+						background-color: #000000
+					.description
+						display: flex
+						background-color: rgba(255, 255, 255, 0.4)
+						flex-direction: column		
+						width: 77vw
+						margin-top: 1vh
+						height: auto
+						
+						h3
+							width: 60vw
+							font-size: 19px
+							font-weight: 700
+							text-transform: uppercase
+							margin: 0 0 0.5vh 0
+						p									
+							width: 76vw
+							height: 50px
+							color: #000000
+							font-family: Geometria
+							font-size: 17px
+							line-height: 1
+							font-weight: 400
+					hr
+						display: none
+						width: 30vw
+				
+			
+					
+			&__galery
+				display: flex
+				flex-direction: row
+				width: 85vw
+				height: 28vw
+				justify-content: space-between
+				&__item
+					display: flex
+					align-items: center
+					justify-content: center
+					width: 25.5vw
+					height: 25.5vw
+					border: 1px solid #626262
+					margin-top: 1vh
+					img
+						width: 14.3vw
+						height: 17.3vw
+
+	.ergopro__galery
+		justify-content: center
+
+	.description
+		display: flex
+		flex-direction: column
+		justify-content: center
+		height: 2vh
+		width: 1vh
+	.circle
+		display: flex
+		justify-content: center
+		align-items: center
+		border: 2px solid #ffffff
+		&--xlarge
+			border-radius: 50%
+			position: relative
+			height: 160px
+			width: 160px
+		&--large
+			display: none
+			border-radius: 50%
+			position: relative
+			height: 7.3vw
+			width: 7.3vw
+		&--small
+			display: none
+			border-radius: 50%
+			position: absolute
+			height: 4.2vw
+			width: 4.2vw
+		&--solid
+			display: none
 			background-color: #ffffff
 			border-radius: 50%
 			height: 2vw
@@ -1485,4 +2178,8 @@ b, strong
 		top: 10px
 		width: 3vw
 		height: 3vw
+		svg
+			width: 10vw
+			height: 10vw
+
 		
