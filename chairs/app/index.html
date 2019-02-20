@@ -16,7 +16,7 @@
 
     <!-- Template Basic Images Start -->
     <meta property="og:image" content="path/to/image.jpg">
-    <link rel="icon" href="/app/img/icons/armchair.svg">
+    <link rel="icon" href="/app/img/favicon/favicon.png">
     <link rel="apple-touch-icon" sizes="180x180" href="/app/img/icons/armchair.png">
     <!-- Template Basic Images End -->
 
@@ -24,11 +24,23 @@
     <meta name="theme-color" content="#000">
     <!-- Custom Browsers Color End -->
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            $('a[href^="#"]').on('click', function(event) {
+                // отменяем стандартное действие
+                event.preventDefault();
 
+                var sc = $(this).attr("href"),
+                    dn = $(sc).offset().top;
 
-    <link rel="stylesheet" href="/app/sass/bootstrap-grid.min.css">
+                $('html, body').animate({
+                    scrollTop: dn
+                }, 1000);
 
-    <link rel="stylesheet" href="/app/app/sass/main.css">
+            });
+        })
+    </script>
     <link rel="stylesheet" href="/app/sass/main.css">
 
 </head>
@@ -42,16 +54,16 @@
                 <div class="header__wrap__menu">
                     <ul class="header__menu">
                         <li class="header__menu__item">
-                            <a href="#" class="header__menu__item__link">Truly</a>
+                            <a href="#truly" class="header__menu__item__link">Truly</a>
                         </li>
                         <li class="header__menu__item">
-                            <a href="#" class="header__menu__item__link">ErgoPro</a>
+                            <a href="#ergopro" class="header__menu__item__link">ErgoPro</a>
                         </li>
                         <li class="header__menu__item">
-                            <a href="#" class="header__menu__item__link">Как заказать</a>
+                            <a href="#info" class="header__menu__item__link">Как заказать</a>
                         </li>
                         <li class="header__menu__item">
-                            <a href="#" class="header__menu__item__link">Контакты</a>
+                            <a href="#location" class="header__menu__item__link">Контакты</a>
                         </li>
                     </ul>
                     <ul class="header__contact">
@@ -65,7 +77,9 @@
                             <div class="icon">
                                 <img src="/app/img/icons/close-envelope.png" alt="">
                             </div>
-                            <span class="contact">good@goodwin.com.ua</span>
+                            <span class="contact">
+                                <a href="mailto:good@goodwin.com.ua">good@goodwin.com.ua</a>
+                            </span>
                         </li>
                     </ul>
                 </div>
@@ -78,7 +92,7 @@
             </div>
         </div>
     </section>
-    <section id="#truly" class="property beige">
+    <section id="truly" class="property beige">
         <div class="property__wrap">
             <span class="property__vertical-line"></span>
             <div class="property__title">
@@ -94,9 +108,9 @@
                 <div class="property__content__wrap">
 
                     <div class="property__content__sliders--trully no-display">
-                        <div id="blue" class="property__content__slider no-display truly__blue1" style="background-image: url('/app/img/Trully1.png')">blue</div>
-                        <div id="red" class="property__content__slider no-display truly__red2" style="background-image: url('/app/img/Trully2.png')">red</div>
-                        <div id="green" class="property__content__slider no-display truly__green3" style="background-image: url('/app/img/Trully3.png')">green</div>
+                        <div id="blue" class="property__content__slider no-display chairs truly__blue1">blue</div>
+                        <div id="red" class="property__content__slider no-display truly__red2">red</div>
+                        <div id="green" class="property__content__slider no-display truly__green3">green</div>
                         <div class="close">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="3vw" height="3vw">
                                 <path
@@ -143,7 +157,7 @@
                                     </p>
                                 </div>
                             </div>
-                            <div class="property__content__chair__item right mobile">
+                            <div class="property__content__chair__item  right mobile ">
                                 <span class="circle circle--large ">
                                     <span class="circle circle--small ">
                                         <span class="circle circle--solid ">
@@ -327,7 +341,7 @@
             </div>
         </div>
     </section>
-    <section id=" ergopro " class="property ">
+    <section id="ergopro" class="property ">
         <div class="property__wrap ">
             <span class="property__vertical-line "></span>
             <div class="property__title ">
@@ -342,8 +356,8 @@
                 </div>
                 <div class="property__content__wrap ">
                     <div class="property__content__sliders--ergopro no-display">
-                        <div id="blue" class="property__content__slider no-display first" style="background-image: url('/app/img/ErgoPro1.png')">1</div>
-                        <div id="red" class="property__content__slider no-display second" style="background-image: url('/app/img/ErgoPro2.png')">2</div>
+                        <div id="blue" class="property__content__slider no-display first"></div>
+                        <div id="red" class="property__content__slider no-display second">2</div>
                         <div class="close">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="3vw" height="3vw">
                                         <path
@@ -565,9 +579,18 @@
                     </div>
                 </div>
             </div>
+            <ol type="A" class="dreams__content__list mobile">
+                <li class="dreams__content__item"><span class="number">1</span> Максимальная поддержка позвоночника при движении вперед-назади вправо-влево благодаря инновационной системе FlexSpine</li>
+                <li class="dreams__content__item"><span class="number">2</span >Коррекция положения для расслабления грудного отдела позвоночника</li>
+                <li class="dreams__content__item"><span class="number">3</span> Точная настройка для правильно положения спины и ног </li>
+                <li class="dreams__content__item"><span class="number">4</span >Максимальное расслабление всего тела после трудного рабочего дня</li>
+                <li class="dreams__content__item"><span class="number">5</span> Формирование правильного изгиба в поясничном отделе позвоночника.</li>
+                <li class="dreams__content__item"><span class="number">6</span> Теперь никакой нагрузки на шейный отдел позвоночника</li>
+                <li class="dreams__content__item"><span class="number">7</span> Отсутствие нагрузки на копчик </li>
+            </ol>
         </div>
     </section>
-    <section class="info ">
+    <section id="info" class="info">
         <div class="info__wrap ">
             <div class="info__title ">
                 Это кресло уже спешит стать вашим!
@@ -584,6 +607,7 @@
                 <div class="info__steps__circle ">
                     <div class="info__steps__circle--solid ">3</div>
                 </div>
+
             </div>
             <div class="info__blocks ">
                 <div class="info__blocks__block ">
@@ -600,7 +624,10 @@
                     <p> Оплатите товар при получении на почте или совершите предоплату на карту.</p>
                 </div>
                 <div class="info__blocks__block ">
-                    <p>Поздравляем! Мы уже летим собирать ваш заказ! Ожидайте вашу посылку и тем временем присматривайте идеальное место в вашем интерьере для новенького кресла.
+                    <p>Поздравляем! Мы уже летим собирать ваш заказ!
+                        <p>
+                            Ожидайте вашу посылку и тем временем присматривайте идеальное место в вашем интерьере для новенького кресла.
+                        </p>
 
                     </p>
                     <p>Позвольте вашему рабочему месту удивить вас удобством и функциональностью!</p>
@@ -608,7 +635,7 @@
             </div>
         </div>
     </section>
-    <section class="location">
+    <section id="location" class="location">
         <div class="location__wrap ">
             <span class="vertical__line "></span>
             <div class="location__title ">
@@ -619,8 +646,10 @@
                 <div class="location__info__map "></div>
                 <div class="location__info__adress ">
                     <div class="contact__info ">
+                        <span class="email "><a href="tel:+38(063)-940-37-89">+38(063)-940-37-89</a></span>
                         <span class="email ">+38(063)-940-37-89</span>
-                        <span class="email ">good@goodwin.com.ua</span>
+                        <span class="email ">+38(063)-940-37-89</span>
+                        <span class="email "><a href="mailto:good@goodwin.com.ua">good@goodwin.com.ua</a></span>
                     </div>
                     <ul>
                         <li class="adress ">Украина, г.Днепр,</br> ул. Екатерининская, 45 офис 567</li>
@@ -633,19 +662,21 @@
                     <div class="location__info__form__wrap ">
                         <div class="title ">ОсТались вопросы?</div>
                         <p style="text-align: center ">Оставьте свой номер и мы вам обязательно перезвоним</p>
-                        <div class="inputext ">
-                            <span>Ваше имя</span>
-                            <input type="text " name="name " id="name ">
-                        </div>
+                        <form method="post" action="mail.php">
+                            <div class="inputext ">
+                                <span>Ваше имя</span>
+                                <input type="text " name="name " id="name" placeholder="Введите ваше имя">
+                            </div>
 
-                        <div class="inputext ">
-                            <span>Ваш телефон</span>
-                            <input type="text " name="phone " id="phone "></div>
-                        <div class="inputext ">
-                            <span>Сообщение</span>
-                            <textarea name="coment " id=" "></textarea>
-                        </div>
-                        <button class="btn1 " type="submit " value="Отправить ">Отправить</button>
+                            <div class="inputext ">
+                                <span>Ваш телефон</span>
+                                <input type="text " name="phone " id="phone "></div>
+                            <div class="inputext ">
+                                <span>Сообщение</span>
+                                <textarea name="coment " id=" "></textarea>
+                            </div>
+                            <button class="btn1 " type="submit " value="Отправить ">Отправить</button>
+                        </form>
                     </div>
                 </div>
             </div>
@@ -661,8 +692,8 @@
             </div>
         </div>
     </section>
-    <script src="js/scripts.min.js "></script>
-    <script src="/app/js/common.js"></script>
+    <script src="/js/scripts.min.js "></script>
+    <script src="/js/common.js"></script>
     <script type="text/javascript">
         $('.truly__red').click(function() {
             $(".truly").addClass('no-display');
@@ -734,11 +765,11 @@
             childdivtext.className = 'div3';
             childdiv.style.position = 'absolute';
             childdivtext.style.position = 'absolute';
-            childdiv.style.backgroundImage = "url( './img/icons/armchair.png') ";
+            childdiv.style.backgroundImage = "url( '/app/img/icons/armchair.png') ";
             var y = Math.sin((div * i) * (Math.PI / 180)) * radius;
             var x = Math.cos((div * i) * (Math.PI / 180)) * radius;
-            childdiv.style.top = (y - 5 + totalOffset).toString() + "px ";
-            childdiv.style.left = (x - 10 + totalOffset).toString() + "px ";
+            childdiv.style.top = (y + totalOffset).toString() + "px ";
+            childdiv.style.left = (x + totalOffset).toString() + "px ";
             childdivtext.style.top = (y + 10 + totalOffset).toString() + "px ";
             childdivtext.style.left = (x + 10 + totalOffset).toString() + "px ";
             if (i == 1 || i == 6 || i == 7) {
@@ -760,6 +791,32 @@
             childdivtext.innerText = arr[i];
             parentdiv.appendChild(childdiv);
             parentdiv.appendChild(childdivtext);
+        }
+    </script>
+    <script>
+        function checkForm(form) {
+
+            var name = form.name.value;
+            var n = name.match(/^[A-Za-zА-Яа-я ]*[A-Za-zА-Яа-я ]+$/);
+            if (!n) {
+                alert("Имя введено неверно, пожалуйста исправьте ошибку");
+                return false;
+            }
+
+            var phone = form.phone.value;
+            var p = phone.match(/^[0-9+][0-9- ]*[0-9- ]+$/);
+            if (!p) {
+                alert("Телефон введен неверно");
+                return false;
+            }
+
+            var mail = form.mail.value;
+            var m = mail.match(/^[A-Za-z0-9][A-Za-z0-9\._-]*[A-Za-z0-9_]*@([A-Za-z0-9]+([A-Za-z0-9-]* [A - Za - z0 - 9] + ) * \.) + [A - Za - z] + $ /);
+            if (!m) {
+                alert("E-mail введен неверно, пожалуйста исправьте ошибку");
+                return false;
+            }
+            return true;
         }
     </script>
 </body>

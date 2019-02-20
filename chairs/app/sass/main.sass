@@ -39,7 +39,7 @@ body
 	background-size: cover
 .between
 	width: 100%
-	height: 37.2vh
+	height: 50.2vh
 	display: flex
 	flex-direction: column
 	justify-content: center
@@ -259,7 +259,9 @@ body
 				flex-direction: column
 				&.right
 					width: 28vw
-					height: 72vh		
+					height: 72vh
+					.mobile
+						display: none		
 				&.left
 					width: 24vw
 					height: 60vh
@@ -273,6 +275,8 @@ body
 					font-family: Geometria
 					font-size: 2.03vw
 					font-weight: 500
+					.mobile
+						display: none
 			&__item
 				display: flex
 				align-items: center
@@ -309,7 +313,7 @@ body
 						font-weight: 400
 						margin: 0
 				hr
-					width: 7.8vw
+					width: 8.8vw
 			
 		
 				
@@ -387,19 +391,18 @@ body
 		display: flex
 		flex-direction: column
 		align-items: center
-		height: 77vh
+		height: 90vh
 		width: 64.5vw
 		margin: 0 4.8vw
-	&__vertical-line
-		
-		height: 6.5vh
+	&__vertical-line	
+		height: 10.5vh
 		border: 1px solid #1b1b1b
-		margin-bottom: 2vh
+		
 	&__title
 		display: flex
 		flex-direction: column
 		align-items: center
-		margin-bottom: 2vh
+		
 		h2
 			font-size: 2vw
 			font-weight: 700
@@ -470,7 +473,7 @@ body
 		height: 49.4vh
 	&__title
 		// Style for "Это кресло"
-		width: 40vw
+		width: 42vw
 		color: #ffffff
 		font-family: Geometria
 		font-size: 1.8vw
@@ -512,7 +515,7 @@ body
 		width: 91vw	
 		&__block
 			height: 24.9vh
-			width: 29.2vw
+			width: 26vw
 			border: 2px solid #ffffff
 			padding: 2.3vh 1.3vw
 			color: #ffffff
@@ -540,7 +543,7 @@ body
 		align-items: center
 		justify-content: center
 		width: 64.79vw
-		height: 6.7vh
+		height: 11vh
 		span
 			// Style for "Уже предст"
 			width: 24.35vw
@@ -553,6 +556,7 @@ body
 			height: 3.14vh
 			font-size: 2.03vw
 			font-weight: 700
+			margin: 2vh
 			text-transform: uppercase
 	&__info
 		height: 52.12vh
@@ -560,7 +564,7 @@ body
 		display: flex
 		align-items: center
 		justify-content: space-between
-		margin-top: 15vh
+		margin-top: 7vh
 		&__map
 			height: 50.16vh
 			width: 35.41vw
@@ -573,7 +577,7 @@ body
 			flex-direction: column
 			justify-content: space-between
 			align-content: space-between
-			height: 25vh
+			height: 30vh
 			.contact__info
 				display: flex
 				flex-direction: column
@@ -581,6 +585,7 @@ body
 				.email
 					width: 12.44vw
 					height: 2vh
+					margin-top: 0.5vh
 					color: #000000
 					font-family: Geometria
 					font-size: 1.2v
@@ -617,6 +622,12 @@ body
 					height: 3.51vh
 					font-size: 0.88vw
 					font-weight: 400
+				form
+					display: flex
+					flex-direction: column
+					justify-content: space-between
+					align-items: center
+					height: 36vh
 				.inputext
 					span
 						margin: 0
@@ -624,7 +635,7 @@ body
 					input
 						border: none
 						width: 18.38vw
-						height: 4.81vh
+						height: 4.21vh
 						background-color: #ffffff
 						font-size: 1.2vw
 					textarea
@@ -812,7 +823,7 @@ b, strong
 +max-screen(780px)
 	.main
 		width: 100%
-		height: 100vh
+		height: 120vh
 		background-image: url("/app/img/bg-mobile.jpg")
 		background-repeat: no-repeat
 		background-position: center
@@ -1044,13 +1055,15 @@ b, strong
 					background-position: 100% 50%
 				&.no-display
 					display: none
-
 				.side
 					display: flex
 					flex-direction: column
 					&.right
 						width: 60vw
 						height: 91vh
+						.mobile
+							display: flex
+					
 					&.left
 						display: none
 						width: 60vw
@@ -1066,6 +1079,8 @@ b, strong
 						font-size: 39px
 						font-weight: 500
 						line-height: 50.9px
+						&.mobile
+							display: flex
 				&__item
 					display: flex
 					align-items: center
@@ -1074,6 +1089,7 @@ b, strong
 					&.right
 						flex-direction: row-reverse
 						width: 56vw
+					
 						
 					&--left
 						width: 26vw
@@ -1181,19 +1197,19 @@ b, strong
 			display: flex
 			flex-direction: column
 			align-items: center
-			height: 77vh
-			width: 64.5vw
+			justify-content: space-between
+			height: 88vh
+			width: 80.5vw
 			margin: 0 4.8vw
 		&__vertical-line
-			
 			height: 6.5vh
 			border: 1px solid #1b1b1b
-			margin-bottom: 2vh
+			margin-bottom: 0
 		&__title
 			display: flex
 			flex-direction: column
 			align-items: center
-			margin-bottom: 2vh
+			margin-bottom: 0
 			h2
 				font-size: 2vw
 				font-weight: 700
@@ -1202,7 +1218,7 @@ b, strong
 			display: flex
 			justify-content: center
 			align-items: center
-			margin-top: 3vh
+			margin-top: 0
 			width: 60vw
 			height: 60vw
 			&__circle
@@ -1243,8 +1259,22 @@ b, strong
 					background-color: #fff
 					img
 						height: 35vh
-						width: 19vw
-
+						width: 30vw
+			&__list
+				width: 85vw
+				height: 22vh
+				flex-direction: column
+				font-size: 21px
+				font-weight: 400			
+			&__item
+				display: inline
+				font-size: 17px
+				widows: 80vw
+				margin-top: 2vh
+				.number
+					font-size: 21px
+					font-weight: 700
+					font-family: "Geometria - Bold"
 	.info
 		display: flex
 		justify-content: center
@@ -1495,7 +1525,7 @@ b, strong
 		display: flex
 
 
-+max-screen(375px)
++max-screen(550px)
 	.main
 		width: 100%
 		height: 100vh
@@ -1639,8 +1669,10 @@ b, strong
 
 	.property
 		width: 100%
-		height: 230vh
+		height: 208vh
 		padding: 2.2vh 0
+		display: flex
+		justify-content: center
 		&__wrap
 			display: flex
 			width: 95vw
@@ -1656,11 +1688,16 @@ b, strong
 			display: flex
 			flex-direction: column
 			align-items: center
-			font-size: 2.03vw
 			margin-bottom: 2vh
+			font-family: Geometria
 			span
-				font-size: 1.6vh
+				font-size: 3.2vw
 				font-weight: 400
+			h2
+				font-size: 7.03vw
+				font-family: Geometria
+				text-transform: uppercase
+				
 		&__content
 			display: flex
 			flex-direction: column
@@ -1669,10 +1706,10 @@ b, strong
 			height: 180vh
 			&__text
 				width: 90vw
-				height: 26vh
+				height: 41vh
 				p
 					width: auto
-					height: 26vh
+					height: 41vh
 					font-size: 19px
 					font-weight: 400
 					margin-right: 3vw
@@ -1682,6 +1719,7 @@ b, strong
 				display: flex
 				flex-direction: column
 				height: 180vh
+				width: 89vw
 			&__sliders
 				&--trully
 					display: flex
@@ -1691,16 +1729,15 @@ b, strong
 					margin-right: 0
 					margin-top: 2vh
 					width: 94vw
-					height: 68vh
+					height: 79vh
 				&--ergopro
 					display: flex
 					position: relative
 					align-items: center
 					justify-content: center
-					margin-right: 108px
 					margin-top: 2vh
-					width: 52vw
-					height: 72vh
+					width: 94vw
+					height: 79vh
 			&__slider
 				display: block
 				width: 70vw
@@ -1708,33 +1745,59 @@ b, strong
 				background-repeat: no-repeat
 				background-position: center
 				background-size: 80%
+				&.truly__blue1
+					background-image: url('/app/img/Trully2.png')
+					background-size: contain
+					background-position: 50% 50%
+				&.truly__red2
+					background-image: url('/app/img/Trully1.png')
+					background-size: contain
+					background-position: 50% 50%
+				&.truly__green3
+					background-image: url('/app/img/Trully3.png')
+					background-size: contain
+					background-position: 50% 50%
+				&.first
+					background-image: url('/app/img/ErgoPro1.png')
+					background-size: contain
+					background-position: 50% 50%
+				&.second
+					background-image: url('/app/img/ErgoPro2.png')
+					background-size: contain
+					background-position: 50% 50%
 				
 			&__chair
 				display: flex
-				margin-top: 2vh
 				background-repeat: no-repeat
 				background-position: 0% 0%
 				width: 90vw
-				height: 113vh
+				height: 95vh
 				&.truly
 					display: flex
 					background-image: url("/app/img/truly.png")
 					background-size: 100%
 					background-position: 50% 50%
-					backface-visibility: 30%
+					.description
+						background-color: rgba(241,229,213, 0.8)
+
 				&.no-display
 					display: none
 				
 					
 				&.ergopro
 					background-image: url("/app/img/ergopro.png")
-					background-size: 50%
+					background-size: 100%
+					.description
+						background-color: rgba(255,255,255, 0.8)
 				.side
 					display: flex
 					flex-direction: column
 					&.right
 						width: 60vw
 						height: 91vh
+						&.mobile
+							display: flex
+						
 					&.left
 						display: none
 						width: 60vw
@@ -1742,23 +1805,25 @@ b, strong
 							
 				
 					.price
-						/* Style for "10 500 грн" */
 						width: 60vw
-						height: 36px
+						height: 21vw
+						margin-bottom: 7vw
 						color: #20418c
 						font-family: Geometria
 						font-size: 39px
 						font-weight: 500
 						line-height: 50.9px
+						.mobile
+							display: inline
 				&__item
 					display: flex
 					align-items: center
 					height: 57.2vh
 					margin-top: 1vh
+					
 					&.right
 						flex-direction: row-reverse
-						width: 90vw
-						
+						width: 90vw										
 					&--left
 						width: 26vw
 					.square
@@ -1768,11 +1833,11 @@ b, strong
 						background-color: #000000
 					.description
 						display: flex
-						background-color: rgba(255, 255, 255, 0.4)
 						flex-direction: column		
 						width: 77vw
 						margin-top: 1vh
 						height: auto
+						
 						
 						h3
 							width: 60vw
@@ -1857,25 +1922,21 @@ b, strong
 			opacity: 0.3
 
 	.dreams
-		display: flex
-		flex-direction: column
-		align-items: center
 		width: 100%
-		height: 110vh
+		height: 125vh
 		background-image: url("/app/img/dreams-bg.png")
 		background-repeat: no-repeat
 		background-size: cover
 		background-position: center
-		padding: 2.2vh
+		padding: 1.1vh 0
 		&__wrap
 			display: flex
 			flex-direction: column
 			align-items: center
-			height: 77vh
-			width: 64.5vw
-			margin: 0 4.8vw
+			justify-content: center
+			height: 87vh
+			width: 95vw
 		&__vertical-line
-			
 			height: 6.5vh
 			border: 1px solid #1b1b1b
 			margin-bottom: 2vh
@@ -1885,30 +1946,29 @@ b, strong
 			align-items: center
 			margin-bottom: 2vh
 			h2
-				font-size: 2vw
+				font-size: 3.5vw
 				font-weight: 700
 				text-transform: uppercase
 		&__content
 			display: flex
 			justify-content: center
 			align-items: center
-			margin-top: 22vh
-			width: 30vw
-			height: 30vw
+			width: 70vw
+			height: 70vw
 			&__circle
 				&--big
 					display: flex
 					position: relative
 					justify-content: center
 					align-items: center
-					width: 30vw
-					height: 30vw
+					width: 70vw
+					height: 70vw
 					border: 2px solid #000000
 					border-radius: 50%
 					.div2
 						position: absolute
-						width: 2.6vw
-						height: 2.6vw
+						width: 8vw
+						height: 8vw
 						background-color: #000000
 						border-radius: 50%
 						background-repeat: no-repeat
@@ -1927,20 +1987,20 @@ b, strong
 					display: flex
 					justify-content: center
 					align-items: center
-					width: 27vw
-					height: 27vw
+					width: 65vw
+					height: 65vw
 					border-radius: 50%
 					background-color: #fff
 					img
-						height: 35vh
-						width: 19vw
+						height: 20vh
+						width: 34vw
 
 	.info
 		display: flex
 		justify-content: center
 		align-items: center
 		width: 100%
-		height: 68vh
+		height: 120vh
 		background-image: url("/app/img/bg-info.jpg")
 		background-repeat: no-repeat
 		background-size: cover
@@ -1950,20 +2010,21 @@ b, strong
 			flex-direction: column
 			justify-content: space-between
 			align-items: center
-			width: 91vw
-			height: 49.4vh
+			width: 95vw
+			height: 100vh
 		&__title
 			// Style for "Это кресло"
-			width: 40vw
+			width: 80vw
+			text-align: center
 			color: #ffffff
 			font-family: Geometria
-			font-size: 1.8vw
+			font-size: 3.8vw
 			font-weight: 700
 			text-transform: uppercase
 		&__steps
+			display: none
 			width: 66.6vw
 			height: 8.7vh
-			display: flex
 			justify-content: space-between
 			align-items: center
 			.line
@@ -1991,29 +2052,32 @@ b, strong
 					font-weight: 700
 		&__blocks
 			display: flex
+			flex-direction: column
+			align-items: center
 			justify-content: space-between
-			height: 24.9vh
-			width: 91vw	
+			height: 90vh
+			width: 95vw	
 			&__block
-				height: 24.9vh
-				width: 29.2vw
+				height: 22.9vh
+				width: 85.2vw
 				border: 2px solid #ffffff
-				padding: 2.3vh 1.3vw
+				padding: 1.3мц 1.3vw
 				color: #ffffff
 				p
-					margin-bottom: 0.3vh
-					font-size: 1.1vw
+					margin-bottom: 0.1vh
+					font-size: 16px
 					font-weight: 400
+					line-height: 1.1
 	.location
 		width: 100%
-		height: 100vh
+		height: 120vh
 		display: flex
 		flex-direction: column
 		align-items: center
 		justify-content: space-between
 		&__wrap
-			width: 84.16vw
-			height: 82vh
+			width: 100%
+			height: 96vh
 			display: flex
 			flex-direction: column
 			align-items: center	
@@ -2039,12 +2103,14 @@ b, strong
 				font-weight: 700
 				text-transform: uppercase
 		&__info
-			height: 52.12vh
-			width: 84.16vw
+			height: 77.12vh
+			width: 100%
+			margin: 1vh
 			display: flex
+			flex-direction: column-reverse
 			align-items: center
 			justify-content: space-between
-			margin-top: 15vh
+			
 			&__map
 				height: 50.16vh
 				width: 35.41vw
@@ -2071,6 +2137,7 @@ b, strong
 						font-weight: 700
 				ul
 					list-style: disc
+					margin-top: 3vh
 				
 				.adress
 					font-size: 0.83vw
@@ -2080,16 +2147,23 @@ b, strong
 				display: flex
 				align-items: center
 				justify-content: center
-				width: 22.6vw
+				width: 100%
 				height: 52.12vh
 				background-color: #fbf0e1
+				form
+					display: flex
+					flex-direction: column
+					justify-content: space-between
+					align-items: center
+					height: 30vh
+					width: 100%
 				&__wrap
 					display: flex
 					flex-direction: column
 					align-items: center
 					justify-content: space-between
-					height: 47.31vh
-					width: 16.56vw
+					height: 30vh
+					width: 90.56vw
 					.title
 						width: 16.45vw
 						height: 1.85vh
@@ -2103,18 +2177,19 @@ b, strong
 						font-weight: 400
 					.inputext
 						span
+							display: none
 							margin: 0
 							padding: 0
 						input
 							border: none
-							width: 18.38vw
-							height: 4.81vh
+							width: 70vw
+							height: 3,5vh
 							background-color: #ffffff
-							font-size: 1.2vw
+							font-size: 3.2vw
 						textarea
 							border: none
-							width: 18.38vw
-							height: 10.64vh
+							width: 70vw
+							height: 7.64vh
 	.no-display
 		display: none			
 	.footer
