@@ -148,6 +148,36 @@ $units: 1px !default;
     }
 }
 
+@mixin iphoneXS-max-portrait {
+    @media only screen and (min-device-width: 414px) and (max-device-width: 846px) and (-webkit-device-pixel-ratio: 3.5) and (orientation: portrait) {
+        @content;
+    }
+}
+
+@mixin iphoneXS-portrait {
+    @media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+        @content;
+    }
+}
+
+@mixin galaxy9-portrait {
+    @media only screen and (min-device-width: 360px) and (max-device-width: 740px) and (-webkit-device-pixel-ratio: 4) and (orientation: portrait) {
+        @content;
+    }
+}
+
+@mixin galaxy7-portrait {
+    @media only screen and (min-device-width: 360px) and (max-device-width: 640px) and (-webkit-device-pixel-ratio: 3) and (orientation: portrait) {
+        @content;
+    }
+}
+
+@mixin iphone5-landscape {
+    @media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-device-pixel-ratio: 2) and (device-aspect-ratio: 40/71) and (orientation: landscape) {
+        @content;
+    }
+}
+
 // ---------------------------------------------------------------------------------------------------------------------
 // --- ipad + ipad mini ------------------------------------------------------------------------------------------------
 // ---------------------------------------------------------------------------------------------------------------------
@@ -158,7 +188,7 @@ $units: 1px !default;
 }
 
 @mixin ipad-portrait {
-    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-device-pixel-ratio: 1) and (orientation: portrait) {
+    @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {
         @content;
     }
 }
@@ -184,8 +214,20 @@ $units: 1px !default;
     }
 }
 
+@mixin ipad-pro10-portrait {
+    @media screen and (min-device-width: 798px) and (max-device-width: 1112px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {
+        @content;
+    }
+}
+
 @mixin ipad-retina-landscape {
     @media screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape) {
+        @content;
+    }
+}
+
+@mixin ipad-pro12-portrait {
+    @media screen and (min-device-width: 1024px) and (max-device-width: 1336px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {
         @content;
     }
 }

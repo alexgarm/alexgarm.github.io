@@ -108,9 +108,9 @@
                 <div class="property__content__wrap">
 
                     <div class="property__content__sliders--trully no-display">
-                        <div id="blue" class="property__content__slider no-display chairs truly__blue1">blue</div>
-                        <div id="red" class="property__content__slider no-display truly__red2">red</div>
-                        <div id="green" class="property__content__slider no-display truly__green3">green</div>
+                        <div id="blue" class="property__content__slider no-display chairs truly__blue1"></div>
+                        <div id="red" class="property__content__slider no-display truly__red2"></div>
+                        <div id="green" class="property__content__slider no-display truly__green3"></div>
                         <div class="close">
                             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50" width="3vw" height="3vw">
                                 <path
@@ -647,9 +647,9 @@
                 <div class="location__info__adress ">
                     <div class="contact__info ">
                         <span class="email "><a href="tel:+38(063)-940-37-89">+38(063)-940-37-89</a></span>
-                        <span class="email ">+38(063)-940-37-89</span>
-                        <span class="email ">+38(063)-940-37-89</span>
-                        <span class="email "><a href="mailto:good@goodwin.com.ua">good@goodwin.com.ua</a></span>
+                        <span class="email "><a href="tel:+38(063)-940-37-89">+38(063)-940-37-89</a></span>
+                        <span class="email "><a href="tel:+38(063)-940-37-89">+38(063)-940-37-89</a></span>
+                        <span class="email last"><a href="mailto:good@goodwin.com.ua">good@goodwin.com.ua</a></span>
                     </div>
                     <ul>
                         <li class="adress ">Украина, г.Днепр,</br> ул. Екатерининская, 45 офис 567</li>
@@ -670,12 +670,12 @@
 
                             <div class="inputext ">
                                 <span>Ваш телефон</span>
-                                <input type="text " name="phone " id="phone "></div>
+                                <input type="text " name="phone " id="phone" placeholder="Введите ваш телефон"></div>
                             <div class="inputext ">
                                 <span>Сообщение</span>
-                                <textarea name="coment " id=" "></textarea>
+                                <textarea name="coment " id=" " placeholder="Напишите пару слов для нас"></textarea>
                             </div>
-                            <button class="btn1 " type="submit " value="Отправить ">Отправить</button>
+                            <button class="btn1 " type="submit " value="Отправить">Отправить</button>
                         </form>
                     </div>
                 </div>
@@ -742,6 +742,11 @@
     </script>
 
     <script type="text/javascript">
+        $(window).resize(function() {
+            setTimeout(function() {
+                window.location.reload();
+            }, 1000);
+        });
         var arr = ["0 ",
             "Максимальная поддержка позвоночника при движении вперед-назади вправо-влево благодаря инновационной системе FlexSpine ",
             "Коррекция положения для расслабления грудного отдела позвоночника ",
@@ -765,7 +770,6 @@
             childdivtext.className = 'div3';
             childdiv.style.position = 'absolute';
             childdivtext.style.position = 'absolute';
-            childdiv.style.backgroundImage = "url( '/app/img/icons/armchair.png') ";
             var y = Math.sin((div * i) * (Math.PI / 180)) * radius;
             var x = Math.cos((div * i) * (Math.PI / 180)) * radius;
             childdiv.style.top = (y + totalOffset).toString() + "px ";
