@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="utf-8">
+    <!-- <base href="/"> -->
+
+    <title>OptimizedHTML 4</title>
+    <meta name="description" content="">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+    <!-- Template Basic Images Start -->
+    <meta property="og:image" content="path/to/image.jpg">
+    <link rel="icon" href="img/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
+    <!-- Template Basic Images End -->
+
+    <!-- Custom Browsers Color Start -->
+    <meta name="theme-color" content="#000">
+    <!-- Custom Browsers Color End -->
+
+    <link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="nav">
+            <div class="nav__wrapper">
+                <div class="nav__menu">
+                    <div class="nav__menu__item nav__menu__item--right">
+                        <div class="search">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="16" viewBox="0 0 15 16">
+                                <image width="15" height="16"
+                                    xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAQCAYAAADJViUEAAABLUlEQVQ4T53SMSiucRTH8c+bMlyDsljMbEom011v6ZaSAUmUwn3rltViuJNJMUhSBhTJQEmRsrCwWGTi7hYpMqCj56/HG94nz/Sc85zv75znnF/J+6cNg2hEDW6xiy08VdQqZYlazOAes7jK8vXoRSfKuM4LJHgZq9irVM/iJixlQjepJuAuNGP6EzClWzGO0Ty8gQE8VIHj8xpGcBdBdA64pwAYJX9wjqMEr6C/IBx1cYHtBG+iuyA8mZ3uLMEL+If/VQTiF3fwO908Ei2YQh+evxAYxg/M5bcd70NoxwQePxAIo4zhZ75BMknU/8JfHOAkE4mpwgenaMAFFis7pzj83IEwRB0ucZhtOBqFdY8RF3rzdsFlv9bPYz/8kR+7qEBMF6OvfweOJiFQfgHiAzXJF9NvwQAAAABJRU5ErkJggg==" />
+                            </svg></div>
+                        <ul class="nav__menu__list">
+                            <li class="nav__menu__list__item">
+                                <a href="#">О компании</a>
+                                <div class="nav__menu__dropdown">
+                                    <ul class="nav__menu__dropdown__list">
+                                        <li class="nav__menu__dropdown__list__item">
+                                            <a href="" class="nav__menu__dropdown__list__item__link">Стратегия</a></li>
+                                        <li class="nav__menu__dropdown__list__item">
+                                            <a href="" class="nav__menu__dropdown__list__item__link">Видение / Миссия / Ценности</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav__menu__list__item">Менеджмент</li>
+                            <li class="nav__menu__list__item">Структура активов</li>
+                        </ul>
+                    </div>
+                    <div class="brand__logo">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="150" height="138" viewBox="0 0 150 138">
+                            <image id="Logo_Makolli" width="150" height="138"
+                                xlink:href="data:img/png;base64,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" />
+                        </svg>
+                    </div>
+                    <div class="nav__menu__item nav__menu__item--left">
+                        <div class="conection">
+                            <div class="conection__wrapper">
+                                <span class="conection__phone">+992 30 30 30</span>
+                                <span class="conection__mail"><svg xmlns="http://www.w3.org/2000/svg"
+                                        xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="12"
+                                        viewBox="0 0 17 12">
+                                        <image width="17" height="12"
+                                            xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAMCAYAAACEJVa/AAAA6klEQVQ4T5XRvyvEYRwH8NcZ/SiLRTGRxapkkew3+A+oU0qRkQEDM5HS1fkPDHZdt1zKahGTdAaLEqPTU5/TV/me+z7j8zyf1/N5f54SBrGBEcXXK45L2MEC1vBQwJnEGeoJ2UMVB7hAowdoHsvRQKWDHOE9oPvA8qxUPBXAEDazyFtUrWIMu/jKSH3YxzPOY384D0nni6hgBZ/oRy1iX2fgrsg6RjGBSyzhES84+Q9J8VKMp3h5ADO4xUd0Nh6x2vizk23c4arLD5UxjcM8pIff/XXlp5MtNHFTVMAs5tIM0uQ7gyzqtHD6DZlZOA/e87uoAAAAAElFTkSuQmCC" />
+                                        </svg></span>
+                            </div>
+                        </div>
+                        <ul class="nav__menu__list">
+                            <li class="nav__menu__list__item">Медиа центр</li>
+                            <li class="nav__menu__list__item">Контакты</li>
+                            <li class="nav__menu__list__item">RU</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="content">
+        <div class="content__wrapper">
+            <div class="main__scroll">
+                <div id="bg1" class="main__scroll__bg bg1"></div>
+                <div id="bg2" class="main__scroll__bg bg2"></div>
+                <div id="bg3" class="main__scroll__bg bg3"></div>
+                <div id="bg4" class="main__scroll__bg bg4"></div>
+                <div id="bg5" class="main__scroll__bg bg5"></div>
+            </div>
+            <div class="side__history">
+                <div class="side__history__wrapper">
+                    <div class="side__history__item">
+                        <div class="info__logo--grey"></div>
+                        <div class="info__title info__title--grey">
+                            <div class="info__title__wrap">
+                                <div class="info__title__breadcrumbs">
+                                    <a href="" class="info__title__breadcrumbs__link fiord">/ О компании</a>
+                                </div>
+                                <div class="info__title__years">2011</div>
+                                <div class="info__title__text">
+                                    В период своей деятельности ООО «Маколли» достигло множество успехов. Сегодня продукция ООО «Маколли» известна во всей Республике Таджикистан. В 2011 году в Таджикистане проводился конкурс «Лучший товар года».
+                                </div>
+                                <div class="info__title__continue">
+                                    <a href="" class="info__title__continue__link fiord">Далее...</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info__picture">
+                            <img src="/img/kombain.jpg" alt=""></div>
+                    </div>
+                    <div class="side__history__item">
+                        <div class="info__logo--burlywood"></div>
+                        <div class="info__title info__title--burlywood">
+                            <div class="info__title__wrap">
+                                <div class="info__title__breadcrumbs">
+                                    <a href="" class="info__title__breadcrumbs__link satinsheengold">/ Экспорт продукции </a>
+                                </div>
+                                <div class="info__title__years">2019</div>
+                                <div class="info__title__text">«Начиная с 2005 года, мы динамично растем, ежегодно подтверждая лидерство в секторе производства и дистрибуции, логистических и других услуг, сфер компетенций Нашего Холдинга.
+                                </div>
+                                <div class="info__title__continue">
+                                    <a href="" class="info__title__continue__link satinsheengold">Далее</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info__picture">
+                            <img src="/img/samosval.jpg" alt="">
+                        </div>
+                    </div>
+                    <div class="side__history__item">
+                        <div class="info__logo--catalinablue"></div>
+                        <div class="info__title info__title--catalinablue">
+                            <div class="info__title__wrap">
+                                <div class="info__title__breadcrumbs">
+                                    <a href="" class="info__title__breadcrumbs__link catalinablue">/ Спич Руководителя</a>
+                                </div>
+                                <div class="info__title__years">2019</div>
+                                <div class="info__title__text">«Начиная с 2005 года, мы динамично растем, ежегодно подтверждая лидерство в секторе производства и дистрибуции, логистических и других услуг, сфер компетенций Нашего Холдинга.
+                                </div>
+                                <div class="info__title__continue">
+                                    <a href="" class="info__title__continue__link catalinablue">Далее</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info__blocks">
+                            <div class="info__blocks__item yellow">
+                                <div class="info__blocks__wrap">
+                                    <div class="info__blocks__breadcrumbs">/ Ключевые ценности</div>
+                                    <div class="info__blocks__title"> ПРОФЕССИОНАЛЬНАЯ КОМАНДА ЛИДЕРОВ</div>
+                                    <div class="info__blocks__icon"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="47" height="47" viewBox="0 0 47 47"><g><g><image width="47" height="47" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC8AAAAvCAYAAABzJ5OsAAAEwklEQVRoQ82aecinUxTHP2MbsoVC9iKKsSUjS3ay1pBpUkLZRcpSEiVZ/sGQnSxFKIMYY82erGXIFiNZs5M9y9Dn7T7T0+O5y/P7Pe/v/Z1/3rfuufd8733OPed7zv1NYzxkGWBN4Hvgj1JI00oVJ0lvOeBC4ARgFeBv4EHgNOCznM2pBK/t+cCBLSA/BbYDvkltYCrBC/qhBLjLgTPGFfxVwCkJcO8Cm48r+JuAYxPgPgQ26Qv8soBu9mfuIhWOnwRcm9CdB8weFvxuwCXAjmGhF4FzgacKQcbUVgTeAjZqUfgL2Al4bRjwBwEPAEs1FlkMHBLC2jB7uAc4rLGAsV53uj+3cCraLA18BKwfWeRzYEPgn5yRyLhf9Jkwdg7wHfB1+KI/layZAr8N8Hpmke1znzYy34y6ENgCeBrYswRsUycFfhfg+cyi6rwwgGEz6BUho24NvDPAGhPRIyarA18BnlKbGHXWBn7oaHgt4P1AB+YCp3ecv0Q9l2GvAU6OLO7F8uRNJl3kVuBo4EtgM6DIv9sM5MBPBzR2eGOyzG954Ftg34K7UU1fFXgT2AA4Eri9y667+Hxd18u7a/DR50KyehRYJ5zcfoDxv0Tc9DEhQf1bMiGmkzv51Nqm7icAae3uwAdB2Qgixd07hNnfwpj54nrg52EA1+cOA9511gPWAN4AzAsXBybo/22imx0BPNbHBoYFX8dwG3BUASiz86zA5QvU4yp9gTd6eLFLxQizaQjFpXP+p9cHeHmPNMII0kUuBc7qMMEy0ftjqTghfYDfAXipA4hK1VIvt2HxmWfcpDxK4A+He7WoD/DHAzcMAN4pKwO/JOZKxc9uGZfEzewDvOn9sgHBy1jtEpwKHByy7hfh7+/AdQnvmNcHeLPvnQOAN0GZsORINwLHdVzj1zp4U7dZ1E9p3H47spiEzUJE7m3rQr/9uKNh1c3IVkvK/sC2IW9I9szcJkFzSEwWV+ANdVcGplcpezHkH/pXBdiacq/ANJ8MWVT9x4F9Om7AaunmxBwpxyOJ8YWCPwBYEFF6NbTgKsCVmjT4XuDEUEltCbwMrFC4gVeAnethr2WeIVg9m09tMkfwGp1ZYFTA1pXWnZ66RXJdDgXuClwntZxcfg/Ai5kT6cd9gBVbJd4RI9BcwRs7Y1zECfrmBRHATeMegu2MttOSFkgh7IL9mENdGxej9e5WgcHqohMbd8CQ5K2PyZkdQ6Frmrh0NUOh3N/TtrX3SQfQWdWq2WmLIyZyeaPP2IngZ4T0bhOoKcZfufkw4sXzk1sy3tHRZZJ2q1BpjL26Fnf1SYvji4boy1SGLeBlkUYiO8OG4F6kmWFNCisBNpSWsLceLNmbsdqSq9hg6kX6oAclQPyCgn42bKJkTlZnVOCrRGhkq55vsuByCqMCv1qgGdozwViMv5cDlxsfBXhtnA+c16C39mykF1ZHA8kowHvSXtQ2uSX0cMYSvD0d23q6TZvI6S3vLAk7y2SfvL3InG9bQaVeBaObmmzwGwOLMkdqr9POW2eZbPACsg0Ye9Uz866bKcKn7OQ1bEVksdN813LMaDNo56GXvk3J57b48EVbhqr4xuqL4t0lk2M6o3Cbum2jjkQt+ZuC0g39BzNq1xMl/m1lAAAAAElFTkSuQmCC"/></g></g></svg></div>
+                                </div>
+                            </div>
+                            <div class="info__blocks__item green">
+                                <div class="info__blocks__wrap">
+                                    <div class="info__blocks__breadcrumbs">/ Ключевые ценности</div>
+                                    <div class="info__blocks__title">Финансовая стабильность
+                                    </div>
+                                    <div class="info__blocks__icon">
+                                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="46" height="46" viewBox="0 0 46 46"><g><g><image width="46" height="46" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAYAAABXuSs3AAAFYUlEQVRoQ+2aXWxURRTH/2dulwZr/AChQcFIaCsSIEHBJwnR6pZFs6TApVFhWQIBwgMFH8AIyoQECTxoESIBY5ctBkJ3IW356Id8JAabiBjDg5LIFjUGUAgCBdR2984xd9maLmX3zpZL6YP3dc6c89uZM3PmnLMEFz/TrDWsR34aTnE1iIR61FZNwDWovMuRmtUXAGK3zNG9KDLNjwZyQbtPAKUMvATgOQCeDDo7AJwmoFUxGgflDzu+Y8fieG/t9wq8YoEca1lYQeAKgAp6afwqAWFiY+ve8PttuerICdxcIItgYSOAGbkayiJvEaMmYXlW7/9i9UVdvVrgtu9SwQ+rGLQWwABd5TnKtTPRymho7XadeY7gby5cX5iIx6OgpA/f948Ze6Jh+ZaToazgti8rC4cAPO2kyKXxOBizImHZ4KQvI7gZXDcOrI6B8ISTEpfGtaFT12xPszPmrB9mGPGTIAx3CcpJTUZoKaWQUqo7FfRY8UWLtnuudlxsBWGikzWXxjNC+5uXv03g8nrvZhOEtODVA9wMyg0A3r0HKAvArwBfAcgORkMAPJVBX3Zo4hoAgoiW1r1Wta27jjTwmQE5Xgh8bwvnCP4PA7vB2NuRjxMHdsi/us8vD3w42BCdUwgIAHgDgAFACzqph3CD2Rrd4N16oUtvGrgZlEcBvJILNAPVKuFZoxs8KgKyRAlsAqP6brdH0j1SK52+whSu81YFe4DPCq6bTFBfaUMzbrKgOdHQ2nrtOQ6CmaBT0yxWYnTD1I9jabeKOV/Wg+HXhGhXJLz7Qh98oynvKOYAnfIY2lznrVr+H3j5XDk0T+A8CHmOFgBmgj8akgc1ZLVEdKBvK+LrnQkubJy2pSPp47ODcgkDaac2o0XGtkhYLtUi0hSa3rLsIECv64izYF/Dq580JcHNoIwCmKkxsR0GRkY+l39qyGqLlB95p0Qp64zWbca0pb6salkX+KXUfZvVGAFVtTvlCm2iHAT9X1YeIE5elU4M39Z5N79ISf828IfTBHtcCUzaVy1P6cjmKuNvqTQJqNWY1zmh9fGBZM6XY8D4VGcCbo3xRSKz7cjo+uc/UllICr/rKDYSaoTje1xHkVsy01sq7Z0f6qSPST3f38B/TCXc2f2c6OX/wZ22V2dc11UINIF81WfHMJHj4STizocfKvJFZlP/OJzemthQofSuQyFo0uHAqP5xHdpbOHVnTCsAMbiqOVjcPwKQDe7beTbKIK2Qz4n8kc0LR7ga8v2Nlc+SAftGcU5guof8slDbEiLWemQxeFtzsLh/PLJSfn4e0HvWKiJ/y7xRD/5Zm/JzO5PRTiSEUN7DgZIHm0jY4GWhc5OJckjdgJtMPKd5XvGDTd2Sqx6OHQXnmCwTV0N41jTPfUar0jot3FaiFG8CcXVTsLhHqS3nZPk2+LnxYNW78gTxbsHYm9dRcOLA4ifTyhOl4TODPWrAFIADoG7lCfAsLXin8sRt+LMbwORCQQhXGOQhcPaCkAa8Y0HIBn9h+ynPkPzHvgYwSed94YJMHNngdUtwyYO665dhZCVOAn1Y9MwAr1307FrBaaG2cYr4GNCHZeYM8Hfb1azvcW9NbKyhcIj7srCvCe+YSJR+dq7Q41F2+aJPWikA9jQFi+6tldK1RWYtG+1/x1YR39/mFQgrm+YVudO86u5fZbtiRaSwEexuuxDALjby3tMNYjaTo6vc7WDYvk/MK4hFBcC9btAyOCyArY3B4vvboL3zR5i1vw28cavTB6AUxBotcT7NQKsAGi91XD/+3eKJfdsSzxR07LNwq/3n4eyxBrFC8k8IAnxNCL58MFByAeTenxD+BfTeazomaxsNAAAAAElFTkSuQmCC"/></g></g></svg></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="side__history__item">
+                        <div class="info__logo--topaz"></div>
+                        <div class="info__title info__title--topaz">
+                            <div class="info__title__wrap">
+                                <div class="info__title__breadcrumbs">
+                                    <a href="" class="info__title__breadcrumbs__link lightbrown">/ Развитие потенциала людей</a>
+                                </div>
+                                <div class="info__title__years">75%</div>
+                                <div class="info__title__text">Благодаря правильной стратегии, динамичному росту и взвешенной кадровой политике каждый сотрудник компании имеет возможность получать новые знания, реализовывать собственные амбиции и потенциал.
+                                </div>
+                                <div class="info__title__continue">
+                                    <a href="" class="info__title__continue__link lightbrown">Далее</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info__picture">
+                            <img src="/img/fermers.jpg" alt=""></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="footer__wrap">
+            <div class="footer__nav">
+                <ul class="footer__nav__list">
+                    <li class="footer__nav__list__item">
+                        <ul class="menu__list">
+                            <li class="menu__list__item">
+                                <a href="" class="menu__list__item__link">О компании</a>
+                            </li>
+                            <li class="menu__list__item">
+                                <a href="" class="menu__list__item__link">Стратегия</a></li>
+                            <li class="menu__list__item">
+                                <a href="" class="menu__list__item__link">Видение</a></li>
+                            <li class="menu__list__item">
+                                <a href="" class="menu__list__item__link">Миссия</a></li>
+                            <li class="menu__list__item">
+                                <a href="" class="menu__list__item__link">Ценности</a></li>
+
+                        </ul>
+                    </li>
+                    <li class="footer__nav__list__item">
+                        <ul class="menu__list">
+
+                            <li class="menu__list__item"><a href="" class="menu__list__item__link">Менеджмент</a></li>
+                            <li class="menu__list__item"><a href="" class="menu__list__item__link">Менеджмент</a></li>
+
+                        </ul>
+                        </<a>
+                        <li class="footer__nav__list__item">
+                            <ul class="menu__list">
+
+                                <li class="menu__list__item"><a href="" class="menu__list__item__link">Структура активов</a>
+                                </li>
+                                <li class="menu__list__item"><a href="" class="menu__list__item__link">Производство</a></li>
+                                <li class="menu__list__item"><a href="" class="menu__list__item__link">Бизнес юниты</a></li>
+
+                            </ul>
+                        </li>
+                        <li class="footer__nav__list__item">
+                            <ul class="menu__list">
+                                <li class="menu__list__item"><a href="" class="menu__list__item__link">Медиа-центp</a></li>
+                                <li class="menu__list__item"><a href="" class="menu__list__item__link">Новости компании</a>
+                                </li>
+                                <li class="menu__list__item"><a href="" class="menu__list__item__link">Корпоративные СМИ</a>
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li class="footer__nav__list__item">
+                            <ul class="menu__list">
+                                <li class="menu__list__item">
+                                    <a href="" class="menu__list__item__link">Контакты
+                                </a>
+                                </li>
+                                <li class="menu__list__item">
+                                    <a href="" class="menu__list__item__link"></a>
+                                </li>
+                                <li class="menu__list__item">
+                                    <a href="" class="menu__list__item__link"></a>
+                                </li>
+                                <li class="menu__list__item">
+                                    <a href="" class="menu__list__item__link"></a>
+                                </li>
+                                <li class="menu__list__item"></li>
+                            </ul>
+                        </li>
+                </ul>
+            </div>
+
+
+
+            <div class="footer__copyright">
+                <span>© 2012—2019 ООО «Маколли». Все права защищены.</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/scripts.min.js"></script>
+
+</body>
+
+</html>

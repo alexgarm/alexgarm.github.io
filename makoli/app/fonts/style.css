@@ -1,0 +1,9 @@
+/* font converted using font-converter.net. thank you! */
+@font-face {
+  font-family: "Stolzl-Book";
+  src: url("./fonts/Stoliz-Book.eot"); /* IE9 Compat Modes */
+  src: url("./fonts/Stoliz-Book.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("./fonts/Stoliz-Book.woff") format("woff"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
