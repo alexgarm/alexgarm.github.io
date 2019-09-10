@@ -40,9 +40,41 @@ ul
 
 b, strong
 	font-weight: bold
+
 .header
+	position: fixed
+	display: flex
+	z-index: 1
 	&--news
 		margin-bottom: 250px
+.main-container
+	display: flex
+	width: 80%
+	max-width: 100%
+	flex-direction: row
+	flex-wrap: wrap
+	margin: 0 auto
+	position: relative
+
+.left-side
+	display: flex
+	width: 50%
+	padding-top: 345px
+.right-side
+	display: flex
+	width: 50%
+	padding-top: 345px
+	justify-content: flex-end
+
+
+
+
+
+
+
+
+
+
 .nav
 	display: flex
 	justify-content: center
@@ -61,7 +93,7 @@ b, strong
 		justify-content: center
 		position: relative
 		&__item
-			padding-top: 10px
+			padding-top: 20px
 			display: flex
 			flex-wrap: nowrap
 			&--right
@@ -89,14 +121,26 @@ b, strong
 			display: flex
 			justify-content: space-between
 			padding: 0
-			
 			&__item
-				font-family: $stolizBold-font
-				font-size: 16px
-				font-weight: 400
+				height: 50px
+				&.lang
+					width: 26px
+				
 				&:hover
-					color: $accent
-					cursor: pointer
+					.nav__menu__dropdown
+						visibility: visible
+						opacity: 1
+				&__link
+					font-family: $stolizBold-font
+					font-size: 16px
+					font-weight: 400
+					text-decoration: none
+					color: #000000
+					&:hover
+						color: $accent
+					
+					
+							
 		&__dropdown
 			display: block
 			width: 289px
@@ -105,7 +149,12 @@ b, strong
 			background-color: rgba(114,138,154,0.2)
 			position: absolute
 			padding: 0
-			top: 100%
+			top: 75%
+			visibility: hidden
+			opacity: 0
+			transition: opacity 0.3s
+			&.lang
+				width: 50px !important
 			&__list
 				display: flex
 				flex-direction: column
@@ -171,8 +220,8 @@ b, strong
 			
 		
 .main__scroll
-	width: 80vw
-	height: 80vh
+	width: 80%
+	
 	background-repeat: no-repeat
 	background-position: center
 	background-size: cover
@@ -181,7 +230,7 @@ b, strong
 	&__bg
 		position: fixed
   		border: 1px solid black
-		width: 80vw
+		width: 80%
 		height: 100%
 		
 	.bg1
@@ -189,7 +238,7 @@ b, strong
 		z-index: -1
 		background-size: cover
 	.bg2
-		background: fixed url('/img/bg2.jpg') 0 0 no-repeat
+		background: fixed url('/img/bg2.jpg') 0 105px no-repeat
 		z-index: -2
 		background-size: cover
 	.bg3
@@ -534,6 +583,12 @@ b, strong
 			flex-direction: column
 			width: 100%
 			margin-right: 30px
+			p
+				color: #000000
+				font-family: $stolizBook-font
+				font-size: 16px
+				font-weight: 400
+				line-height: 25px
 			
 			&__img
 				width: 100%
@@ -545,7 +600,7 @@ b, strong
 				margin-bottom: 12px
 				height: 40px
 				&__text
-					
+
 				
 		&__list
 			display: flex
@@ -571,7 +626,6 @@ b, strong
 			border-bottom: 1px solid #eeeeee
 
 			img
-				// Style for "bg1"
 				width: 104px
 				height: 96px
 				margin-right: 14px
@@ -585,16 +639,17 @@ b, strong
 					text-decoration: none
 					
 
-	
+
 
 .no-fixed
 	position: static !important
 .footer
+	flex-grow: 1
 	display: flex
 	justify-content: center
 	align-items: center
 	flex-direction: column
-	width: 100vw
+	width: 100%
 	&__wrap
 		width: 80vw
 		height: 22.8vh
@@ -616,11 +671,6 @@ b, strong
 						text-decoration: none
 						&:hover
 							cursor: pointer
-
-						
-	
-
-		
 
 	&__copyright
 		height: 4.56vh
