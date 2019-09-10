@@ -26,6 +26,9 @@ body
 			border-color: red
 		&:required:valid
 			border-color: green
+a
+	text-decoration: none
+
 ul
 	list-style: none
 .img-responsive
@@ -42,11 +45,12 @@ b, strong
 	font-weight: bold
 
 .header
+	width: 100%
 	position: fixed
 	display: flex
 	z-index: 1
 	&--news
-		margin-bottom: 250px
+		margin-bottom: 100px
 .main-container
 	display: flex
 	width: 80%
@@ -79,14 +83,20 @@ b, strong
 	display: flex
 	justify-content: center
 	height: 103px
+	width: 100%
 	background-color: #fff
 	&__wrapper
 		display: flex
 		justify-content: space-around
-		width: 70%
+		width: 95%
 		height: 89px
 		margin-top: 14px
 		position: fixed
+	&__wrapp
+		display: flex
+		width: 100%
+		height: 100px
+		position: absolute
 	&__menu
 		display: flex
 		width: 100%
@@ -99,8 +109,8 @@ b, strong
 			&--right
 				display: flex
 				flex-direction: column
-				width: 476px
-				margin-right: 9.6vw
+				width: 25%
+				margin-right: 10%
 
 			&--left
 				display: flex
@@ -139,7 +149,7 @@ b, strong
 					&:hover
 						color: $accent
 					
-					
+				
 							
 		&__dropdown
 			display: block
@@ -147,12 +157,18 @@ b, strong
 			height: 113px
 			border-radius: 5px
 			background-color: rgba(114,138,154,0.2)
-			position: absolute
 			padding: 0
 			top: 75%
 			visibility: hidden
 			opacity: 0
 			transition: opacity 0.3s
+			position: absolute
+			bottom: 1px
+			&__top100
+				top: 100% !important
+			
+		
+
 			&.lang
 				width: 50px !important
 			&__list
@@ -175,53 +191,53 @@ b, strong
 						font-size: 16px
 						font-weight: 400
 						text-decoration: none
-						cursor: pointer
-	
+						cursor: pointer	
 .content
-	width: 100vw
+	width: 100%
 	display: flex
 	justify-content: center
 	margin-bottom: 120px
 	&__wrapper
-		width: 80vw
-	&__header__img
-		background-image: url('/img/gorizont.jpg')
-		background-repeat: no-repeat
-		background-size: cover
-		height: 514px
-		display: flex
-		justify-content: center
-		align-items: flex-end
-		&.about2
-			background-image: url('/img/combinat.jpg')!important
-		&.managment
-			background-image: url('/img/port.jpg')!important
-		&.contacts
-			background-image: url('/img/factory.jpg')!important
-
-		&__title
-			width: 1400px
-			height: 124px
-			border-radius: 5px 
-			background-color: #ffffff
-			opacity: 0.9
+		width: 80%
+	&__header
+		width: 100% 
+		&__img
+			background-image: url('/img/gorizont.jpg')
+			background-repeat: no-repeat
+			background-size: cover
+			height: 514px
 			display: flex
-			align-items: center
-			padding-left: 55px
-			padding-top: 10px
-			span
-				// Style for "О компании"
-				height: 50px
-				color: #000000
-				font-family: 
-				font-size: 30px
-				font-weight: $stolizBold-font
-				text-transform: uppercase
+			justify-content: center
+			align-items: flex-end
+			&.about2
+				background-image: url('/img/combinat.jpg')!important
+			&.managment
+				background-image: url('/img/port.jpg')!important
+			&.contacts
+				background-image: url('/img/factory.jpg')!important
+
+			&__title
+				width: 90%
+				height: 124px
+				border-radius: 5px 
+				background-color: #ffffff
+				opacity: 0.9
+				display: flex
+				align-items: center
+				padding-left: 55px
+				padding-top: 10px
+				span
+					// Style for "О компании"
+					height: 50px
+					color: #000000
+					font-family: 
+					font-size: 30px
+					font-weight: $stolizBold-font
+					text-transform: uppercase
 			
 		
 .main__scroll
 	width: 80%
-	
 	background-repeat: no-repeat
 	background-position: center
 	background-size: cover
@@ -261,7 +277,6 @@ b, strong
 	height: 100%
 	padding-top: 300px
 	position: relative
-	
 	&__wrapper
 		height: 3030px
 		width: 536px
@@ -412,16 +427,25 @@ b, strong
 					font-family: $stolizRegular-font
 	&__introduction
 		width: 100%
-		margin-bottom: 112px
+		margin-bottom: 40px
+		&__manager
+			height: 460px
+			display: flex
+			justify-content: center
+			align-items: center
+			padding: 30px
+			margin-bottom: 50px
+
 		&__wrap
 			width: 100%
 			display: flex
-			
+	
 		&__img
 			height: 460px
 			display: flex
 			flex-wrap: wrap
 			flex-direction: column
+			margin-right: 25px
 			&__name
 				width: 297px
 				height: 46px
@@ -435,6 +459,18 @@ b, strong
 				font-size: 20px
 				font-weight: 400
 		&__text
+			width: 100%
+			height: 391px
+
+			&__wrap
+				color: #000000
+				font-family: $stolizBook-font
+				font-size: 16px
+				font-weight: 400
+				line-height: 25px
+			
+
+
 			
 	&__explain
 		width: 100%
@@ -442,8 +478,11 @@ b, strong
 		flex-wrap: wrap
 		margin-bottom: 79px
 		&--worth
+			width: 50%
+			padding: 15px
 			border-right: 1px solid #ab8b0b
 		&--focus
+			width: 30%
 		&__head
 			color: #ab8b0b
 			display: flex
@@ -504,10 +543,21 @@ b, strong
 			text-transform: uppercase
 
 .managment
+	width: 100%
 	&__wrap
 		justify-content: center
 		align-items: center
 		margin-bottom: 42px
+	&__title
+		width: 100%
+		display: flex
+		justify-content: center
+		h2
+			color: #ab8b0b
+			font-family: $stolizRegular-font
+			font-size: 20px
+			font-weight: 700
+			text-transform: uppercase
 
 	&__list
 		
@@ -517,9 +567,7 @@ b, strong
 			justify-content: center
 			align-items: center
 	&__scheme
-		/* Style for "97" */
 		width: 100%
-		height: 1212px
 		&__img
 			width: 100%
 			height: 1212px
@@ -531,30 +579,28 @@ b, strong
 .news
 	display: flex
 	justify-content: center
+	margin-bottom: 50px
 	width: 100%
 	&__wrap
 		width: 70%
 		display: flex
 		flex-direction: column
 		justify-content: center
-		align-items: center
+		
 	&__title
-		// Style for "Медиа Цент"
 		width: 400px
+		height: 40px
+		margin-bottom: 20px
 		color: #000000
 		font-family: $stolizRegular-font
 		font-size: 30px
 		font-weight: 400
-		line-height: 3.77px
 		text-transform: uppercase
 	&__company
 		width: 100%
-		height: 400px
-
-		&__title	
+		&__title
 		&__slider
 			width: 100%
-			height: 400px
 			
 		&__list
 			width: 100%
@@ -563,14 +609,15 @@ b, strong
 			width: 200px
 			height: 322px
 			&__img
-
+				width: 205px
+				height: 202px
 			&__title
 				width: 256px
-				height: 60px
+				height: 100px
 				color: #000000
 				font-family: $stolizBook-font
 				font-size: 16px
-				font-weight: 400
+				font-weight: 700
 	&__content
 		display: flex
 		width: 100%
@@ -643,6 +690,7 @@ b, strong
 
 .no-fixed
 	position: static !important
+	
 .footer
 	flex-grow: 1
 	display: flex
@@ -688,8 +736,8 @@ b, strong
 .line--left
 	border-left: 2px solid #ab8b0b
 	p
-		padding-left: 30px
 
+		padding-left: 30px	
 .fiord
 	color: #3f515d
 .satinsheengold

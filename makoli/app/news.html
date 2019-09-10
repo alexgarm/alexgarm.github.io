@@ -29,8 +29,8 @@
 </head>
 
 <body>
-    <header class="header header--news">
-        <div class="nav">
+    <header class="header header--news no-fixed">
+        <div class="nav no-fixed">
             <div class="nav__wrapper no-fixed">
                 <div class="nav__menu">
                     <div class="nav__menu__item nav__menu__item--right">
@@ -41,8 +41,8 @@
                             </svg></div>
                         <ul class="nav__menu__list">
                             <li class="nav__menu__list__item">
-                                <a href="#">O компании</a>
-                                <div class="nav__menu__dropdown">
+                                <a class="nav__menu__list__item__link" href="#">О компании</a>
+                                <div class="nav__menu__dropdown nav__menu__dropdown__top100">
                                     <ul class="nav__menu__dropdown__list">
                                         <li class="nav__menu__dropdown__list__item">
                                             <a href="" class="nav__menu__dropdown__list__item__link">Стратегия</a></li>
@@ -52,8 +52,23 @@
                                     </ul>
                                 </div>
                             </li>
-                            <li class="nav__menu__list__item">Менеджмент</li>
-                            <li class="nav__menu__list__item">Структура активов</li>
+                            <li class="nav__menu__list__item"><a class="nav__menu__list__item__link" href="#">Менеджмент</a>
+                                <div id="company" class="nav__menu__dropdown nav__menu__dropdown__top100">
+                                    <ul class="nav__menu__dropdown__list">
+                                        <li class="nav__menu__dropdown__list__item">
+                                            <a href="" class="nav__menu__dropdown__list__item__link">Производство
+                                                            </a></li>
+                                        <li class="nav__menu__dropdown__list__item">
+                                            <a href="" class="nav__menu__dropdown__list__item__link">Бизнес юниты</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="nav__menu__list__item">
+                                <a class="nav__menu__list__item__link">
+                                    Структура активов
+                                </a>
+                            </li>
                         </ul>
                     </div>
                     <div class="brand__logo">
