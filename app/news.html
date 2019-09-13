@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <!-- <base href="/"> -->
 
-    <title>Менеджмент</title>
+    <title>OptimizedHTML 4</title>
     <meta name="description" content="">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,11 +23,13 @@
     <!-- Custom Browsers Color End -->
 
     <link rel="stylesheet" href="css/main.min.css">
+    <link rel="stylesheet" href="css/slick/slick.css">
+    <link rel="stylesheet" href="css/slick/slick-theme.css">
 
 </head>
 
 <body>
-    <header class="header no-fixed">
+    <header class="header header--news no-fixed">
         <div class="nav no-fixed">
             <div class="nav__wrapper no-fixed">
                 <div class="nav__menu">
@@ -50,13 +52,12 @@
                                     </ul>
                                 </div>
                             </li>
-                            <li class="nav__menu__list__item">
-                                <a class="nav__menu__list__item__link" href="">Менеджмент</a>
+                            <li class="nav__menu__list__item"><a class="nav__menu__list__item__link" href="#">Менеджмент</a>
                                 <div id="company" class="nav__menu__dropdown nav__menu__dropdown__top100">
                                     <ul class="nav__menu__dropdown__list">
                                         <li class="nav__menu__dropdown__list__item">
                                             <a href="" class="nav__menu__dropdown__list__item__link">Производство
-                                                                    </a></li>
+                                                            </a></li>
                                         <li class="nav__menu__dropdown__list__item">
                                             <a href="" class="nav__menu__dropdown__list__item__link">Бизнес юниты</a>
                                         </li>
@@ -65,8 +66,8 @@
                             </li>
                             <li class="nav__menu__list__item">
                                 <a class="nav__menu__list__item__link">
-                                            Структура активов
-                                        </a>
+                                    Структура активов
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -85,7 +86,7 @@
                                         viewBox="0 0 17 12">
                                         <image width="17" height="12"
                                             xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAMCAYAAACEJVa/AAAA6klEQVQ4T5XRvyvEYRwH8NcZ/SiLRTGRxapkkew3+A+oU0qRkQEDM5HS1fkPDHZdt1zKahGTdAaLEqPTU5/TV/me+z7j8zyf1/N5f54SBrGBEcXXK45L2MEC1vBQwJnEGeoJ2UMVB7hAowdoHsvRQKWDHOE9oPvA8qxUPBXAEDazyFtUrWIMu/jKSH3YxzPOY384D0nni6hgBZ/oRy1iX2fgrsg6RjGBSyzhES84+Q9J8VKMp3h5ADO4xUd0Nh6x2vizk23c4arLD5UxjcM8pIff/XXlp5MtNHFTVMAs5tIM0uQ7gyzqtHD6DZlZOA/e87uoAAAAAElFTkSuQmCC" />
-                                        </svg></span>
+                                    </svg></span>
                             </div>
                         </div>
                         <ul class="nav__menu__list">
@@ -98,78 +99,116 @@
             </div>
         </div>
     </header>
-    <div class="content">
-        <div class="content__wrapper">
-            <div class="content__header">
-                <div class="content__header__img managment">
-                    <div class="content__header__img__title">
-                        <span>Менеджмент</span>
+    <div class="news">
+        <div class="news__wrap">
+            <div class="news__title">Медиа Центр</div>
+            <div class="news__company">
+                <div class="news__company__title">Новости компании</div>
+                <div class="news__company__slider">
+                    <ul class="news__company__list">
+                        <li class="news__company__item">
+                            <img src="/img/med-pic-news.jpg" alt="bread" class="news__company__item__img">
+                            <div class="news__company__item__title">Начиная с 2005 года, мы динамично растем, ежегодно подтверждая
+                            </div>
+                        </li>
+                        <li class="news__company__item">
+                            <img src="/img/med-pic-news.jpg" alt="bread" class="news__company__item__img">
+                            <div class="news__company__item__title">Начиная с 2005 года, мы динамично растем, ежегодно подтверждая
+                            </div>
+                        </li>
+                        <li class="news__company__item">
+                            <img src="/img/med-pic-news.jpg" alt="bread" class="news__company__item__img">
+                            <div class="news__company__item__title">Начиная с 2005 года, мы динамично растем, ежегодно подтверждая
+                            </div>
+                        </li>
+                        <li class="news__company__item">
+                            <img src="/img/med-pic-news.jpg" alt="bread" class="news__company__item__img">
+                            <div class="news__company__item__title">Начиная с 2005 года, мы динамично растем, ежегодно подтверждая
+                            </div>
+                        </li>
+                        <li class="news__company__item">
+                            <img src="/img/med-pic-news.jpg" alt="bread" class="news__company__item__img">
+                            <div class="news__company__item__title">Начиная с 2005 года, мы динамично растем, ежегодно подтверждая
+                            </div>
+                        </li>
+                        <li class="news__company__item">
+                            <img src="/img/med-pic-news.jpg" alt="bread" class="news__company__item__img">
+                            <div class="news__company__item__title">Начиная с 2005 года, мы динамично растем, ежегодно подтверждая
+                            </div>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+            <div class="news__content">
+                <div class="news__content__wrap">
+                    <div class="news__content__full">
+                        <div class="news__content__full__title">
+                            <span class="name">
+                <h4>Заголовок статьи</h4>
+                </span>
+                            <span class="date">
+                21.08.2019
+                </span>
+                        </div>
+                        <div class="news__content__full__img">
+                            <img src="/img/big-picture-news.jpg" alt=""></div>
+                        <div class="news__content__full__text">
+                            <p>«Начиная с 2005 года, мы динамично растем, ежегодно подтверждая лидерство в секторе производства и дистрибуции, логистических и других услуг, сфер компетенций Нашего Холдинга. Более трети всего потребления промышленного производства
+                                кондитерских и хлебобулочных изделий в Таджикистане, покрываем Мы. Безусловно, нам есть чем гордиться!</p>
+                            <p>Для нас важно не только чего мы достигаем, но и как. Ежедневно мы выполняем сотни бизнес операций и принимаем тысячи решений, не имеющих универсальной формулы, при этом влияют на результативность Компании сегодня и ее устойчивость
+                                в долгосрочной перспективе. В любой ситуации мы полагаемся на видение и миссию компании, наши ценности и руководящие принципы, формирующие корпоративную философию и культуру.</p>
+                            <p>Я верю, что в период преодоления очередной планки зрелости, перехода от количественного роста к качественному, корпоративные ценности и принципы стали нормой жизни и основой в принятии решений для каждого из нас, а видение
+                                и миссия наполняют наш бизнес особым смыслом и дают мощный импульс для уверенного движения вперед!»</p>
+                        </div>
+                        <div class="news__content__full__navigation">
+                            <span class="prev"></span>
+                            <span class="next"></span>
+                        </div>
+                    </div>
+                    <div class="news__content__list">
+                        <div class="news__content__list__title"><span>Корпоративные СМИ</span></div>
+                        <ul class="news__list">
+                            <il class="news__list__item">
+                                <img src="/img/sm-pic-news.jpg" alt="" class="news__list__item__img">
+                                <div class="news__list__item__title">
+                                    <a href="">Начиная с 2005 года, мы динамично растем, ежегодно подтверждая лидерство</a>
+                                    <span class="news__list__item__date">21.08.2019</span>
+                                </div>
+                            </il>
+                            <il class="news__list__item">
+                                <img src="/img/sm-pic-news.jpg" alt="" class="news__list__item__img">
+                                <div class="news__list__item__title">
+                                    <a href="">Начиная с 2005 года, мы динамично растем, ежегодно подтверждая лидерство</a>
+                                    <span class="news__list__item__date">21.08.2019</span>
+                                </div>
+
+                            </il>
+                            <il class="news__list__item">
+                                <img src="/img/sm-pic-news.jpg" alt="" class="news__list__item__img">
+                                <div class="news__list__item__title">
+                                    <a href="">Начиная с 2005 года, мы динамично растем, ежегодно подтверждая лидерство</a>
+                                    <span class="news__list__item__date">21.08.2019</span>
+                                </div>
+
+                            </il>
+                            <il class="news__list__item">
+                                <img src="/img/sm-pic-news.jpg" alt="" class="news__list__item__img">
+                                <div class="news__list__item__title">
+                                    <a href="">Начиная с 2005 года, мы динамично растем, ежегодно подтверждая лидерство</a>
+                                    <span class="news__list__item__date">21.08.2019</span>
+                                </div>
+
+                            </il>
+
+                        </ul>
                     </div>
                 </div>
             </div>
-            <div class="about">
-                <div class="about__wrap">
-
-                    <div class="about__introduction">
-                        <div class="about__introduction__wrap">
-
-                            <div class="about__introduction__text">
-                                <div class="line--left">
-                                    <p>
-                                        ГК Маколли является по своей сути – имущественный, чистый, интегрированный Холдинг, придерживается большинства практик холдингового управления международных стандартов и политик. После вступления в силу решения о переходе к Холдинговому управлению ГК
-                                        Маколли, Совет директоров компании принял рекомендации и одобрил процесс по – этапного перехода Бизнес юнитов в реализации решения. Процесс трансформации должен быть завершен 2020 году.
-
-                                    </p>
-                                </div>
-
-                                <p>
-                                    Компания постоянно стремится поддерживать гендерное, образовательное, профессиональное и возрастное разнообразие между членами органов управления, понимая влияние разнообразия на максимизацию стоимости для акционеров. Многообразие была значительно усилена
-                                    в течение нескольких последних лет. Компания придерживается принципов разнообразия, провозглашенных в многочисленных внутренних документах, а также в Политике равных возможностей и культурного многообразия. Мы ценим
-                                    и уважаем каждого нашего сотрудника, его мнение как безусловную ответственность и мотивацию, позицию по принимаемым вопросам как желание быть в команде развития и изменений.
-                                </p>
-
-
-                            </div>
-                        </div>
-
-                    </div>
-                    <div class="managment">
-                        <div class="managment__wrap">
-                            <div class="managment__title">
-                                <h2>Постоянные Члены Совета Директоров </h2>
-                            </div>
-                            <div class="managment__list">
-                                <div class="managment__list__wrap">
-                                    <div class="about__introduction__img">
-                                        <img src="/img/manager.jpg" alt="">
-                                        <div class="about__introduction__img__name">Хакимов Осим Юсуфович</div>
-                                        <div class="about__introduction__img__position">Председатель Совета Директоров</div>
-                                    </div>
-                                    <div class="about__introduction__img">
-                                        <img src="/img/manager.jpg" alt="">
-                                        <div class="about__introduction__img__name">Хакимов Осим Юсуфович</div>
-                                        <div class="about__introduction__img__position">Председатель Совета Директоров</div>
-                                    </div>
-                                    <div class="about__introduction__img">
-                                        <img src="/img/manager.jpg" alt="">
-                                        <div class="about__introduction__img__name">Хакимов Осим Юсуфович</div>
-                                        <div class="about__introduction__img__position">Председатель Совета Директоров</div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="managment__scheme">
-                                <div class="managment__scheme__img">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
         </div>
-    </div>
 
+    </div>
     <div class="footer">
         <div class="footer__wrap">
             <div class="footer__nav">
@@ -201,19 +240,25 @@
                         <li class="footer__nav__list__item">
                             <ul class="menu__list">
 
-                                <li class="menu__list__item"><a href="" class="menu__list__item__link">Структура активов</a>
+                                <li class="menu__list__item">
+                                    <a href="" class="menu__list__item__link">Структура активов</a>
                                 </li>
-                                <li class="menu__list__item"><a href="" class="menu__list__item__link">Производство</a></li>
-                                <li class="menu__list__item"><a href="" class="menu__list__item__link">Бизнес юниты</a></li>
+                                <li class="menu__list__item">
+                                    <a href="" class="menu__list__item__link">Производство</a></li>
+                                <li class="menu__list__item">
+                                    <a href="" class="menu__list__item__link">Бизнес юниты</a></li>
 
                             </ul>
                         </li>
                         <li class="footer__nav__list__item">
                             <ul class="menu__list">
-                                <li class="menu__list__item"><a href="" class="menu__list__item__link">Медиа-центp</a></li>
-                                <li class="menu__list__item"><a href="" class="menu__list__item__link">Новости компании</a>
+                                <li class="menu__list__item">
+                                    <a href="" class="menu__list__item__link">Медиа-центp</a></li>
+                                <li class="menu__list__item">
+                                    <a href="" class="menu__list__item__link">Новости компании</a>
                                 </li>
-                                <li class="menu__list__item"><a href="" class="menu__list__item__link">Корпоративные СМИ</a>
+                                <li class="menu__list__item">
+                                    <a href="" class="menu__list__item__link">Корпоративные СМИ</a>
                                 </li>
 
                             </ul>
@@ -247,8 +292,19 @@
         </div>
     </div>
 
-    <script src="js/scripts.min.js"></script>
 
+    <script src="js/scripts.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/common.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.news__company__list').slick({
+                infinite: true,
+                slidesToShow: 5,
+                slidesToScroll: 3
+            });
+        });
+    </script>
 </body>
 
 </html>

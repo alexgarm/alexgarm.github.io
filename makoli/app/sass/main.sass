@@ -202,7 +202,7 @@ b, strong
 	&__header
 		width: 100% 
 		&__img
-			background-image: url('/makoli/app/img/gorizont.jpg')
+			background-image: url('/img/gorizont.jpg')
 			background-repeat: no-repeat
 			background-size: cover
 			height: 514px
@@ -210,11 +210,13 @@ b, strong
 			justify-content: center
 			align-items: flex-end
 			&.about2
-				background-image: url('/makoli/app/img/combinat.jpg')!important
+				background-image: url('/img/combinat.jpg')!important
 			&.managment
-				background-image: url('/makoli/app/img/port.jpg')!important
+				background-image: url('/img/port.jpg')!important
 			&.contacts
-				background-image: url('/makoli/app/img/factory.jpg')!important
+				background-image: url('/img/factory.jpg')!important
+			&.structor1
+				background-image: url('/img/bakers.jpg')!important
 
 			&__title
 				width: 90%
@@ -250,23 +252,23 @@ b, strong
 		height: 100%
 		
 	.bg1
-		background: fixed url('/makoli/app/img/bread-content.jpg') 0 105px no-repeat
+		background: fixed url('/img/bread-content.jpg') 0 105px no-repeat
 		z-index: -1
 		background-size: cover
 	.bg2
-		background: fixed url('/makoli/app/img/bg2.jpg') 0 105px no-repeat
+		background: fixed url('/img/bg2.jpg') 0 105px no-repeat
 		z-index: -2
 		background-size: cover
 	.bg3
-		background: fixed url('/makoli/app/img/bg3.jpg') 0 105px no-repeat
+		background: fixed url('/img/bg3.jpg') 0 105px no-repeat
 		z-index: -3
 		background-size: cover
 	.bg4
-		background: fixed url('/makoli/app/img/bg4.jpg') 0 105px no-repeat
+		background: fixed url('/img/bg4.jpg') 0 105px no-repeat
 		z-index: -4
 		background-size: cover
 	.bg5
-		background: fixed url('/makoli/app/img/bg5.jpg') 0 105px no-repeat
+		background: fixed url('/img/bg5.jpg') 0 105px no-repeat
 		z-index: -5
 		background-size: cover
 
@@ -292,19 +294,19 @@ b, strong
 					/* Style for "Rectangle" */
 					width: 74px
 					height: 70px
-					background-image: url('/makoli/app/img/pic/logo--grey.png')
+					background-image: url('/img/pic/logo--grey.png')
 				&--burlywood
 					width: 74px
 					height: 70px
-					background-image: url('/makoli/app/img/burlywood.png')
+					background-image: url('/img/burlywood.png')
 				&--catalinablue
 					width: 74px
 					height: 70px
-					background-image: url('/makoli/app/img/logo--catalinablue.png')
+					background-image: url('/img/logo--catalinablue.png')
 				&--topaz
 					width: 74px
 					height: 70px
-					background-image: url('/makoli/app/img/logo--topaz.png')
+					background-image: url('/img/logo--topaz.png')
 
 
 			&__title
@@ -414,7 +416,7 @@ b, strong
 			&--view
 				width: 56.12% !important
 			
-			.about__tabs__item__name
+			&__name
 				color: #5d5d5d
 				font-family: $stolizBook-font
 				font-size: 17px
@@ -571,7 +573,7 @@ b, strong
 		&__img
 			width: 100%
 			height: 1212px
-			background-image: url("/makoli/app/img/structure.png")
+			background-image: url("/img/structure.png")
 			background-position: center
 			background-size: contain
 			background-repeat: no-repeat
@@ -685,6 +687,59 @@ b, strong
 				a
 					text-decoration: none
 					
+
+.structor
+	display: flex
+	width: 100%
+	min-height: 300px
+	padding: 0 41px
+
+	&__wrap
+		display: flex
+		width: 100%
+	&__tabs
+		display: flex
+		flex-direction: column
+		width: 30%
+
+		&__item
+			width: 250px
+			height: 43px
+			display: flex
+			align-items: center
+			justify-content: center
+			padding: 0 0 0 25px
+			
+			&.active
+				width: 250px
+				height: 43px
+				background-color: #5d5d5d
+				.structor__tabs__item__link
+					width: 250px
+					color: #ffffff
+					font-family: $stolizBook-font
+					font-size: 22px
+					font-weight: 400
+					text-transform: uppercase
+
+			&__link
+				width: 250px
+				color: #5d5d5d
+				font-family: $stolizRegular-font
+				font-size: 22px
+				font-weight: 400
+				text-transform: uppercase
+	&__lists
+		width: 60%			
+	&__list
+		display: flex
+		justify-content: space-around
+		width: 100%
+		&__items
+			width: 180px
+
+
+
 
 
 
