@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <!-- <base href="/"> -->
 
-    <title> Контакты</title>
+    <title>OptimizedHTML 4</title>
     <meta name="description" content="">
 
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -36,22 +36,49 @@
                             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="15" height="16" viewBox="0 0 15 16">
                                 <image width="15" height="16"
                                     xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA8AAAAQCAYAAADJViUEAAABLUlEQVQ4T53SMSiucRTH8c+bMlyDsljMbEom011v6ZaSAUmUwn3rltViuJNJMUhSBhTJQEmRsrCwWGTi7hYpMqCj56/HG94nz/Sc85zv75znnF/J+6cNg2hEDW6xiy08VdQqZYlazOAes7jK8vXoRSfKuM4LJHgZq9irVM/iJixlQjepJuAuNGP6EzClWzGO0Ty8gQE8VIHj8xpGcBdBdA64pwAYJX9wjqMEr6C/IBx1cYHtBG+iuyA8mZ3uLMEL+If/VQTiF3fwO908Ei2YQh+evxAYxg/M5bcd70NoxwQePxAIo4zhZ75BMknU/8JfHOAkE4mpwgenaMAFFis7pzj83IEwRB0ucZhtOBqFdY8RF3rzdsFlv9bPYz/8kR+7qEBMF6OvfweOJiFQfgHiAzXJF9NvwQAAAABJRU5ErkJggg==" />
-                            </svg></div>
+                            </svg>
+                        </div>
+                        <div class="nav__menu__hamburger">
+                            <div class="hamburger-menu">
+                                <input id="menu__toggle" type="checkbox" />
+                                <label class="menu__btn" for="menu__toggle">
+                                  <span></span>
+                                </label>
+
+                                <ul class="menu__box">
+                                    <li><a class="menu__item" href="/">Главная</a></li>
+                                    <li><a class="menu__item" href="/about.html">Стратегия</a></li>
+                                    <li><a class="menu__item" href="/about2.html">Видение</a></li>
+                                    <li><a class="menu__item" href="/managment.html">Менеджмент</a></li>
+                                    <li><a class="menu__item" href="#">Контакты</a></li>
+                                </ul>
+                            </div>
+                        </div>
                         <ul class="nav__menu__list">
                             <li class="nav__menu__list__item">
-                                <a href="#">O компании</a>
-                                <div class="nav__menu__dropdown">
+                                <a class="nav__menu__list__item__link" href="#">О компании</a>
+                                <div class="nav__menu__dropdown nav__menu__dropdown__top100">
                                     <ul class="nav__menu__dropdown__list">
                                         <li class="nav__menu__dropdown__list__item">
                                             <a href="" class="nav__menu__dropdown__list__item__link">Стратегия</a></li>
                                         <li class="nav__menu__dropdown__list__item">
-                                            <a href="" class="nav__menu__dropdown__list__item__link">Видение / Миссия /
-                                                Ценности</a>
+                                            <a href="" class="nav__menu__dropdown__list__item__link">Видение / Миссия / Ценности</a>
                                         </li>
                                     </ul>
                                 </div>
                             </li>
-                            <li class="nav__menu__list__item">Менеджмент</li>
+                            <li class="nav__menu__list__item"><a class="nav__menu__list__item__link" href="#">Менеджмент</a>
+                                <div id="company" class="nav__menu__dropdown nav__menu__dropdown__top100">
+                                    <ul class="nav__menu__dropdown__list">
+                                        <li class="nav__menu__dropdown__list__item">
+                                            <a href="" class="nav__menu__dropdown__list__item__link">Производство
+                                                    </a></li>
+                                        <li class="nav__menu__dropdown__list__item">
+                                            <a href="" class="nav__menu__dropdown__list__item__link">Бизнес юниты</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
                             <li class="nav__menu__list__item">Структура активов</li>
                         </ul>
                     </div>
@@ -70,13 +97,25 @@
                                         viewBox="0 0 17 12">
                                         <image width="17" height="12"
                                             xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAAMCAYAAACEJVa/AAAA6klEQVQ4T5XRvyvEYRwH8NcZ/SiLRTGRxapkkew3+A+oU0qRkQEDM5HS1fkPDHZdt1zKahGTdAaLEqPTU5/TV/me+z7j8zyf1/N5f54SBrGBEcXXK45L2MEC1vBQwJnEGeoJ2UMVB7hAowdoHsvRQKWDHOE9oPvA8qxUPBXAEDazyFtUrWIMu/jKSH3YxzPOY384D0nni6hgBZ/oRy1iX2fgrsg6RjGBSyzhES84+Q9J8VKMp3h5ADO4xUd0Nh6x2vizk23c4arLD5UxjcM8pIff/XXlp5MtNHFTVMAs5tIM0uQ7gyzqtHD6DZlZOA/e87uoAAAAAElFTkSuQmCC" />
-                                    </svg></span>
+                                        </svg></span>
                             </div>
                         </div>
                         <ul class="nav__menu__list">
-                            <li class="nav__menu__list__item">Медиа-центр</li>
+                            <li class="nav__menu__list__item">Медиа центр</li>
                             <li class="nav__menu__list__item">Контакты</li>
-                            <li class="nav__menu__list__item">RU</li>
+                            <li class="nav__menu__list__item lang">
+                                <a class="nav__menu__list__item__link" href="#">RU</a>
+                                <div id="company" class="nav__menu__dropdown nav__menu__dropdown__top100 lang">
+                                    <ul class="nav__menu__dropdown__list">
+                                        <li class="nav__menu__dropdown__list__item">
+                                            <a href="" class="nav__menu__dropdown__list__item__link">En
+                                                            </a></li>
+                                        <li class="nav__menu__dropdown__list__item">
+                                            <a href="" class="nav__menu__dropdown__list__item__link">Ru</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -86,164 +125,137 @@
     <div class="content">
         <div class="content__wrapper">
             <div class="content__header">
-                <div class="content__header__img contacts">
+                <div class="content__header__img">
                     <div class="content__header__img__title">
-                        <span>Контакты</span>
+                        <span>О компании</span>
                     </div>
                 </div>
             </div>
-
-            <div class="contact">
-                <div class="contact__wrap">
-                    <div class="contact__adress">
-                        <div class="contact__adress__text">
-                            <div class="place__name">Центральный офис:
-
-                            </div>
-                            <div class="place__adress">Таджикистан, г. Душанбе,</br> ул. Кахарова, 35а
-
-                            </div>
+            <div class="about">
+                <div class="about__wrap">
+                    <div class="about__tabs">
+                        <div class="about__tabs__item about__tabs__item--strategy active">
+                            <span class="about__tabs__item__name">Стратегия</span>
                         </div>
-                        <div class="contact__adress__map">
+                        <div class="about__tabs__item about__tabs__item--view ">
+                            <span class="about__tabs__item__name">Виденье, Миссия, Ценности</span></div>
 
-                            <iframe width="100%" height="284" src="https://maps.google.com/maps?width=700&amp;height=440&amp;hl=en&amp;q=%D0%A2%D0%B0%D0%B4%D0%B6%D0%B8%D0%BA%D0%B8%D1%81%D1%82%D0%B0%D0%BD%2C%20%D0%94%D1%83%D1%88%D0%B0%D0%BD%D0%B1%D0%B5%20%20%D1%83%D0%BB.%20%D0%9A%D0%B0%D1%85%D0%B0%D1%80%D0%BE%D0%B2%D0%B0%2C%2035%D0%B0+(makolli)&amp;ie=UTF8&amp;t=&amp;z=18&amp;iwloc=B&amp;output=embed"
-                                frameborder="0" scrolling="no" marginheight="0" marginwidth="0">
-
-                                <style>
-                                    #gmap_canvas img {
-                                        max-width: none !important;
-                                        background: none !important
-                                    }
-                                </style>
-                        </div>
-
-                        <br />
-                        </iframe>
-                        </div>
                     </div>
-                    <div class="contact__adress">
-                        <div class="contact__adress__text">
-                            <div class="place__name">Производственный комплекс:
-
-                            </div>
-                            <div class="place__adress">734036, г.Душанбе,</br> ул.Р. Набиева 345/1</br> + 992 900 30 30 30
-                            </div>
-                        </div>
-                        <div class="contact__adress__map">
-
-                            <iframe width="100%" height="284" src="https://maps.google.com/maps?width=700&amp;height=440&amp;hl=en&amp;q=%D0%A2%D0%B0%D0%B4%D0%B6%D0%B8%D0%BA%D0%B8%D1%81%D1%82%D0%B0%D0%BD%20%20%D0%94%D1%83%D1%88%D0%B0%D0%BD%D0%B1%D0%B5%20%D0%9D%D0%B0%D0%B1%D0%B8%D0%B5%D0%B2%D0%B0%20345%2F1+(makolli)&amp;ie=UTF8&amp;t=&amp;z=18&amp;iwloc=B&amp;output=embed"
-                                frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
-                            <div style="position: absolute;width: 80%;bottom: 10px;left: 0;right: 0;margin-left: auto;margin-right: auto;color: #000;text-align: center;">
-                                <small style="line-height: 1.8;font-size: 2px;background: #fff;">Powered by <a
-                                        href="https://embedgooglemaps.com/en/">embedgooglemaps EN</a> & <a
-                                        href="https://iamsterdamcard.it">www.iamsterdamcard.it</a></small></div>
-                            <style>
-                                #gmap_canvas img {
-                                    max-width: none !important;
-                                    background: none !important
-                                }
-                            </style>
-
-                            <br />
-                        </div>
-                    </div>
-                    <div class="contact__emails">
-                        <ul class="contact__list">
-                            <li class="contact__list__item">
-                                <span class="contact__list__item__name">Связи с инвесторами</span>
-                                <span class="contact__list__item__email">investor_relations@makolli.tj</span>
-
-                            </li>
-                            <li class="contact__list__item">
-                                <span class="contact__list__item__name">Cвязи с общественностью</span>
-                                <span class="contact__list__item__email">pr@makolli.tj </span>
-
-                            </li>
-                            <li class="contact__list__item">
-                                <span class="contact__list__item__name">Продажа экспорт</span>
-                                <span class="contact__list__item__email">export@makolli.tj</span>
-
-                            </li>
-                            <li class="contact__list__item">
-                                <span class="contact__list__item__name">Работа в компанії</span>
-                                <span class="contact__list__item__email">openvacancy@makolli.tj</span>
-
-                            </li>
-                            <li class="contact__list__item">
-                                <span class="contact__list__item__name">Информация о тендерах </span>
-                                <span class="contact__list__item__email"> openvacancy@makolli.tj</span>
-
-                            </li>
+                    <div class="about__introduction">
+                        <p></p> Компания Маколли нацелена на удвоение объемов производства и утроение товарооборота в период 2019 - 2024 финансового года, предлагая уникальные комплексные решения своим партнерам - поставщикам и покупателям, благодаря сбалансированному
+                        развитию бизнес-сегментов компании путем:
+                        <ul class="about__introduction__list">
+                            <li class="about__introduction__list__item">- эффективного использования сети активов </li>
+                            <li class="about__introduction__list__item">- инвестирования в технологии и инновации </li>
+                            <li class="about__introduction__list__item">- стратегических приобретений новых активов</li>
+                            <li class="about__introduction__list__item">- развития потенциала команды и совершенствования процессов</li>
                         </ul>
-                        <ul class="contact__list">
-                            <li class="contact__list__item">
-                                <span class="contact__list__item__name">Отдел снабжения </span>
-                                <span class="contact__list__item__email"> import@makolli.tj</span>
+                    </div>
+                    <div class="about__explain">
+                        <div class="about__explain--worth">
+                            <div class="about__explain__head">
+                                <span class="about__explain__head__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="34" height="32" viewBox="0 0 34 32"><g><g><image width="34" height="32" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACIAAAAgCAYAAAB3j6rJAAACtklEQVRYheWWT0hUURjFfzqQJUF/VTKwwArTshYZtEhIdCFCSatAdCtFMRZUBq5rFgWtHGFqKly0aVFgunAVUVkW6CYSmwhXkS2yRrEkpsU9r3nzfOO8mTejiw58MPc75373vPvdO++Bf4SAW3mo4xuPFWuO/8NIeQGNbPcqrAASQK9HfRC47FHbq9q7vJoJZWFmL1DjQXdFNUNeTTjNnMyg6weiGTTNuZqwcAbYkUFTBBRn0FQAnbmasHAEaPcZR/2asPqaj7iaq4kaYBH4AcwBh4HdjogAS4qIC18PfNf8X8D+bE0UA8+BTzL0E7jj0ByQgeuKJeXsGADmgTrgI/CCzOcpBecw29ms8QWNT2gcAF4DU8B6xZRyAWmOa85FjZs0Pu/VRBWmHfYrWQy8BKaBDUCPijbaNI3K9cjYB+CNzRjAXdWu8mJkCPgCbHHk6zB9HgTimG13YkDcPUyrDjr4zao95LZwELgNdNieakw5Z8RI3oKoCx+18bE0NcZI7maHckGAh8AEcJNkH+PKucU85hak4+ekScfHtUaT1pyQh2WIAH+ANjcSCAOf03CI60/Dtal2ZIX5/xAAhoEFoMGFb8U8Ub0Ld0hcqwvXoJpPST3AK6IUeAt8BaodXAlme/tc5vVh/nNKHPlq1RpX7axQjjlw00CZg3uEuZpOjIuzo0w1YmT3wZWCfcAs8IrUJ+nCtKDSlqtUrsuWK9XcWcx3iy8cw/T2CcnebsMcum6brlu5rRoHNGdBNfKCdi0StuWeYQ6ehWHlLIQ151S+TFiw3j/XNL6EeTtvVCwqhzQJ4Gy+TVi4oQU6MT1PAKcVCWCPuIS0BUMR5l3zG2gB3gP3gQf63SJuUNqCYh0wivkrHwG+KUaUG5VmVbAJmGT55+CkuFXFTmDGZmJGuTVBLfBOUeun0F8oPeV790A+jAAAAABJRU5ErkJggg=="/></g></g></svg></span>
 
-                            </li>
-                            <li class="contact__list__item">
-                                <span class="contact__list__item__name">Дистрибуция товаров</span>
-                                <span class="contact__list__item__email">distribution@makolli.tj</span>
+                                <div class="about__explain__head__title">Ценности</div>
 
-                            </li>
-                            <li class="contact__list__item">
-                                <span class="contact__list__item__name">Отдел Логистические услуги</span>
-                                <span class="contact__list__item__email"> logistics@makolli.tj </span>
+                            </div>
+                            <ul class="about__explain__list">
+                                <li class="about__explain__list__item">- финансовая стабильность / сильная структура баланса</li>
+                                <li class="about__explain__list__item">- стойкая деловая репутация</li>
+                                <li class="about__explain__list__item">- профессиональная команда лидеров</li>
+                            </ul>
+                        </div>
+                        <div class="about__explain--focus">
+                            <div class="about__explain__head">
+                                <span class="about__explain__head__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35" height="35" viewBox="0 0 35 35"><g><g><image width="35" height="35" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAjCAYAAAAe2bNZAAAB3ElEQVRYhc2YsYrCQBCGP8FCfALf4bC6Sp/AVmysfQbxDUJAAr6ARSpfwEafwEpBrrW8wtbGQlCvyAxZl92op3fZH8KSmdnJn5nszG7gdQyAk4ylIwWuMpaKCjAjIzOT+39FG0iANXAUInodRZ6I3Z+hB2yth9+7tjLvbWgAC+shX0AMdIG5yOZyH4vetF+In5fwCewtpy3LZiy6sSVvWS+xF3+/JnIQRweg77GrAR0ZXehbfp4m1CCPyDfQfNaBhab40Qg9lTIN7+ENRExCGqHFo5N65Hn2pQbgA4iAJbCRMRK5D33D90OrTJevj30dmAIX3Mv5Ivq6Z75GfXuPSNtwaq8aJbIybHbABBjKuDN0Kw+hlmFTWBgT8jriwlT0Z2AEVC19VeRnsZt6/GgdSorIrMUodug+yFMzKnIiek2Z6xuKRb/2OaiQ95quQx+Rp8aOiI0qecoih75L3stumuuArP1r99XSPua2kC1FN7lDRDER+6Uhq4lfbSHa7VPhwQn3qriSVVbFRmTDB8kMxX5jyDoFzzpBYJFRBPHNmAhmNUFgdSaoCgwB9SYIrGtDQPsZCGynBwHtgU1CQZwOFMGcm0wEcaK0EcRZ24XS/0LYSMnIpOXSyPC2P1c/yUtAOOrhubwAAAAASUVORK5CYII="/></g></g></svg></span>
+                                <span class="about__explain__head__title">Фокус</span>
+                            </div>
+                            <ul class="about__explain__list">
+                                <li class="about__explain__list__item">- географический фокус </li>
+                                <li class="about__explain__list__item">- мощная производственная база</li>
+                                <li class="about__explain__list__item">- операционная дисциплина</li>
+                            </ul>
+                        </div>
+                    </div>
 
-                            </li>
-                            <li class="contact__list__item">
-                                <span class="contact__list__item__name">По всем другим вопросам:</span>
-                                <span class="contact__list__item__email"> info@makolli.tj </span>
 
+                    <div class="about__targets">
+                        <div class="about__targets__title">Стратегические цели</div>
+                        <ul class="about__targets__list">
+                            <li class="about__targets__list__items">- Консолидировать бизнес интересы Холдинга в Таджикистане</li>
+                            <li class="about__targets__list__items">- До 2020 года удвоить объемы экспорта по сравнению с 2018 ФГ</li>
+                            <li class="about__targets__list__items">- Достичь устойчивого управления расходами в Производственном секторе</li>
+                            <li class="about__targets__list__items">- Позиция №1 в сегментах компетенций производства в Таджикистане</li>
+                            <li class="about__targets__list__items">- Позиция №1 по дистрибуционному и логистическим бизнесам до 2022 года </li>
+                            <li class="about__targets__list__items">- Диверсификация сырьевых потоков и переход по всем закупкам исключительно на тендерной основе с 2022 года</li>
+                        </ul>
+
+                    </div>
+                    <div class="about__targets">
+                        <div class="about__targets__title">Цель</div>
+                        <div class="about__targets__list__items">Максимизировать прибыль Компании, обеспечивая ее устойчивое развитие</div>
+                    </div>
+                    <div class="about__targets seashell">
+                        <div class="about__targets__title">Детализация среднесрочной ЦЕЛЕЙ</div>
+                        <ul class="about__targets__list">
+                            <li class="about__targets__list__action">
+                                <span class="arrow__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 13 14"><g><g><path fill="#ab8b0b" d="M12.697 7.55L.452 13.953 1.03.147z"/></g></g></svg>
+                                </span>
+                                <h5>Активы и управление</h5>
                             </li>
+                            <li class="about__targets__list__items"> 1) Расширение производства кондитерских изделий в 2,5 раза до 2020 года</li>
+                            <li class="about__targets__list__items">2) Строительство современного логистического комплекса с автоматизированными решениями бизнеса до 2022 года</li>
+                            <li class="about__targets__list__items">3) Развитие сети собственной дистрибуции в Киргизстане, Узбекистане и Казахстане, РФ до 2022 года</li>
+                            <li class="about__targets__list__items">4) Диверсификация производства стратегического сырья в РФ, открытие производства до 2023 года</li>
+                            <li class="about__targets__list__items">5) Существенное обновление заводов с целью повышения их эффективности</li>
+                            <li class="about__targets__list__items">6) Капитализация 2022 ФГ на уровне 310 % в сравнении с 2018 годом</li>
+                        </ul>
+                        <ul class="about__targets dist">
+                            <li class="about__targets__list__action">
+                                <span class="arrow__icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="13" height="14" viewBox="0 0 13 14"><g><g><path fill="#ab8b0b" d="M12.697 7.55L.452 13.953 1.03.147z"/></g></g></svg>
+                                </span>
+                                <h5>
+                                    ЭКСПОРТ продукции
+                                </h5>
+                            </li>
+                            <li class="about__targets__list__items ">Утроить объемы экспорта продукции до 2022 года</li>
+                            <li class="about__targets__list__items">Позиция №1 экспорта кондитерской продукции в Таджикистане до 2022 года</li>
+                            <li class="about__targets__list__items">Освоение новых рынков Тихоокеанского региона Азии до 2023 года.</li>
 
                         </ul>
                     </div>
-                    <div class="contact__info">
-                        <h2>Если Вам стало известно о фактах:</h2>
-                        <p>- конфликта интересов, оказания давления на сотрудников, нарушения внутренних политик и процедур, в частности в сферах охраны труда и защиты окружающей среды, - мошенничества и коррупции, злоупотребления служебным положением и
-                            доверием, нарушения прав участников тендеров, свяжитесь с нами, позвонив на Горячую линию, единую для всех предприятий компании, по телефону: +992 900-30-30-30 или написав на электронный адрес: doverie@makolli.tj</p>
-                        <h2>Внимание! </h2>
-                        <p>Анонимные сообщения не рассматриваются. В телефонном или письменном обращении от физического лица просим указать ФИО, контактный номер телефона и электронный адрес. Если же обращение поступает от юридического лица, пожалуйста,
-                            сообщайте ФИО, должность и контактный телефон лица, обращающегося, а также полное название компании (в случае письменного обращения письмо должен быть подписан руководителем организации с указанием всех ее реквизитов).</p>
+                    <div class="about__targets">
+                        <div class="about__targets__title">
+                            <div class="about__targets__title">Развитие Бизнес направлений </div>
+                        </div>
+                        <div class="about__buisnes">
+                            <div class="about__buisnes__items">
+                                <span class="vertical-line">
+                        
+                        </span>
+                                <span class="about__buisnes__title">Логистика</span>
+                            </div>
+                            <div class="about__buisnes__items">
+
+                                <span class="about__buisnes__title">Внешне экономическая деятельность</span>
+                            </div>
+                            <div class="about__buisnes__items">
+
+                                <span class="about__buisnes__title">Производство внутреннее</span>
+                            </div>
+                            <div class="about__buisnes__items">
+                                <span class="about__buisnes__title">Дистрибуция </span></div>
+                            <div class="about__buisnes__items">
+                                <span class="about__buisnes__title">Производство СТМ</span></div>
+                        </div>
                     </div>
-
-                    <form action="contactus" class="contact__form">
-                        <span class="contact__form__name">Напишите нам:</span>
-                        <div class="contact__form__inputs">
-
-                            <div class="contact__form__side">
-                                <div class="contact__form__side__item">
-                                    <label for="Name">ФИО*</label>
-                                    <input type="text">
-                                </div>
-                                <div class="contact__form__side__item"><label for="Name">Телефон</label>
-                                    <input type="text"></div>
-
-                            </div>
-                            <div class="contact__form__side">
-                                <div class="contact__form__side__item">
-                                    <label for="Name">E-mail*</label>
-                                    <input type="text">
-                                </div>
-                                <div class="contact__form__side__item">
-                                    <label for="Name">Тема сообщения*</label>
-                                    <input type="text">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="contact__form__side__item">
-                            <label for="Name">Ваше сообщение</label>
-                            <textarea></textarea>
-                        </div>
-
-                        <button class="contact__form__button">Отправить</button>
-                    </form>
-
-
                 </div>
-            </div>
 
+            </div>
 
         </div>
     </div>

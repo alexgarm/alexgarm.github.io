@@ -2,6 +2,8 @@
 @import "fonts"
 @import "libs"
 
+
+
 ::placeholder
 	color: #666
 
@@ -68,6 +70,7 @@ b, strong
 	display: flex
 	width: 50%
 	padding-top: 345px
+	padding-bottom: 130px
 	justify-content: flex-end
 
 
@@ -82,7 +85,7 @@ b, strong
 .nav
 	display: flex
 	justify-content: center
-	height: 103px
+	height: 119px
 	width: 100%
 	background-color: #fff
 	&__wrapper
@@ -115,8 +118,8 @@ b, strong
 			&--left
 				display: flex
 				flex-direction: column
-				width: 300px
-				margin-left: 20vw
+				width: 17%
+				margin-left: 20%
 				.conection
 					display: flex
 					justify-content: flex-end
@@ -148,7 +151,8 @@ b, strong
 					color: #000000
 					&:hover
 						color: $accent
-					
+		&__hamburger
+			display: none		
 				
 							
 		&__dropdown
@@ -196,34 +200,34 @@ b, strong
 	width: 100%
 	display: flex
 	justify-content: center
-	margin-bottom: 120px
+	margin-bottom: 180px
 	&__wrapper
 		width: 80%
 	&__header
 		width: 100% 
 		&__img
-			background-image: url('/makoli/app/img/gorizont.jpg')
+			background-image: url('/img/gorizont.jpg')
 			background-repeat: no-repeat
 			background-size: cover
 			height: 514px
+			width: 100%
 			display: flex
 			justify-content: center
 			align-items: flex-end
 			&.about2
-				background-image: url('makoli/app/img/combinat.jpg')!important
+				background-image: url('/img/combinat.jpg')!important
 			&.managment
-				background-image: url('/makoli/app/img/port.jpg')!important
+				background-image: url('/img/port.jpg')!important
 			&.contacts
-				background-image: url('/makoli/app/img/factory.jpg')!important
+				background-image: url('/img/factory.jpg')!important
 			&.structor1
-				background-image: url('/makoli/app/img/bakers.jpg')!important
+				background-image: url('/img/bakers.jpg')!important
 
 			&__title
 				width: 90%
 				height: 124px
 				border-radius: 5px 
 				background-color: #ffffff
-				opacity: 0.9
 				display: flex
 				align-items: center
 				padding-left: 55px
@@ -252,23 +256,23 @@ b, strong
 		height: 100%
 		
 	.bg1
-		background: fixed url('/makoli/app/img/bread-content.jpg') 0 105px no-repeat
+		background: fixed url('/img/bread-content.jpg') 0 105px no-repeat
 		z-index: -1
 		background-size: cover
 	.bg2
-		background: fixed url('/makoli/app/img/bg2.jpg') 0 105px no-repeat
+		background: fixed url('/img/bg2.jpg') 0 105px no-repeat
 		z-index: -2
 		background-size: cover
 	.bg3
-		background: fixed url('/makoli/app/img/bg3.jpg') 0 105px no-repeat
+		background: fixed url('/img/bg3.jpg') 0 105px no-repeat
 		z-index: -3
 		background-size: cover
 	.bg4
-		background: fixed url('/makoli/app/img/bg4.jpg') 0 105px no-repeat
+		background: fixed url('/img/bg4.jpg') 0 105px no-repeat
 		z-index: -4
 		background-size: cover
 	.bg5
-		background: fixed url('/makoli/app/img/bg5.jpg') 0 105px no-repeat
+		background: fixed url('/img/bg5.jpg') 0 105px no-repeat
 		z-index: -5
 		background-size: cover
 
@@ -281,12 +285,13 @@ b, strong
 	position: relative
 	&__wrapper
 		height: 3030px
-		width: 536px
+		width: 70%
 		display: flex
 		flex-direction: column
 		
 	&__item
-		height: 832px
+		width: 100%
+		height: 880px
 		margin-bottom: 6px
 		.info
 			&__logo
@@ -294,19 +299,19 @@ b, strong
 					/* Style for "Rectangle" */
 					width: 74px
 					height: 70px
-					background-image: url('/makoli/app/img/pic/logo--grey.png')
+					background-image: url('/img/pic/logo--grey.png')
 				&--burlywood
 					width: 74px
 					height: 70px
-					background-image: url('/makoli/app/img/burlywood.png')
+					background-image: url('/img/burlywood.png')
 				&--catalinablue
 					width: 74px
 					height: 70px
-					background-image: url('/makoli/app/img/logo--catalinablue.png')
+					background-image: url('/img/logo--catalinablue.png')
 				&--topaz
 					width: 74px
 					height: 70px
-					background-image: url('/makoli/app/img/logo--topaz.png')
+					background-image: url('/img/logo--topaz.png')
 
 
 			&__title
@@ -314,11 +319,11 @@ b, strong
 				justify-content: center
 				align-items: center
 				margin-top: 7px
-				width: 536px
-				height: 358px
+				width: 100%
+				height: 390px
 				&__wrap
-					width: 480px
-					height: 307px
+					width: 90%
+					height: 330px
 					display: flex
 					flex-direction: column
 					justify-content: space-between
@@ -351,8 +356,8 @@ b, strong
 					font-family: $stolizRegular-font
 					opacity: 1
 				&__text
-					width: 480px
-					height: 140px
+					width: 100%
+					height: 200px
 					color: #ffffff
 					font-size: 16px
 					font-weight: 400
@@ -462,7 +467,6 @@ b, strong
 				font-weight: 400
 		&__text
 			width: 100%
-			height: 391px
 
 			&__wrap
 				color: #000000
@@ -482,15 +486,17 @@ b, strong
 		&--worth
 			width: 50%
 			padding: 15px
-			border-right: 1px solid #ab8b0b
+			.about__explain__list
+				border-right: 1px solid #ab8b0b
 		&--focus
-			width: 30%
+			width: 45%
+			padding: 15px 0
 		&__head
 			color: #ab8b0b
 			display: flex
 			justify-content: space-between
 			padding-left: 45px
-			width: 250px
+			width: 65%
 			&__icon
 				fill: #ab8b0b
 				width: 34px
@@ -502,6 +508,8 @@ b, strong
 				font-size: 20px
 				font-weight: 700
 				text-transform: uppercase
+		&__list
+
 	&__targets
 		margin-bottom: 50px
 		&__title
@@ -573,7 +581,7 @@ b, strong
 		&__img
 			width: 100%
 			height: 1212px
-			background-image: url("/makoli/app/img/structure.png")
+			background-image: url("/img/structure.png")
 			background-position: center
 			background-size: contain
 			background-repeat: no-repeat
@@ -739,6 +747,119 @@ b, strong
 			width: 180px
 
 
+.contact
+	width: 100%
+	justify-content: center
+	display: flex
+	&__wrap
+		width: 90%
+	&__adress
+		display: flex
+		justify-content: space-around
+		align-items: center
+		width: 100%
+		margin-bottom: 35px
+		&__text
+			width: 30%
+			.place__name
+				height: 21px
+				color: #ab8b0b
+				font-family: stolizBold-font
+				font-size: 20px
+				font-weight: 700
+				line-height: 0.5
+			.place__adress
+				color: #000000
+				font-family: stolizBook-font
+				font-size: 20px
+				font-weight: 400
+		&__map
+			width: 70%
+		
+
+	&__emails
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+	&__list
+		padding: 0
+		width: 45%
+		&__item
+			width: 100%
+			display: flex
+			justify-content: space-between
+			&__name
+				
+				color: #000000
+				font-family: stolizBold-font
+				font-size: 20px
+				font-weight: 700
+				line-height: 37px	
+			&__email
+				width: 40%
+			
+
+
+	&__form
+		display: flex
+		flex-direction: column
+		align-items: center
+		width: 100%
+		&__inputs
+			display: flex
+			flex-wrap: wrap
+			justify-content: space-between
+			width: 100%
+			
+		&__side
+			display: flex
+			flex-direction: column
+			justify-content: space-between
+			&__item
+				width: 100%
+				display: flex
+				flex-direction: column
+				margin-bottom: 30px
+				label
+					height: 40px
+					color: #5d5d5d
+					font-family: stolizBook-font
+					font-size: 16px
+					font-weight: 400
+				input
+					// Style for "Rectangle"
+					width: 532px
+					height: 30px
+					border: 1px solid #eeeeee
+					background-color: #ffffff
+				textarea
+					width: 100%
+					height: 143px
+					border: 1px solid #eeeeee
+					font-size: 20px
+
+				
+					
+		&__name
+			height: 27px
+			color: #5d5d5d
+			font-family: Stolzl
+			font-size: 22px
+			font-weight: 700
+			margin-bottom: 50px
+			text-transform: uppercase
+		&__button
+			// Style for "Rectangle"
+			width: 230px
+			height: 68px
+			background-color: #ab8b0b
+			color: #ffffff
+			font-size: 18px
+			font-weight: 400
+			font-family: $stolizBook-font
+
+
+	
 
 
 
@@ -753,13 +874,14 @@ b, strong
 	align-items: center
 	flex-direction: column
 	width: 100%
+	height: 253px
 	&__wrap
 		width: 80vw
-		height: 22.8vh
+		height: 253px
 		background-color: #aab9c2
 	&__nav
 		display: flex
-		height: 18.2vh
+		height: 213px
 		width: 75vw
 		&__list
 			display: flex
@@ -808,6 +930,202 @@ b, strong
 .seashell
 	background-color: #fffcf9 !important
 .brand__logo
-	z-index: 100
+	z-index: 1
+#menu__toggle
+	opacity: 0
+
+#menu__toggle
+	&:checked 
+		& ~ .menu__btn
+			span
+				transform: rotate(45deg)
+#menu__toggle
+	&:checked 
+		& ~ .menu__btn
+			span
+				&::before
+					top: 0
+					transform: rotate(0)
+
+#menu__toggle
+	&:checked 
+		& ~ .menu__btn
+			span
+				&:after
+					top: 0
+					transform: rotate(90deg)
+
+#menu__toggle
+	&:checked
+		& ~ .menu__box
+			visibility: visible
+			left: 0
+
+.menu__btn
+	display: flex
+	align-items: center
+	position: fixed
+	width: 26px
+	height: 26px
+	cursor: pointer
+	z-index: 10
+.menu__btn
+	span
+		display: block
+		position: absolute
+		width: 100%
+		height: 2px
+		background-color: #616161
+		transition-duration: .25s
+
+
+.menu__btn
+	span
+		&:before
+			display: block
+			position: absolute
+			width: 100%
+			height: 2px
+			background-color: #616161
+			transition-duration: .25s
+.menu__btn
+	span
+		&:after
+			display: block
+			position: absolute
+			width: 100%
+			height: 2px
+			background-color: #616161
+			transition-duration: .25s
+
+.menu__btn
+	span
+		&:before
+			content: ''
+			top: -8px
+
+.menu__btn
+	span
+		&:after
+			content: ''
+			top: 8px
+
+.menu__box
+	display: block
+	position: fixed
+	visibility: hidden
+	top: 0
+	left: -100%
+	width: 300px
+	height: 100%
+	margin: 0
+	padding: 130px 0
+	list-style: none
+	background-color: #728a9a
+	box-shadow: 1px 0px 6px rgba(0, 0, 0, .2)
+	transition-duration: .25s
+
+.menu__item
+	display: block
+	padding: 12px 24px
+	color: #333
+	font-family: $stolizRegular-font
+	font-size: 20px
+	font-weight: 600
+	text-decoration: none
+	transition-duration: .25s
+
+.menu__item
+	&:hover
+		background-color: #CFD8DC
+
 
 @import "media" // Always at the end
++max-screen(1601)
+	.nav__menu__item--right
+		width: 33%
+		margin-right: 4%
+	.nav__menu__item--left
+		width: 20%
+		margin-left: 10%
+	.about__tabs
+		width: 77%
+
+
++max-screen(1250)
+	.nav__menu__item--right
+		width: 42%
+		margin-right: 4%
+		padding-left: 3%
+	.nav__menu__item--left
+		width: 38%
+		margin-left: 10%
+		padding-right: 3%
+	.main-container
+		width: 100%
+	.main__scroll__bg
+		width: 100%
+	.footer__wrap
+		width: 100%
+
+
++max-screen(1150)
+	.nav__menu__item--right
+		width: 42%
+		margin-right: 4%
+		flex-wrap: wrap
+	.nav__menu__item--left
+		width: 38%
+		margin-left: 10%
+	.main-container
+		width: 100%
+	.main__scroll__bg
+		width: 100%
+	.content__wrapper
+		width: 100%
+	.footer__wrap
+		width: 100%
+
++max-screen(1100)
+	.nav__menu__list
+		display: none
+	.nav__menu__hamburger
+		display: block
+
+
++max-screen(800)
+	.about__explain
+		&--worth
+			width: 100%
+			.about__explain__list
+				border-right: none
+		&--focus
+			width: 100%
+
+
++max-screen(550)
+	.nav__menu__item--left
+		margin-left: 0
+		width: 30%
+	.about
+		&__wrap
+			padding: 0
+		&__tabs
+			width: 100%
+	.conection__wrapper
+		flex-direction: column-reverse
+		align-items: flex-end
+		justify-content: space-between
+		height: 80px
+
+	.managment__scheme__img
+		height: 421px
+	.right-side
+		padding-top: 150px
+	.side__history
+		padding-top: 200px
+		&__wrapper
+			width: 100%
+	.right-side,
+	.info__title
+		width: 100%
